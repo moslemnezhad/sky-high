@@ -32,7 +32,36 @@
       "description": "Trusted accounting, tax, and financial advisory services for individuals, entrepreneurs, and corporations across Canada. We simplify complex financial matters so you can focus on achieving your personal and business goals.",
       "book": "Book Consultation",
       "services": "Explore Our Services"
+    },
+    
+    "whyChooseUs": {
+  "title": "Why Businesses Choose Us",
+  "subtitle": "We provide reliable, accurate, and strategic accounting solutions designed for Canadian businesses and individuals.",
+
+  "features": {
+
+    "compliance": {
+      "title": "CRA Compliance Focus",
+      "desc": "We ensure your filings are accurate, compliant, and fully aligned with Canadian tax regulations."
+    },
+
+    "tax": {
+      "title": "Tax Optimization",
+      "desc": "Strategic planning to help reduce taxes and improve financial efficiency."
+    },
+
+    "support": {
+      "title": "Dedicated Client Support",
+      "desc": "Direct access to experienced professionals who understand your business."
+    },
+
+    "deadline": {
+      "title": "On-Time Guarantee",
+      "desc": "We prioritize deadlines so you never face penalties or late filings."
     }
+
+  }
+}
   },
 
   "about": {

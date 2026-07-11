@@ -1,4 +1,4 @@
-import { articles } from "../../content";
+import { articles } from "../../content/services";
 import ArticleCard from "./ArticleCard";
 
 export default function LatestArticles() {

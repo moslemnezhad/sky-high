@@ -5,9 +5,7 @@ export default function Hero() {
   const { t } = useTranslation();
 
   return (
-    // IMPORTANT:
-    // Keep the hero layout LTR so the content always stays
-    // on the LEFT side of the image.
+    // Keep hero layout LTR so content always stays on the LEFT
     <section
       className="relative min-h-[90vh] flex items-center"
       dir="ltr"
@@ -20,14 +18,14 @@ export default function Hero() {
         }}
       />
 
-      {/* Overlay */}
+      {/* Dark Overlay */}
       <div className="absolute inset-0 bg-[#071F35]/25" />
 
       {/* Left Gradient */}
       <div className="absolute inset-0 bg-gradient-to-r from-[#071F35]/75 via-[#071F35]/35 to-transparent" />
 
       {/* Content */}
-      <div className="relative max-w-7xl mx-auto px-6 lg:px-5 xl:px-0 w-full">
+      <div className="relative max-w-7xl mx-auto px-6 lg:px-4 xl:px-0 w-full">
 
         {/* Always stays on LEFT */}
         <div className="max-w-2xl">
@@ -37,7 +35,7 @@ export default function Hero() {
             dir={direction()}
             className={`uppercase tracking-[0.35em] text-[#C8A24A] font-semibold ${textAlign()}`}
           >
-            {t("hero.eyebrow")}
+            {t("home.hero.eyebrow")}
           </p>
 
           {/* Title */}
@@ -45,9 +43,9 @@ export default function Hero() {
             dir={direction()}
             className={`mt-4 text-5xl md:text-6xl font-bold leading-[1.1] text-white ${textAlign()}`}
           >
-            {t("hero.title1")}
+            {t("home.hero.title1")}
             <br />
-            {t("hero.title2")}
+            {t("home.hero.title2")}
           </h1>
 
           {/* Description */}
@@ -55,7 +53,7 @@ export default function Hero() {
             dir={direction()}
             className={`mt-6 max-w-3xl text-xl leading-8 text-gray-200 ${textAlign()}`}
           >
-            {t("hero.description")}
+            {t("home.hero.description")}
           </p>
 
           {/* Buttons */}
@@ -65,14 +63,14 @@ export default function Hero() {
               href="/contact"
               className="inline-flex items-center justify-center rounded-xl bg-[#C8A24A] px-8 py-4 font-semibold text-[#071F35] shadow-lg transition hover:bg-[#d6b15b]"
             >
-              {t("hero.book")}
+              {t("home.hero.book")}
             </a>
 
             <a
               href="/services"
               className="inline-flex items-center justify-center rounded-xl border border-white/40 px-8 py-4 font-semibold text-white transition hover:bg-white/10"
             >
-              {t("hero.services")}
+              {t("home.hero.services")}
             </a>
 
           </div>
