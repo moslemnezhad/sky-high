@@ -1,0 +1,94 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "resources": "Resources",
+    "contact": "Contact",
+    "book": "Book Consultation"
+  },
+
+  "breadcrumb": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "resources": "Resources",
+    "contact": "Contact",
+    "personal-tax": "Personal Tax",
+    "corporate-tax": "Corporate Tax",
+    "bookkeeping": "Bookkeeping",
+    "payroll": "Payroll",
+    "gst-hst": "GST/HST",
+    "canada-usa-tax": "Canada–USA Tax",
+    "small-business": "Small Business",
+    "tax-planning": "Tax Planning"
+  },
+
+  "home": {
+    "hero": {
+      "eyebrow": "WELCOME TO SKY HIGH FINANCIAL MANAGEMENT",
+      "title1": "Wings to Soar Beyond",
+      "title2": "Financial Expectations",
+      "description": "Trusted accounting, tax, and financial advisory services for individuals, entrepreneurs, and corporations across Canada. We simplify complex financial matters so you can focus on achieving your personal and business goals.",
+      "book": "Book Consultation",
+      "services": "Explore Our Services"
+    }
+  },
+
+  "about": {
+    "hero": {
+      "eyebrow": "GET TO KNOW US",
+      "title": "Your Trusted Partner for Financial Success",
+      "description": "Learn about Sky High Financial Management, our professional approach, and our commitment to providing accurate, reliable, and personalized accounting and tax solutions for every client we serve."
+    },
+
+    "company": {
+      "title": "Who We Are",
+      "paragraph1": "Sky High Financial Management Inc. is committed to delivering accurate accounting, tax, and financial solutions tailored to the unique needs of each client.",
+      "paragraph2": "We believe accounting should provide clarity—not complexity. Our goal is to help business owners understand their financial position, remain compliant, reduce tax risk, and make confident decisions for future growth."
+    },
+
+    "why": {
+      "title": "Why Businesses Choose Us",
+      "accounting": "Professional Accounting & Bookkeeping",
+      "tax": "Corporate & Personal Tax Expertise",
+      "crossBorder": "Canada & USA Cross-Border Tax Services",
+      "payroll": "Payroll & CRA Compliance",
+      "cloud": "Cloud Accounting Solutions",
+      "multi": "Multilingual Service (English | فارسی | العربية)"
+    },
+
+    "mission": {
+      "title": "Our Mission",
+      "text": "To provide reliable, professional accounting, bookkeeping, payroll, and tax services that help individuals and businesses make informed financial decisions."
+    },
+
+    "vision": {
+      "title": "Our Vision",
+      "text": "To become one of Canada's most trusted accounting firms by delivering exceptional service, modern technology, and long-term client relationships."
+    },
+
+    "values": {
+      "title": "Our Values",
+      "text": "Integrity, professionalism, transparency, responsiveness, and genuine commitment to our clients' success."
+    },
+
+    "cta": {
+      "title": "Let's Build Your Financial Success Together",
+      "description": "Whether you're starting a business, managing growth, or preparing your taxes, we're here to help every step of the way.",
+      "button": "Book a Consultation"
+    }
+  },
+  "services": {
+  "hero": {
+    "eyebrow": "OUR SERVICES",
+    "title": "Professional Accounting & Tax Solutions",
+    "description": "Comprehensive accounting, bookkeeping, payroll, tax, and advisory services designed to help individuals and businesses across Canada succeed."
+  },
+
+  "intro": {
+    "title": "Helping You Stay Financially Confident",
+    "description": "Whether you're an individual, entrepreneur, or growing corporation, we provide tailored financial solutions backed by professional expertise and personalized service."
+  }
+}
+}
