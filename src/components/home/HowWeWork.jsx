@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import {
   CalendarDays,
   FolderOpen,
@@ -32,7 +33,8 @@ const steps = [
   },
 ];
 
-export default function HowWeWork() {
+export default function Industries() {
+  const { t } = useTranslation();
   return (
     <section className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-6">

@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import {
   Phone,
   Mail,
@@ -8,11 +9,12 @@ import {
 import { Link } from "react-router-dom";
 
 export default function Footer() {
+  const { t } = useTranslation();
+
   return (
     <footer className="bg-[#071F35] text-white">
 
       {/* Gold Top Border */}
-
       <div className="h-1 bg-[#C8A24A]" />
 
       <div className="max-w-7xl mx-auto px-6 py-20">
@@ -34,11 +36,7 @@ export default function Footer() {
             </h3>
 
             <p className="mt-5 text-gray-300 leading-8">
-
-              Professional accounting, bookkeeping,
-              payroll, tax planning and advisory services
-              for individuals and businesses across Canada.
-
+              {t("footer.company.description")}
             </p>
 
             <div className="mt-6 flex flex-wrap gap-2">
@@ -58,26 +56,25 @@ export default function Footer() {
             </div>
 
           </div>
-
-          {/* Services */}
+                    {/* Services */}
 
           <div>
 
             <h3 className="text-xl font-semibold mb-6">
-              Services
+              {t("footer.services.title")}
             </h3>
 
             <div className="space-y-4">
 
               {[
-                "Accounting",
-                "Bookkeeping",
-                "Payroll",
-                "Corporate Tax",
-                "Personal Tax",
-                "Cross-Border Tax",
-                "CRA Compliance",
-                "Financial Advisory",
+                t("footer.services.accounting"),
+                t("footer.services.bookkeeping"),
+                t("footer.services.payroll"),
+                t("footer.services.corporateTax"),
+                t("footer.services.personalTax"),
+                t("footer.services.crossBorder"),
+                t("footer.services.cra"),
+                t("footer.services.advisory"),
               ].map((item) => (
 
                 <Link
@@ -100,7 +97,7 @@ export default function Footer() {
           <div>
 
             <h3 className="text-xl font-semibold mb-6">
-              Company
+              {t("footer.companyMenu.title")}
             </h3>
 
             <div className="space-y-4">
@@ -109,35 +106,35 @@ export default function Footer() {
                 to="/"
                 className="block text-gray-300 hover:text-[#C8A24A]"
               >
-                Home
+                {t("navbar.home")}
               </Link>
 
               <Link
                 to="/about"
                 className="block text-gray-300 hover:text-[#C8A24A]"
               >
-                About Us
+                {t("navbar.about")}
               </Link>
 
               <Link
                 to="/services"
-                className="block text-gray-300 hover:text-[#C8A24A]"
+                className="block text-gray-300 hover:text-[#C8A24A)"
               >
-                Services
+                {t("navbar.services")}
               </Link>
 
               <Link
                 to="/resources"
                 className="block text-gray-300 hover:text-[#C8A24A]"
               >
-                Resources
+                {t("navbar.resources")}
               </Link>
 
               <Link
                 to="/contact"
                 className="block text-gray-300 hover:text-[#C8A24A]"
               >
-                Contact
+                {t("navbar.contact")}
               </Link>
 
             </div>
@@ -149,7 +146,7 @@ export default function Footer() {
           <div>
 
             <h3 className="text-xl font-semibold mb-6">
-              Contact
+              {t("footer.contact.title")}
             </h3>
 
             <div className="space-y-5">
@@ -161,7 +158,7 @@ export default function Footer() {
                 <div>
 
                   <div className="font-medium">
-                    Phone
+                    {t("footer.contact.phone")}
                   </div>
 
                   <div className="text-gray-300">
@@ -179,7 +176,7 @@ export default function Footer() {
                 <div>
 
                   <div className="font-medium">
-                    Email
+                    {t("footer.contact.email")}
                   </div>
 
                   <div className="text-gray-300 break-all">
@@ -197,7 +194,7 @@ export default function Footer() {
                 <div>
 
                   <div className="font-medium">
-                    Service Area
+                    {t("footer.contact.area")}
                   </div>
 
                   <div className="text-gray-300">
@@ -215,13 +212,11 @@ export default function Footer() {
                 <div>
 
                   <div className="font-medium">
-                    Business Hours
+                    {t("footer.contact.hours")}
                   </div>
 
                   <div className="text-gray-300">
-                    Mon – Fri
-                    <br />
-                    9:00 AM – 6:00 PM
+                    {t("footer.contact.schedule")}
                   </div>
 
                 </div>
@@ -235,8 +230,7 @@ export default function Footer() {
         </div>
 
       </div>
-
-      {/* Bottom */}
+            {/* Bottom */}
 
       <div className="border-t border-gray-700">
 
@@ -245,7 +239,7 @@ export default function Footer() {
           <p className="text-gray-400 text-sm">
 
             © {new Date().getFullYear()} Sky High Financial Management Inc.
-            All Rights Reserved.
+            {t("footer.copyright")}
 
           </p>
 
@@ -255,14 +249,14 @@ export default function Footer() {
               to="/privacy"
               className="text-gray-400 hover:text-[#C8A24A]"
             >
-              Privacy Policy
+              {t("footer.privacy")}
             </Link>
 
             <Link
               to="/terms"
               className="text-gray-400 hover:text-[#C8A24A]"
             >
-              Terms of Service
+              {t("footer.terms")}
             </Link>
 
           </div>

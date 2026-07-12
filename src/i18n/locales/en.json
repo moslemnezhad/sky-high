@@ -24,45 +24,233 @@
     "tax-planning": "Tax Planning"
   },
 
-  "home": {
-    "hero": {
-      "eyebrow": "WELCOME TO SKY HIGH FINANCIAL MANAGEMENT",
-      "title1": "Wings to Soar Beyond",
-      "title2": "Financial Expectations",
-      "description": "Trusted accounting, tax, and financial advisory services for individuals, entrepreneurs, and corporations across Canada. We simplify complex financial matters so you can focus on achieving your personal and business goals.",
-      "book": "Book Consultation",
-      "services": "Explore Our Services"
-    },
-    
-    "whyChooseUs": {
-  "title": "Why Businesses Choose Us",
-  "subtitle": "We provide reliable, accurate, and strategic accounting solutions designed for Canadian businesses and individuals.",
+  "footer": {
+  "companyTitle": "Sky High Financial",
 
-  "features": {
+  "description": "Professional accounting, bookkeeping, payroll, tax planning, and advisory services for individuals and businesses across Canada.",
+
+  "languages": {
+    "english": "English",
+    "persian": "فارسی",
+    "arabic": "العربية"
+  },
+
+  "servicesTitle": "Services",
+
+  "services": {
+    "accounting": "Accounting",
+    "bookkeeping": "Bookkeeping",
+    "payroll": "Payroll",
+    "corporateTax": "Corporate Tax",
+    "personalTax": "Personal Tax",
+    "crossBorder": "Cross-Border Tax",
+    "craCompliance": "CRA Compliance",
+    "financialAdvisory": "Financial Advisory"
+  },
+
+  "company": {
+    "title": "Company",
+    "home": "Home",
+    "about": "About Us",
+    "services": "Services",
+    "resources": "Resources",
+    "contact": "Contact"
+  },
+
+  "contact": {
+    "title": "Contact",
+    "phone": "Phone",
+    "email": "Email",
+    "whatsapp": "WhatsApp",
+    "linkedin": "LinkedIn",
+    "instagram": "Instagram",
+    "serviceArea": "Service Area",
+    "serviceAreaValue": "Canada & USA",
+    "hours": "Business Hours",
+    "hoursValue": "Mon – Fri\n9:00 AM – 6:00 PM"
+  },
+
+  "bottom": {
+    "copyright": "All Rights Reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  }
+},
+
+  "home": {
+  "hero": {
+    "eyebrow": "WELCOME TO SKY HIGH FINANCIAL MANAGEMENT",
+    "title1": "Wings to Soar Beyond",
+    "title2": "Financial Expectations",
+    "description": "Trusted accounting, tax, and financial advisory services for individuals, entrepreneurs, and corporations across Canada. We simplify complex financial matters so you can focus on achieving your personal and business goals.",
+    "book": "Book Consultation",
+    "services": "Explore Our Services"
+  },
+
+  "whyChooseUs": {
+    "title": "Why Businesses Choose Us",
+    "subtitle": "We provide reliable, accurate, and strategic accounting solutions designed for Canadian businesses and individuals.",
+
+    "features": {
+      "compliance": {
+        "title": "CRA Compliance Focus",
+        "desc": "We ensure your filings are accurate, compliant, and fully aligned with Canadian tax regulations."
+      },
+
+      "tax": {
+        "title": "Tax Optimization",
+        "desc": "Strategic planning to help reduce taxes and improve financial efficiency."
+      },
+
+      "support": {
+        "title": "Dedicated Client Support",
+        "desc": "Direct access to experienced professionals who understand your business."
+      },
+
+      "deadline": {
+        "title": "On-Time Guarantee",
+        "desc": "We prioritize deadlines so you never face penalties or late filings."
+      }
+    }
+  },
+
+  "servicesPreview": {
+    "title": "Our Professional Services",
+    "subtitle": "Comprehensive accounting and tax solutions designed for individuals, startups, and established businesses throughout Canada.",
+    "button": "View Details"
+  },
+
+  "cta": {
+  "title": "Ready to Simplify Your Accounting?",
+  "description": "Get professional tax and accounting support tailored for Canadian individuals and businesses. Book a consultation today and receive expert financial guidance.",
+  "button": "Book Free Consultation"
+},
+"stats": {
+  "title": "Trusted by Individuals & Businesses",
+  "subtitle": "We focus on accuracy, compliance, and long-term financial confidence for our clients across Canada.",
+
+  "items": {
+    "experience": {
+      "value": "10+ Years",
+      "label": "Professional Experience"
+    },
+
+    "taxReturns": {
+      "value": "500+",
+      "label": "Tax Returns Completed"
+    },
 
     "compliance": {
-      "title": "CRA Compliance Focus",
-      "desc": "We ensure your filings are accurate, compliant, and fully aligned with Canadian tax regulations."
-    },
-
-    "tax": {
-      "title": "Tax Optimization",
-      "desc": "Strategic planning to help reduce taxes and improve financial efficiency."
+      "value": "100%",
+      "label": "CRA Compliance Focus"
     },
 
     "support": {
-      "title": "Dedicated Client Support",
-      "desc": "Direct access to experienced professionals who understand your business."
+      "value": "24/7",
+      "label": "Client-Oriented Support Mindset"
+    }
+  }
+},
+
+"howWeWork": {
+  "eyebrow": "SIMPLE PROCESS",
+  "title": "How We Work",
+  "description": "We make accounting and taxation straightforward through a clear, efficient, and transparent process.",
+
+  "steps": {
+    "consultation": {
+      "title": "Book a Consultation",
+      "description": "Schedule a consultation online or contact our team to discuss your accounting and tax needs."
     },
 
-    "deadline": {
-      "title": "On-Time Guarantee",
-      "desc": "We prioritize deadlines so you never face penalties or late filings."
-    }
+    "documents": {
+      "title": "Share Your Documents",
+      "description": "Securely provide your financial records and supporting documents for review."
+    },
 
+    "preparation": {
+      "title": "We Prepare Everything",
+      "description": "Our experienced professionals prepare your accounting records and tax filings with precision."
+    },
+
+    "review": {
+      "title": "Review & File",
+      "description": "After your approval, we file your returns and continue providing year-round financial support."
+    }
+  }
+},
+"industries": {
+  "eyebrow": "INDUSTRIES WE SERVE",
+  "title": "Supporting Businesses Across Canada",
+  "description": "We provide tailored accounting, bookkeeping, payroll, tax, and advisory services to businesses across a wide range of industries.",
+
+  "professionalServices": {
+    "title": "Professional Services",
+    "description": "Accounting solutions for consultants, lawyers, engineers, and other professionals."
+  },
+
+  "healthcare": {
+    "title": "Healthcare",
+    "description": "Financial and tax services for physicians, dentists, clinics, and healthcare providers."
+  },
+
+  "construction": {
+    "title": "Construction",
+    "description": "Bookkeeping, payroll, GST/HST, and tax planning for contractors and construction companies."
+  },
+
+  "retail": {
+    "title": "Retail & E-Commerce",
+    "description": "Inventory, sales tax, bookkeeping, and financial reporting for retail businesses."
+  },
+
+  "realEstate": {
+    "title": "Real Estate",
+    "description": "Accounting and tax support for investors, developers, landlords, and real estate professionals."
+  },
+
+  "technology": {
+    "title": "Technology",
+    "description": "Cloud accounting and financial advisory for startups and technology companies."
+  },
+
+  "hospitality": {
+    "title": "Hospitality",
+    "description": "Payroll, bookkeeping, and tax services for restaurants, cafés, and hotels."
+  },
+
+  "smallBusiness": {
+    "title": "Small Businesses",
+    "description": "Comprehensive accounting and tax support designed for growing Canadian businesses."
+  }
+},
+
+"stats": {
+  "title": "Trusted by Individuals & Businesses",
+  "subtitle": "We focus on accuracy, compliance, and long-term financial confidence for clients across Canada.",
+
+  "experience": {
+    "value": "10+ Years",
+    "label": "Professional Experience"
+  },
+
+  "returns": {
+    "value": "500+",
+    "label": "Tax Returns Completed"
+  },
+
+  "compliance": {
+    "value": "100%",
+    "label": "CRA Compliance Focus"
+  },
+
+  "support": {
+    "value": "24/7",
+    "label": "Client-Oriented Support"
   }
 }
-  },
+
+},
 
   "about": {
     "hero": {
@@ -116,8 +304,97 @@
   },
 
   "intro": {
+    "eyebrow": "WHAT WE OFFER",
     "title": "Helping You Stay Financially Confident",
     "description": "Whether you're an individual, entrepreneur, or growing corporation, we provide tailored financial solutions backed by professional expertise and personalized service."
+  },
+
+  "buttons": {
+    "learnMore": "Learn More"
+  },
+
+  "cards": {
+    "accounting": {
+      "title": "Accounting",
+      "description": "Professional accounting services, financial reporting, statements, and strategic business insights."
+    },
+    "bookkeeping": {
+      "title": "Bookkeeping",
+      "description": "Accurate bookkeeping, bank reconciliations, and organized financial records."
+    },
+    "payroll": {
+      "title": "Payroll Services",
+      "description": "Payroll processing, T4 preparation, ROEs, payroll remittances, and CRA compliance."
+    },
+    "corporateTax": {
+      "title": "Corporate Tax",
+      "description": "Corporate tax planning, T2 return preparation, and tax-efficient strategies."
+    },
+    "personalTax": {
+      "title": "Personal Tax",
+      "description": "Personal income tax preparation with maximum deduction optimization."
+    },
+    "financialAdvisory": {
+      "title": "Financial Advisory",
+      "description": "Business planning, budgeting, forecasting, and financial growth strategies."
+    },
+    "businessConsulting": {
+      "title": "Business Consulting",
+      "description": "Professional consulting to improve operations, profitability, and business performance."
+    },
+    "craCompliance": {
+      "title": "CRA Compliance",
+      "description": "CRA audit assistance, tax filings, regulatory compliance, and reporting support."
+    },
+    "crossBorder": {
+      "title": "Cross-Border Tax",
+      "description": "Canada–U.S. tax planning, foreign income reporting, treaty considerations, and cross-border compliance."
+    },
+    "taxPlanning": {
+      "title": "Tax Planning & Optimization",
+      "description": "Proactive tax planning strategies to reduce tax liabilities and maximize financial opportunities."
+    }
   }
+},
+
+  "intro": {
+    "title": "Helping You Stay Financially Confident",
+    "description": "Whether you're an individual, entrepreneur, or growing corporation, we provide tailored financial solutions backed by professional expertise and personalized service."
+  },
+  "footer": {
+  "company": {
+    "description": "Professional accounting, bookkeeping, payroll, tax planning and advisory services for individuals and businesses across Canada."
+  },
+
+  "services": {
+    "title": "Services",
+    "accounting": "Accounting",
+    "bookkeeping": "Bookkeeping",
+    "payroll": "Payroll",
+    "corporateTax": "Corporate Tax",
+    "personalTax": "Personal Tax",
+    "crossBorder": "Cross-Border Tax",
+    "cra": "CRA Compliance",
+    "advisory": "Financial Advisory"
+  },
+
+  "companyMenu": {
+    "title": "Company"
+  },
+
+  "contact": {
+    "title": "Contact",
+    "phone": "Phone",
+    "email": "Email",
+    "area": "Service Area",
+    "hours": "Business Hours",
+    "schedule": "Mon – Fri\n9:00 AM – 6:00 PM"
+  },
+
+  "privacy": "Privacy Policy",
+
+  "terms": "Terms of Service",
+
+  "copyright": " All Rights Reserved."
 }
 }

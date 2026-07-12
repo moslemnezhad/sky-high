@@ -14,101 +14,52 @@ import {
 export const services = [
   {
     id: "accounting",
-    title: "Accounting",
+    slug: "accounting",
     icon: Landmark,
-    short:
-      "Professional accounting services and financial reporting.",
-    description:
-      "Professional accounting services, financial reporting, statements, and strategic business insights for businesses across Canada.",
   },
-
   {
     id: "bookkeeping",
-    title: "Bookkeeping",
+    slug: "bookkeeping",
     icon: Calculator,
-    short:
-      "Accurate bookkeeping and reconciliations.",
-    description:
-      "Monthly bookkeeping, bank reconciliations, GST/HST tracking, and organized financial records.",
   },
-
   {
     id: "payroll",
-    title: "Payroll Services",
+    slug: "payroll",
     icon: BadgeDollarSign,
-    short:
-      "Payroll processing and CRA remittances.",
-    description:
-      "Payroll processing, T4s, ROEs, payroll remittances, and CRA payroll compliance.",
   },
-
   {
-    id: "corporate-tax",
-    title: "Corporate Tax",
+    id: "corporateTax",
+    slug: "corporate-tax",
     icon: Briefcase,
-    short:
-      "Corporate tax planning and T2 filing.",
-    description:
-      "Corporate tax preparation, planning, CRA filing, and tax-efficient strategies.",
   },
-
   {
-    id: "personal-tax",
-    title: "Personal Tax",
+    id: "personalTax",
+    slug: "personal-tax",
     icon: FileText,
-    short:
-      "Personal tax preparation and deductions.",
-    description:
-      "Personal income tax returns with maximum deduction optimization and CRA compliance.",
   },
-
   {
-    id: "financial-advisory",
-    title: "Financial Advisory",
+    id: "financialAdvisory",
+    slug: "financial-advisory",
     icon: TrendingUp,
-    short:
-      "Planning, forecasting and business growth.",
-    description:
-      "Budgeting, forecasting, financial analysis, and strategic business planning.",
   },
-
   {
-    id: "business-consulting",
-    title: "Business Consulting",
+    id: "businessConsulting",
+    slug: "business-consulting",
     icon: Users,
-    short:
-      "Helping businesses improve performance.",
-    description:
-      "Business consulting designed to improve profitability, efficiency, and long-term growth.",
   },
-
   {
-    id: "cra-compliance",
-    title: "CRA Compliance",
+    id: "craCompliance",
+    slug: "cra-compliance",
     icon: ShieldCheck,
-    short:
-      "Stay compliant with CRA regulations.",
-    description:
-      "CRA audit support, compliance reviews, reporting requirements, and tax filing assistance.",
   },
-
   {
-    id: "cross-border-tax",
-    title: "Cross-Border Tax",
+    id: "crossBorder",
+    slug: "cross-border-tax",
     icon: Globe,
-    short:
-      "Canada–U.S. tax expertise.",
-    description:
-      "Canada–U.S. tax planning, treaty guidance, foreign income reporting, and cross-border compliance.",
   },
-
   {
-    id: "tax-planning",
-    title: "Tax Planning & Optimization",
+    id: "taxPlanning",
+    slug: "tax-planning",
     icon: PiggyBank,
-    short:
-      "Reduce taxes legally.",
-    description:
-      "Proactive tax planning strategies that minimize taxes while maximizing available opportunities.",
   },
 ];

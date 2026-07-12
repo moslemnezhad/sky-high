@@ -1,3 +1,5 @@
+import { useTranslation } from "react-i18next";
+
 import {
   Building2,
   Stethoscope,
@@ -61,6 +63,8 @@ const industries = [
 ];
 
 export default function Industries() {
+  const { t } = useTranslation();
+
   return (
     <section className="bg-slate-50 py-24">
       <div className="max-w-7xl mx-auto px-6">
