@@ -309,6 +309,23 @@
     "description": "Whether you're an individual, entrepreneur, or growing corporation, we provide tailored financial solutions backed by professional expertise and personalized service."
   },
 
+  "categories": {
+  "business": {
+    "title": "Business Services",
+    "description": "Comprehensive accounting and operational support for businesses of every size."
+  },
+
+  "tax": {
+    "title": "Tax Services",
+    "description": "Professional tax preparation, planning, and compliance for individuals and corporations."
+  },
+
+  "advisory": {
+    "title": "Advisory Services",
+    "description": "Strategic financial guidance to help you grow with confidence."
+  }
+},
+
   "buttons": {
     "learnMore": "Learn More"
   },

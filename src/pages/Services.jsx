@@ -4,12 +4,16 @@ import { Link } from "react-router-dom";
 import PageHero from "../components/common/PageHero";
 import { services } from "../data/services";
 
-import {
-  ArrowRight,
-} from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 export default function Services() {
   const { t } = useTranslation();
+
+  const categories = [
+    "business",
+    "tax",
+    "advisory",
+  ];
 
   return (
     <>
@@ -20,11 +24,11 @@ export default function Services() {
         description={t("services.hero.description")}
       />
 
-      {/* SERVICES */}
-
       <section className="bg-slate-50 py-24">
 
         <div className="max-w-7xl mx-auto px-6">
+
+          {/* INTRO */}
 
           <div className="text-center max-w-3xl mx-auto">
 
@@ -42,59 +46,105 @@ export default function Services() {
 
           </div>
 
-          <div className="grid gap-8 mt-16 md:grid-cols-2 lg:grid-cols-5">
 
-            {services.map((service) => {
+          {/* SERVICE CATEGORIES */}
 
-              const Icon = service.icon;
+          <div className="mt-20">
 
-              return (
+            {categories.map((category) => (
 
-                <div
-                  key={service.slug}
-                  className="group bg-white rounded-2xl p-8 shadow-sm border border-gray-200 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col"
-                >
+              <div key={category} className="mb-20">
 
-                  <div className="w-16 h-16 rounded-xl bg-[#0B2D4D] flex items-center justify-center group-hover:bg-[#C8A24A] transition-colors">
 
-                    <Icon className="w-8 h-8 text-white" />
+                {/* Category Header */}
 
-                  </div>
+                <div className="max-w-3xl mb-10">
 
-                  <h3 className="mt-6 text-xl font-semibold text-[#0B2D4D]">
-
-                    {t(`services.cards.${service.id}.title`)}
-
+                  <h3 className="text-3xl font-bold text-[#0B2D4D]">
+                    {t(`services.categories.${category}.title`)}
                   </h3>
 
-                  <p className="mt-4 text-gray-600 leading-7 text-sm flex-grow">
-
-                    {t(`services.cards.${service.id}.description`)}
-
+                  <p className="mt-3 text-gray-600 leading-7">
+                    {t(`services.categories.${category}.description`)}
                   </p>
-
-                  <Link
-                    to={`/services/${service.slug}`}
-                    className="mt-6 inline-flex items-center gap-2 font-semibold text-[#0B2D4D] hover:text-[#C8A24A] transition-colors"
-                  >
-
-                    {t("services.buttons.learnMore")}
-
-                    <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
-
-                  </Link>
 
                 </div>
 
-              );
 
-            })}
+                {/* Cards */}
+
+                <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+
+
+                  {services
+                    .filter((service) => service.category === category)
+                    .map((service) => {
+
+                      const Icon = service.icon;
+
+
+                      return (
+
+                        <div
+                          key={service.slug}
+                          className="group bg-white rounded-2xl p-8 shadow-sm border border-gray-200 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col"
+                        >
+
+                          <div className="w-16 h-16 rounded-xl bg-[#0B2D4D] flex items-center justify-center group-hover:bg-[#C8A24A] transition-colors">
+
+                            <Icon className="w-8 h-8 text-white" />
+
+                          </div>
+
+
+                          <h4 className="mt-6 text-xl font-semibold text-[#0B2D4D]">
+
+                            {t(`services.cards.${service.id}.title`)}
+
+                          </h4>
+
+
+                          <p className="mt-4 text-gray-600 leading-7 text-sm flex-grow">
+
+                            {t(`services.cards.${service.id}.description`)}
+
+                          </p>
+
+
+                          <Link
+                            to={`/services/${service.slug}`}
+                            className="mt-6 inline-flex items-center gap-2 font-semibold text-[#0B2D4D] hover:text-[#C8A24A] transition-colors"
+                          >
+
+                            {t("services.buttons.learnMore")}
+
+                            <ArrowRight
+                              className="w-4 h-4 transition-transform group-hover:translate-x-1"
+                            />
+
+                          </Link>
+
+
+                        </div>
+
+                      );
+
+                    })}
+
+
+                </div>
+
+              </div>
+
+            ))}
 
           </div>
+
 
         </div>
 
       </section>
-          </>
+
+    </>
   );
 }
