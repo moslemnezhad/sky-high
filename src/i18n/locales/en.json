@@ -296,6 +296,7 @@
       "button": "Book a Consultation"
     }
   },
+
   "services": {
   "hero": {
     "eyebrow": "OUR SERVICES",
@@ -308,6 +309,43 @@
     "title": "Helping You Stay Financially Confident",
     "description": "Whether you're an individual, entrepreneur, or growing corporation, we provide tailored financial solutions backed by professional expertise and personalized service."
   },
+
+  "whyChoose": {
+  "eyebrow": "WHY CHOOSE US",
+  "title": "Professional Support You Can Trust",
+  "description": "We combine accounting expertise, tax knowledge, and personalized service to help Canadian individuals and businesses stay compliant and make confident financial decisions.",
+
+  "items": {
+
+    "compliance": {
+      "title": "CRA Compliance Focus",
+      "description": "Accurate reporting and tax services designed to help you meet Canadian requirements."
+    },
+
+    "personalized": {
+      "title": "Personalized Service",
+      "description": "Solutions tailored to your specific financial goals and business needs."
+    },
+
+    "multilingual": {
+      "title": "Multilingual Support",
+      "description": "Professional service available in English, فارسی, and العربية."
+    },
+
+    "accuracy": {
+      "title": "Accuracy & Reliability",
+      "description": "Careful preparation and attention to detail in every engagement."
+    }
+
+  }
+},
+"cta": {
+  "eyebrow": "LET'S WORK TOGETHER",
+  "title": "Ready to Simplify Your Accounting?",
+  "description": "Whether you're starting a business, growing your company, or looking for professional tax support, we're here to help. Schedule a consultation and let's discuss the right solution for your financial needs.",
+  "book": "Book a Free Consultation",
+  "about": "Learn About Us"
+},
 
   "categories": {
   "business": {
@@ -374,10 +412,67 @@
   }
 },
 
-  "intro": {
-    "title": "Helping You Stay Financially Confident",
-    "description": "Whether you're an individual, entrepreneur, or growing corporation, we provide tailored financial solutions backed by professional expertise and personalized service."
+"contact": {
+  "hero": {
+    "eyebrow": "WE'RE HERE TO HELP",
+    "title": "Let's Start a Conversation",
+    "description": "Have questions or need professional accounting advice? Contact Sky High Financial Management to discuss your personal or business needs and schedule a consultation."
   },
+
+  "intro": {
+    "eyebrow": "GET IN TOUCH",
+    "title": "We'd Love To Hear From You",
+    "description": "Contact us today to schedule a consultation or ask any questions about our accounting and tax services."
+  },
+
+  "cards": {
+    "phone": "Phone",
+    "email": "Email",
+    "whatsapp": "WhatsApp",
+    "whatsappValue": "+1 (778) 903-1528",
+    "hours": "Office Hours",
+    "serving": "Serving",
+
+    "phoneValue": "+1 (778) 903-1528",
+    "emailValue": "skyhighfm.inc@gmail.com",
+    "websiteValue": "www.skyhighfinancial.ca",
+    "hoursValue": "Monday – Friday",
+    "hoursValue2": "9:00 AM – 5:00 PM PST",
+    "servingValue": "Businesses across Canada"
+  },
+
+  "form": {
+    "title": "Send Us a Message",
+
+    "name": "Full Name",
+    "email": "Email Address",
+    "service": "Select a Service",
+    "message": "Your Message",
+
+    "send": "Send Message",
+    "sending": "Sending..."
+  },
+
+  "services": {
+    "accounting": "Accounting",
+    "bookkeeping": "Bookkeeping",
+    "payroll": "Payroll",
+    "corporateTax": "Corporate Tax",
+    "personalTax": "Personal Tax",
+    "financialAdvisory": "Financial Advisory",
+    "businessConsulting": "Business Consulting",
+    "craCompliance": "CRA Compliance",
+    "crossBorder": "Cross-Border Tax",
+    "taxPlanning": "Tax Planning",
+    "general": "General Inquiry"
+  },
+
+  "success": {
+    "message": "✓ Thank you! Your message has been sent successfully. We'll get back to you within one business day."
+  }
+},
+
+  
   "footer": {
   "company": {
     "description": "Professional accounting, bookkeeping, payroll, tax planning and advisory services for individuals and businesses across Canada."

@@ -4,7 +4,13 @@ import { Link } from "react-router-dom";
 import PageHero from "../components/common/PageHero";
 import { services } from "../data/services";
 
-import { ArrowRight } from "lucide-react";
+import {
+  ArrowRight,
+  ShieldCheck,
+  Users,
+  Globe,
+  FileCheck,
+} from "lucide-react";
 
 export default function Services() {
   const { t } = useTranslation();
@@ -58,18 +64,34 @@ export default function Services() {
 
                 {/* Category Header */}
 
-                <div className="max-w-3xl mb-10">
+                <div className="max-w-4xl mb-12">
 
-                  <h3 className="text-3xl font-bold text-[#0B2D4D]">
-                    {t(`services.categories.${category}.title`)}
-                  </h3>
+                  <div className="flex items-center gap-4">
 
-                  <p className="mt-3 text-gray-600 leading-7">
-                    {t(`services.categories.${category}.description`)}
-                  </p>
+                    <div className="h-[2px] w-12 bg-[#C8A24A]" />
 
-                </div>
+                      <p className="uppercase tracking-[0.3em] text-sm font-semibold text-[#C8A24A]">
+                        {t(`services.categories.${category}.title`)}
+                      </p>
 
+                    </div>
+
+
+                    <h3 className="mt-4 text-3xl md:text-4xl font-bold text-[#0B2D4D]">
+
+                      {t(`services.categories.${category}.title`)}
+
+                    </h3>
+
+
+                    <p className="mt-4 text-lg text-gray-600 leading-8 max-w-3xl">
+
+                      {t(`services.categories.${category}.description`)}
+
+                    </p>
+
+
+                  </div>
 
                 {/* Cards */}
 
@@ -139,7 +161,129 @@ export default function Services() {
             ))}
 
           </div>
+{/* WHY CHOOSE US */}
 
+<section className="mt-24 bg-[#0B2D4D] rounded-3xl px-8 py-16 text-white">
+
+  <div className="max-w-4xl mx-auto text-center">
+
+    <p className="uppercase tracking-[0.3em] text-[#C8A24A] font-semibold text-sm">
+      {t("services.whyChoose.eyebrow")}
+    </p>
+
+
+    <h2 className="mt-4 text-3xl md:text-4xl font-bold">
+      {t("services.whyChoose.title")}
+    </h2>
+
+
+    <p className="mt-5 text-blue-100 leading-8">
+      {t("services.whyChoose.description")}
+    </p>
+
+
+  </div>
+
+
+  <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
+
+
+    {[
+      {
+        icon: ShieldCheck,
+        key: "compliance",
+      },
+      {
+        icon: Users,
+        key: "personalized",
+      },
+      {
+        icon: Globe,
+        key: "multilingual",
+      },
+      {
+        icon: FileCheck,
+        key: "accuracy",
+      },
+    ].map((item) => {
+
+      const Icon = item.icon;
+
+      return (
+
+        <div
+          key={item.key}
+          className="bg-white/10 rounded-2xl p-6 text-center"
+        >
+
+          <Icon className="w-10 h-10 mx-auto text-[#C8A24A]" />
+
+
+          <h3 className="mt-5 text-lg font-semibold">
+            {t(`services.whyChoose.items.${item.key}.title`)}
+          </h3>
+
+
+          <p className="mt-3 text-sm text-blue-100 leading-6">
+            {t(`services.whyChoose.items.${item.key}.description`)}
+          </p>
+
+
+        </div>
+
+      );
+
+    })}
+
+
+  </div>
+
+</section>
+{/* SERVICES CTA */}
+
+<div className="mt-24 text-center">
+
+  <div className="max-w-4xl mx-auto bg-white rounded-3xl shadow-lg border border-gray-200 px-8 py-16">
+
+    <p className="uppercase tracking-[0.3em] text-[#C8A24A] font-semibold text-sm">
+      {t("services.cta.eyebrow")}
+    </p>
+
+    <h2 className="mt-4 text-4xl font-bold text-[#0B2D4D]">
+      {t("services.cta.title")}
+    </h2>
+
+    <p className="mt-6 text-lg text-gray-600 leading-8">
+      {t("services.cta.description")}
+    </p>
+
+    <div className="mt-10 flex flex-wrap justify-center gap-4">
+
+      <Link to="/contact">
+
+        <button className="bg-[#C8A24A] hover:bg-[#d8b056] text-[#071F35] font-semibold px-8 py-4 rounded-xl transition">
+
+          {t("services.cta.book")}
+
+        </button>
+
+      </Link>
+
+      <Link to="/about">
+
+        <button className="border border-[#0B2D4D] text-[#0B2D4D] hover:bg-[#0B2D4D] hover:text-white font-semibold px-8 py-4 rounded-xl transition">
+
+          {t("services.cta.about")}
+
+        </button>
+
+      </Link>
+
+    </div>
+
+  </div>
+
+</div>
 
         </div>
 

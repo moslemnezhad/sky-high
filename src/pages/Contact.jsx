@@ -1,14 +1,16 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import emailjs from "@emailjs/browser";
 import {
   Phone,
   Mail,
-  Globe,
   Clock,
   MapPin,
+  MessageCircle,
 } from "lucide-react";
 
 export default function Contact() {
+  const { t } = useTranslation();
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
 
@@ -59,17 +61,16 @@ export default function Contact() {
           <div className="max-w-3xl">
 
             <p className="uppercase tracking-[0.35em] text-[#C8A24A] font-semibold">
-              WE'RE HERE TO HELP
+              {t("contact.hero.eyebrow")}
             </p>
 
             <h1 className="mt-4 text-5xl md:text-6xl font-bold text-white leading-tight">
-              Let's Start a Conversation
+              {t("contact.hero.title")}
             </h1>
 
             <p className="mt-8 text-xl leading-8 text-gray-200">
-              Have questions or need professional accounting advice? 
-              Contact Sky High Financial Management to discuss your personal or business needs and schedule a consultation.
-              
+              {t("contact.hero.description")} 
+                            
             </p>
 
           </div>
@@ -91,83 +92,114 @@ export default function Contact() {
             <div>
 
               <p className="uppercase tracking-[0.3em] text-[#C8A24A] font-semibold">
-                Get In Touch
+                {t("contact.intro.eyebrow")}
               </p>
 
               <h2 className="mt-4 text-4xl font-bold text-[#0B2D4D]">
-                We'd Love To Hear From You
+                {t("contact.intro.title")}
               </h2>
 
               <p className="mt-6 text-gray-600 leading-8">
-                Contact us today to schedule a consultation or ask
-                any questions about our accounting and tax services.
+                {t("contact.intro.description")}                
               </p>
 
-              <div className="space-y-6 mt-10">
+            <div className="grid gap-6 mt-10 sm:grid-cols-2">
 
-                <div className="flex gap-4 items-start">
-                  <Phone className="text-[#C8A24A]" />
-                  <div>
-                    <h3 className="font-semibold text-[#0B2D4D]">
-                      Phone
-                    </h3>
-                    <p className="text-gray-600">
-                      (778) 903-1528
-                    </p>
-                  </div>
-                </div>
+              {/* Phone */}
 
-                <div className="flex gap-4 items-start">
-                  <Mail className="text-[#C8A24A]" />
-                  <div>
-                    <h3 className="font-semibold text-[#0B2D4D]">
-                      Email
-                    </h3>
-                    <p className="text-gray-600">
-                      skyhighfm.inc@gmail.com
-                    </p>
-                  </div>
-                </div>
+              <div className="rounded-2xl border border-gray-200 bg-white p-6 hover:shadow-lg transition">
 
-                <div className="flex gap-4 items-start">
-                  <Globe className="text-[#C8A24A]" />
-                  <div>
-                    <h3 className="font-semibold text-[#0B2D4D]">
-                      Website
-                    </h3>
-                    <p className="text-gray-600">
-                      www.skyhighfinancial.ca
-                    </p>
-                  </div>
-                </div>
+                <Phone className="w-8 h-8 text-[#C8A24A]" />
 
-                <div className="flex gap-4 items-start">
-                  <Clock className="text-[#C8A24A]" />
-                  <div>
-                    <h3 className="font-semibold text-[#0B2D4D]">
-                      Office Hours
-                    </h3>
-                    <p className="text-gray-600">
-                      Monday – Friday
-                      <br />
-                      9:00 AM – 5:00 PM PST
-                    </p>
-                  </div>
-                </div>
+                <h3 className="mt-5 font-semibold text-[#0B2D4D]">
+                  {t("contact.cards.phone")}
+                </h3>
 
-                <div className="flex gap-4 items-start">
-                  <MapPin className="text-[#C8A24A]" />
-                  <div>
-                    <h3 className="font-semibold text-[#0B2D4D]">
-                      Serving
-                    </h3>
-                    <p className="text-gray-600">
-                      Businesses across Canada
-                    </p>
-                  </div>
-                </div>
+                <p className="mt-2 text-gray-600">
+                  {t("contact.cards.phoneValue")}
+                </p>
 
               </div>
+
+
+              {/* WhatsApp */}
+
+              <a
+                href="https://wa.me/17789031528"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-2xl border border-gray-200 bg-white p-6 hover:shadow-lg transition block"
+              >
+
+                <MessageCircle className="w-8 h-8 text-[#25D366]" />
+
+                <h3 className="mt-5 font-semibold text-[#0B2D4D]">
+                  {t("contact.cards.whatsapp")}
+                </h3>
+
+                <p className="mt-2 text-gray-600">
+                  {t("contact.cards.whatsappValue")}
+                </p>
+
+              </a>
+
+
+              {/* Email */}
+
+              <a
+                href="mailto:skyhighfm.inc@gmail.com"
+                className="rounded-2xl border border-gray-200 bg-white p-6 hover:shadow-lg transition block"
+              >
+
+                <Mail className="w-8 h-8 text-[#C8A24A]" />
+
+                <h3 className="mt-5 font-semibold text-[#0B2D4D]">
+                  {t("contact.cards.email")}
+                </h3>
+
+                <p className="mt-2 text-gray-600 break-all">
+                  {t("contact.cards.emailValue")}
+                </p>
+
+              </a>
+
+
+              {/* Office Hours */}
+
+              <div className="rounded-2xl border border-gray-200 bg-white p-6 hover:shadow-lg transition">
+
+                <Clock className="w-8 h-8 text-[#C8A24A]" />
+
+                <h3 className="mt-5 font-semibold text-[#0B2D4D]">
+                  {t("contact.cards.hours")}
+                </h3>
+
+                <p className="mt-2 text-gray-600">
+                  {t("contact.cards.hoursValue")}
+                  <br />
+                  {t("contact.cards.hoursValue2")}
+                </p>
+
+              </div>
+
+
+              {/* Serving Canada */}
+
+              <div className="rounded-2xl border border-gray-200 bg-white p-6 hover:shadow-lg transition sm:col-span-2">
+
+                <MapPin className="w-8 h-8 text-[#C8A24A]" />
+
+                <h3 className="mt-5 font-semibold text-[#0B2D4D]">
+                  {t("contact.cards.serving")}
+                </h3>
+
+                <p className="mt-2 text-gray-600">
+                  {t("contact.cards.servingValue")}
+                </p>
+
+              </div>
+
+            </div>
 
             </div>
 
@@ -176,7 +208,7 @@ export default function Contact() {
             <div className="bg-slate-50 rounded-3xl p-10 shadow-sm">
 
               <h3 className="text-2xl font-bold text-[#0B2D4D] mb-8">
-                Send Us a Message
+                {t("contact.form.title")}
               </h3>
 
               <form onSubmit={sendEmail} className="space-y-5">
@@ -184,7 +216,7 @@ export default function Contact() {
                 <input
                   type="text"
                   name="name"
-                  placeholder="Full Name"
+                  placeholder={t("contact.form.name")}
                   required
                   className="w-full rounded-xl border border-gray-300 px-5 py-4 focus:outline-none focus:ring-2 focus:ring-[#C8A24A]"
                 />
@@ -192,7 +224,7 @@ export default function Contact() {
                 <input
                   type="email"
                   name="email"
-                  placeholder="Email Address"
+                  placeholder={t("contact.form.email")}
                   required
                   className="w-full rounded-xl border border-gray-300 px-5 py-4 focus:outline-none focus:ring-2 focus:ring-[#C8A24A]"
                 />
@@ -201,24 +233,26 @@ export default function Contact() {
                   name="service"
                   className="w-full rounded-xl border border-gray-300 px-5 py-4 focus:outline-none focus:ring-2 focus:ring-[#C8A24A]"
                 >
-                  <option value="">Select a Service</option>
-                  <option>Accounting</option>
-                  <option>Bookkeeping</option>
-                  <option>Payroll</option>
-                  <option>Corporate Tax</option>
-                  <option>Personal Tax</option>
-                  <option>Financial Advisory</option>
-                  <option>Business Consulting</option>
-                  <option>CRA Compliance</option>
-                  <option>Cross-Border Tax</option>
-                  <option>Tax Planning</option>
-                  <option>General Inquiry</option>
+                 <option value="">
+                    {t("contact.form.service")}
+                  </option>
+                  <option>{t("contact.services.accounting")}</option>
+                  <option>{t("contact.services.bookkeeping")}</option>
+                  <option>{t("contact.services.payroll")}</option>
+                  <option>{t("contact.services.corporateTax")}</option>
+                  <option>{t("contact.services.personalTax")}</option>
+                  <option>{t("contact.services.financialAdvisory")}</option>
+                  <option>{t("contact.services.businessConsulting")}</option>
+                  <option>{t("contact.services.craCompliance")}</option>
+                  <option>{t("contact.services.crossBorder")}</option>
+                  <option>{t("contact.services.taxPlanning")}</option>
+                  <option>{t("contact.services.general")}</option>                  
                 </select>
 
                 <textarea
                   name="message"
                   rows="6"
-                  placeholder="Your Message"
+                  placeholder={t("contact.form.message")}
                   required
                   className="w-full rounded-xl border border-gray-300 px-5 py-4 focus:outline-none focus:ring-2 focus:ring-[#C8A24A]"
                 />
@@ -227,13 +261,14 @@ export default function Contact() {
                   type="submit"
                   className="w-full rounded-xl bg-[#0B2D4D] py-4 text-white font-semibold transition-all duration-300 hover:bg-[#143e63]"
                 >
-                  {loading ? "Sending..." : "Send Message"}
+                  {loading  
+                  ? t("contact.form.sending")
+                  : t("contact.form.send")}
                 </button>
 
                 {success && (
                   <div className="rounded-xl bg-green-50 border border-green-200 p-4 text-green-700 text-center">
-                    ✓ Thank you! Your message has been sent successfully.
-                    We'll get back to you within one business day.
+                    {t("contact.success.message")}                    
                   </div>
                 )}
 
