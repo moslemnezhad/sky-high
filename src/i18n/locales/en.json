@@ -438,7 +438,7 @@
     "websiteValue": "www.skyhighfinancial.ca",
     "hoursValue": "Monday – Friday",
     "hoursValue2": "9:00 AM – 5:00 PM PST",
-    "servingValue": "Businesses across Canada"
+    "servingValue": "Individuals and Businesses across Canada"
   },
 
   "form": {
@@ -446,8 +446,10 @@
 
     "name": "Full Name",
     "email": "Email Address",
-    "service": "Select a Service",
+    "service": "How can we help?",
     "message": "Your Message",
+    "phone": "Phone Number",
+    "company": "Company Name (Optional)",
 
     "send": "Send Message",
     "sending": "Sending..."
@@ -469,7 +471,223 @@
 
   "success": {
     "message": "✓ Thank you! Your message has been sent successfully. We'll get back to you within one business day."
+  },
+  "faq": {
+  "eyebrow": "FREQUENTLY ASKED QUESTIONS",
+  "title": "Questions We Often Receive",
+  "description": "Here are answers to some of the most common questions about our accounting and tax services.",
+
+  "items": {
+
+    "q1": {
+      "question": "Do you work with clients remotely?",
+      "answer": "Yes. We work with individuals and businesses across Canada using secure online communication and cloud-based accounting tools."
+    },
+
+    "q2": {
+      "question": "Do you provide services outside British Columbia?",
+      "answer": "Absolutely. We proudly serve clients across all Canadian provinces and territories."
+    },
+
+    "q3": {
+      "question": "How quickly will I receive a response?",
+      "answer": "We aim to respond to all inquiries within one business day."
+    },
+
+    "q4": {
+      "question": "Can I schedule an online consultation?",
+      "answer": "Yes. We offer virtual consultations for both personal and business clients anywhere in Canada."
+    }
+
   }
+},
+
+"cta": {
+  "eyebrow": "LET'S WORK TOGETHER",
+
+  "title": "Ready to Simplify Your Accounting?",
+
+  "description": "Whether you're an individual, entrepreneur, or growing business, we're here to help you make confident financial decisions with reliable accounting, tax, and advisory services.",
+
+  "call": "Call Now",
+
+  "whatsapp": "Chat on WhatsApp"
+}
+
+},
+
+"resources": {
+
+  "hero": {
+
+    "eyebrow": "LEARN & EXPLORE",
+
+    "title": "Knowledge for Better Financial Decisions",
+
+    "description": "Browse practical guides and trusted resources covering Canadian taxes, bookkeeping, payroll, GST/HST, and small business topics to help you better understand your financial responsibilities."
+
+  },
+
+  "categories": {
+  "eyebrow": "EXPLORE TOPICS",
+
+  "heading": "Browse by Category",
+
+  "description": "Explore practical accounting, tax, payroll, bookkeeping, and business resources designed to help individuals and businesses across Canada.",
+
+  "items": {
+
+    "tax-planning": {
+      "title": "Tax Planning",
+      "description": "Strategies to minimize taxes and maximize financial efficiency."
+    },
+
+    "corporate-tax": {
+      "title": "Corporate Tax",
+      "description": "Corporate tax returns, planning, instalments, and CRA compliance."
+    },
+
+    "personal-tax": {
+      "title": "Personal Tax",
+      "description": "Personal income tax, deductions, credits, and filing guidance."
+    },
+
+    "bookkeeping": {
+      "title": "Bookkeeping",
+      "description": "Financial records, reconciliations, and accurate reporting."
+    },
+
+    "payroll": {
+      "title": "Payroll",
+      "description": "Payroll processing, T4s, CPP, EI, and CRA remittances."
+    },
+
+    "gst-hst": {
+      "title": "GST / HST",
+      "description": "Registration, filing requirements, and input tax credits."
+    },
+
+    "cross-border": {
+      "title": "Canada–U.S. Tax",
+      "description": "Cross-border tax planning and international reporting."
+    },
+
+    "small-business": {
+      "title": "Small Business",
+      "description": "Accounting, tax, payroll, and financial guidance for growing businesses."
+    }
+  }
+},
+
+"downloads": {
+  "eyebrow": "FREE RESOURCES",
+
+  "heading": "Free Checklists & Guides",
+
+  "description": "Download practical checklists and guides designed to help individuals, entrepreneurs, and businesses prepare for tax season, bookkeeping, payroll, GST/HST filing, and year-end reporting.",
+
+  "button": "Download PDF",
+
+  "footer": "Free downloads • No registration required",
+
+  "items": {
+
+    "t1": {
+      "title": "Personal Tax Checklist (T1)",
+      "description": "A comprehensive checklist to help individuals gather the documents needed to prepare their Canadian personal income tax return."
+    },
+
+    "t2": {
+      "title": "Corporate Tax Checklist (T2)",
+      "description": "A practical checklist for incorporated businesses to prepare for year-end and corporate income tax filing."
+    },
+
+    "bookkeeping": {
+      "title": "Bookkeeping Checklist",
+      "description": "Monthly bookkeeping checklist to help keep your financial records accurate, organized, and CRA-ready."
+    },
+
+    "payroll": {
+      "title": "Payroll Checklist",
+      "description": "A simple checklist covering payroll setup, employee records, remittances, T4 preparation, and year-end requirements."
+    },
+
+    "gst": {
+      "title": "GST / HST Checklist",
+      "description": "Everything you need before preparing and filing your GST/HST return with the Canada Revenue Agency."
+    },
+
+    "yearend": {
+      "title": "Year-End Business Checklist",
+      "description": "Prepare your business for year-end with a checklist covering accounting records, assets, expenses, and supporting documents."
+    }
+  }
+},
+
+"deadlines": {
+  "eyebrow": "IMPORTANT DATES",
+
+  "heading": "CRA Tax Deadlines",
+
+  "description": "Below are some of the most common Canadian tax filing and payment deadlines for individuals and businesses. Your specific deadlines may vary depending on your filing status and reporting requirements.",
+
+  "table": {
+    "deadline": "Deadline",
+    "description": "Description"
+  },
+
+  "items": {
+
+    "personal": {
+      "date": "April 30",
+      "description": "Personal income tax filing and payment deadline (most individuals)."
+    },
+
+    "selfEmployed": {
+      "date": "June 15",
+      "description": "Self-employed personal income tax filing deadline. Any balance owing is generally due April 30."
+    },
+
+    "corporatePayment": {
+      "date": "2–3 months after year-end",
+      "description": "Corporate income tax payment deadline (depending on CRA eligibility rules)."
+    },
+
+    "t2": {
+      "date": "6 months after year-end",
+      "description": "T2 Corporation Income Tax Return filing deadline."
+    },
+
+    "gst": {
+      "date": "1 month after reporting period",
+      "description": "GST/HST return and payment deadline (depends on your filing frequency)."
+    },
+
+    "payroll": {
+      "date": "Varies",
+      "description": "Payroll remittance deadlines depend on your CRA remitter type and reporting frequency."
+    }
+  },
+
+  "note": {
+
+    "title": "Important Note",
+
+    "description": "Filing and payment deadlines may vary depending on your business structure, fiscal year-end, reporting frequency, and eligibility under CRA rules. For example, some Canadian-controlled private corporations (CCPCs) qualify for a three-month corporate tax payment deadline, while others must pay within two months. Always refer to the Canada Revenue Agency (CRA) for the most current requirements."
+  }
+},
+
+"cta": {
+  "eyebrow": "NEED PROFESSIONAL GUIDANCE?",
+
+  "title": "Let's Build a Stronger Financial Future Together",
+
+  "description": "Our resources are designed to educate, but every situation is unique. Whether you need accounting, bookkeeping, tax planning, payroll, or business advisory services, we're here to help.",
+
+  "primary": "Book a Consultation",
+
+  "secondary": "Explore Our Services"
+}
 },
 
   

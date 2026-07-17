@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import {
   FileText,
   Download,
@@ -5,92 +6,84 @@ import {
 } from "lucide-react";
 
 const downloads = [
-  {
-    title: "Personal Tax Checklist (T1)",
-    desc: "A comprehensive checklist to help individuals gather the documents needed to prepare their Canadian personal income tax return.",
-    file: "#",
-  },
-  {
-    title: "Corporate Tax Checklist (T2)",
-    desc: "A practical checklist for incorporated businesses to prepare for year-end and corporate income tax filing.",
-    file: "#",
-  },
-  {
-    title: "Bookkeeping Checklist",
-    desc: "Monthly bookkeeping checklist to help keep your financial records accurate, organized, and CRA-ready.",
-    file: "#",
-  },
-  {
-    title: "Payroll Checklist",
-    desc: "A simple checklist covering payroll setup, employee records, remittances, T4 preparation, and year-end requirements.",
-    file: "#",
-  },
-  {
-    title: "GST/HST Checklist",
-    desc: "Everything you need before preparing and filing your GST/HST return with the Canada Revenue Agency.",
-    file: "#",
-  },
-  {
-    title: "Year-End Business Checklist",
-    desc: "Prepare your business for year-end with a checklist covering accounting records, assets, expenses, and supporting documents.",
-    file: "#",
-  },
+  { id: "t1", file: "#" },
+  { id: "t2", file: "#" },
+  { id: "bookkeeping", file: "#" },
+  { id: "payroll", file: "#" },
+  { id: "gst", file: "#" },
+  { id: "yearend", file: "#" },
 ];
 
 export default function DownloadCenter() {
+
+  const { t } = useTranslation();
+
   return (
+
     <section className="bg-white py-20">
 
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Header */}
 
-        <div className="text-center mb-14">
+        <div className="text-center max-w-3xl mx-auto">
 
-          <h2 className="text-4xl font-bold text-[#0B2D4D]">
-            Free Business Resources
+          <p className="uppercase tracking-[0.35em] text-[#C8A24A] font-semibold">
+
+            {t("resources.downloads.eyebrow")}
+
+          </p>
+
+          <h2 className="mt-4 text-4xl md:text-5xl font-bold text-[#0B2D4D]">
+
+            {t("resources.downloads.heading")}
+
           </h2>
 
-          <p className="mt-4 text-gray-600 max-w-3xl mx-auto">
-            Download free checklists designed to help individuals,
-            entrepreneurs, and businesses prepare for tax season,
-            bookkeeping, payroll, and year-end reporting.
+          <p className="mt-6 text-lg text-gray-600 leading-8">
+
+            {t("resources.downloads.description")}
+
           </p>
 
         </div>
 
-        {/* Downloads */}
+        {/* Download Cards */}
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid gap-8 mt-16 md:grid-cols-2 lg:grid-cols-3">
 
-          {downloads.map((item, index) => (
+          {downloads.map((item) => (
 
             <div
-              key={index}
-              className="rounded-3xl border border-gray-200 bg-gray-50 p-7 hover:shadow-xl transition duration-300"
+              key={item.id}
+              className="group rounded-3xl border border-gray-200 bg-slate-50 p-8 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl"
             >
 
               <FileText
-                className="text-[#0B2D4D]"
-                size={30}
+                className="text-[#0B2D4D] group-hover:text-[#C8A24A] transition-colors"
+                size={34}
               />
 
-              <h3 className="mt-5 text-xl font-bold text-[#0B2D4D]">
-                {item.title}
+              <h3 className="mt-6 text-xl font-bold text-[#0B2D4D]">
+
+                {t(`resources.downloads.items.${item.id}.title`)}
+
               </h3>
 
               <p className="mt-4 text-gray-600 leading-7">
-                {item.desc}
+
+                {t(`resources.downloads.items.${item.id}.description`)}
+
               </p>
 
               <a
                 href={item.file}
-                className="inline-flex items-center gap-2 mt-8 font-semibold text-[#C8A24A] hover:underline"
+                className="inline-flex items-center gap-2 mt-8 font-semibold text-[#C8A24A] hover:text-[#0B2D4D] transition-colors"
               >
 
                 <Download size={18} />
 
-                Download PDF
+                {t("resources.downloads.button")}
 
               </a>
 
@@ -108,7 +101,7 @@ export default function DownloadCenter() {
 
             <CheckCircle size={18} />
 
-            Free downloads • No registration required
+            {t("resources.downloads.footer")}
 
           </div>
 
@@ -117,5 +110,7 @@ export default function DownloadCenter() {
       </div>
 
     </section>
+
   );
+
 }

@@ -1,53 +1,47 @@
+import { useTranslation } from "react-i18next";
+
 export default function TaxDeadlines() {
+
+  const { t } = useTranslation();
+
   const deadlines = [
-    {
-      deadline: "April 30",
-      description:
-        "Personal income tax filing and payment deadline (most individuals)",
-    },
-    {
-      deadline: "June 15",
-      description:
-        "Self-employed personal tax filing deadline (any balance owing is generally due April 30)",
-    },
-    {
-      deadline: "2–3 months after year-end",
-      description:
-        "Corporate income tax balance due (depending on CRA eligibility rules)",
-    },
-    {
-      deadline: "6 months after year-end",
-      description:
-        "T2 Corporation Income Tax Return filing deadline",
-    },
-    {
-      deadline: "1 month after reporting period",
-      description:
-        "GST/HST return and payment (depends on your filing frequency)",
-    },
-    {
-      deadline: "Varies",
-      description:
-        "Payroll remittances (depends on your CRA remitter type and frequency)",
-    },
+    { id: "personal" },
+    { id: "selfEmployed" },
+    { id: "corporatePayment" },
+    { id: "t2" },
+    { id: "gst" },
+    { id: "payroll" },
   ];
 
   return (
+
     <section className="bg-[#F8FAFC] py-20">
 
       <div className="max-w-5xl mx-auto px-6">
 
-        <h2 className="text-4xl font-bold text-center text-[#0B2D4D]">
-          CRA Tax Deadlines
-        </h2>
+        <div className="text-center max-w-3xl mx-auto">
 
-        <p className="text-center text-gray-600 mt-4 mb-12 max-w-3xl mx-auto">
-          Below are some of the most common Canadian tax filing and payment
-          deadlines for individuals and businesses. Your specific deadlines
-          may vary depending on your filing status and reporting requirements.
-        </p>
+          <p className="uppercase tracking-[0.35em] text-[#C8A24A] font-semibold">
 
-        <div className="overflow-hidden rounded-3xl bg-white shadow-sm border border-gray-200">
+            {t("resources.deadlines.eyebrow")}
+
+          </p>
+
+          <h2 className="mt-4 text-4xl md:text-5xl font-bold text-[#0B2D4D]">
+
+            {t("resources.deadlines.heading")}
+
+          </h2>
+
+          <p className="mt-6 text-lg text-gray-600 leading-8">
+
+            {t("resources.deadlines.description")}
+
+          </p>
+
+        </div>
+
+        <div className="overflow-hidden rounded-3xl bg-white shadow-sm border border-gray-200 mt-16">
 
           <table className="w-full">
 
@@ -56,11 +50,15 @@ export default function TaxDeadlines() {
               <tr>
 
                 <th className="text-left px-6 py-5 font-semibold w-1/3">
-                  Deadline
+
+                  {t("resources.deadlines.table.deadline")}
+
                 </th>
 
                 <th className="text-left px-6 py-5 font-semibold">
-                  Description
+
+                  {t("resources.deadlines.table.description")}
+
                 </th>
 
               </tr>
@@ -69,19 +67,23 @@ export default function TaxDeadlines() {
 
             <tbody>
 
-              {deadlines.map((item, index) => (
+              {deadlines.map((item) => (
 
                 <tr
-                  key={index}
+                  key={item.id}
                   className="border-t border-gray-200 hover:bg-gray-50 transition"
                 >
 
                   <td className="px-6 py-5 font-semibold text-[#0B2D4D]">
-                    {item.deadline}
+
+                    {t(`resources.deadlines.items.${item.id}.date`)}
+
                   </td>
 
                   <td className="px-6 py-5 text-gray-600">
-                    {item.description}
+
+                    {t(`resources.deadlines.items.${item.id}.description`)}
+
                   </td>
 
                 </tr>
@@ -97,17 +99,15 @@ export default function TaxDeadlines() {
         <div className="mt-8 rounded-2xl bg-blue-50 border border-blue-100 p-6">
 
           <h3 className="text-lg font-semibold text-[#0B2D4D] mb-3">
-            Important Note
+
+            {t("resources.deadlines.note.title")}
+
           </h3>
 
           <p className="text-gray-600 leading-7">
-            Filing and payment deadlines may vary depending on your business
-            structure, fiscal year-end, reporting frequency, and eligibility
-            under CRA rules. For example, some Canadian-controlled private
-            corporations (CCPCs) qualify for a three-month corporate tax
-            payment deadline, while others must pay within two months.
-            Always refer to the Canada Revenue Agency (CRA) for the most
-            current requirements.
+
+            {t("resources.deadlines.note.description")}
+
           </p>
 
         </div>
@@ -115,5 +115,7 @@ export default function TaxDeadlines() {
       </div>
 
     </section>
+
   );
+
 }

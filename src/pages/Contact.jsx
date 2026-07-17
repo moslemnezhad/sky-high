@@ -228,6 +228,19 @@ export default function Contact() {
                   required
                   className="w-full rounded-xl border border-gray-300 px-5 py-4 focus:outline-none focus:ring-2 focus:ring-[#C8A24A]"
                 />
+                <input
+                  type="tel"
+                  name="phone"
+                  placeholder={t("contact.form.phone")}
+                  className="w-full rounded-xl border border-gray-300 px-5 py-4 focus:outline-none focus:ring-2 focus:ring-[#C8A24A]"
+                />
+
+                <input
+                  type="text"
+                  name="company"
+                  placeholder={t("contact.form.company")}
+                  className="w-full rounded-xl border border-gray-300 px-5 py-4 focus:outline-none focus:ring-2 focus:ring-[#C8A24A]"
+                />
 
                 <select
                   name="service"
@@ -275,6 +288,113 @@ export default function Contact() {
               </form>
 
             </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      {/* ================= FAQ ================= */}
+
+      <section className="py-24 bg-slate-50">
+
+        <div className="max-w-5xl mx-auto px-6">
+
+          <div className="text-center">
+
+            <p className="uppercase tracking-[0.3em] text-[#C8A24A] font-semibold">
+
+              {t("contact.faq.eyebrow")}
+
+            </p>
+
+            <h2 className="mt-4 text-4xl font-bold text-[#0B2D4D]">
+
+              {t("contact.faq.title")}
+
+            </h2>
+
+            <p className="mt-6 text-gray-600 leading-8">
+
+              {t("contact.faq.description")}
+
+            </p>
+
+          </div>
+
+          <div className="mt-14 space-y-6">
+
+            {[1,2,3,4].map((item)=>(
+
+              <div
+                key={item}
+                className="bg-white rounded-2xl border border-gray-200 p-8 shadow-sm"
+              >
+
+                <h3 className="text-xl font-semibold text-[#0B2D4D]">
+
+                  {t(`contact.faq.items.q${item}.question`)}
+
+                </h3>
+
+                <p className="mt-4 text-gray-600 leading-8">
+
+                  {t(`contact.faq.items.q${item}.answer`)}
+
+                </p>
+
+              </div>
+
+            ))}
+
+          </div>
+
+        </div>
+
+      </section>
+
+      {/* ================= FINAL CTA ================= */}
+
+      <section className="py-24 bg-[#0B2D4D]">
+
+        <div className="max-w-5xl mx-auto px-6 text-center">
+
+          <p className="uppercase tracking-[0.35em] text-[#C8A24A] font-semibold">
+
+            {t("contact.cta.eyebrow")}
+
+          </p>
+
+          <h2 className="mt-6 text-4xl md:text-5xl font-bold text-white">
+
+            {t("contact.cta.title")}
+
+          </h2>
+
+          <p className="mt-8 text-xl leading-8 text-gray-300 max-w-3xl mx-auto">
+
+            {t("contact.cta.description")}
+
+          </p>
+
+          <div className="mt-12 flex flex-wrap justify-center gap-5">
+
+            <a
+              href="tel:+17789031528"
+              className="inline-flex items-center justify-center rounded-xl bg-[#C8A24A] px-8 py-4 font-semibold text-[#071F35] transition hover:bg-[#d6b15b]"
+            >
+              {t("contact.cta.call")}
+            </a>
+
+            <a
+              href="https://wa.me/17789031528"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center rounded-xl border border-white/30 px-8 py-4 font-semibold text-white transition hover:bg-white/10"
+            >
+              {t("contact.cta.whatsapp")}
+            </a>
 
           </div>
 
