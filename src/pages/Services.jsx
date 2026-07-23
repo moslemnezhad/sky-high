@@ -94,66 +94,37 @@ export default function Services() {
                   </div>
 
                 {/* Cards */}
-
                 <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
-
-
                   {services
                     .filter((service) => service.category === category)
                     .map((service) => {
-
                       const Icon = service.icon;
 
-
                       return (
-
-                        <div
+                        <Link
                           key={service.slug}
+                          to={`/services/${service.slug}`}
                           className="group bg-white rounded-2xl p-8 shadow-sm border border-gray-200 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col"
                         >
-
                           <div className="w-16 h-16 rounded-xl bg-[#0B2D4D] flex items-center justify-center group-hover:bg-[#C8A24A] transition-colors">
-
                             <Icon className="w-8 h-8 text-white" />
-
                           </div>
 
-
                           <h4 className="mt-6 text-xl font-semibold text-[#0B2D4D]">
-
                             {t(`services.cards.${service.id}.title`)}
-
                           </h4>
 
-
                           <p className="mt-4 text-gray-600 leading-7 text-sm flex-grow">
-
                             {t(`services.cards.${service.id}.description`)}
-
                           </p>
 
-
-                          <Link
-                            to={`/services/${service.slug}`}
-                            className="mt-6 inline-flex items-center gap-2 font-semibold text-[#0B2D4D] hover:text-[#C8A24A] transition-colors"
-                          >
-
+                          <span className="mt-6 inline-flex items-center gap-2 font-semibold text-[#0B2D4D] group-hover:text-[#C8A24A] transition-colors">
                             {t("services.buttons.learnMore")}
-
-                            <ArrowRight
-                              className="w-4 h-4 transition-transform group-hover:translate-x-1"
-                            />
-
-                          </Link>
-
-
-                        </div>
-
+                            <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+                          </span>
+                        </Link>
                       );
-
                     })}
-
-
                 </div>
 
               </div>
@@ -161,6 +132,7 @@ export default function Services() {
             ))}
 
           </div>
+          
 {/* WHY CHOOSE US */}
 
 <section className="mt-24 bg-[#0B2D4D] rounded-3xl px-8 py-16 text-white">

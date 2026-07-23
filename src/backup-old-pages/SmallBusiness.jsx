@@ -1,47 +1,47 @@
 import {
-  BookOpen,
-  Receipt,
-  Landmark,
+  Building2,
   Calculator,
+  Landmark,
   FileText,
+  TrendingUp,
   ExternalLink,
 } from "lucide-react";
 
-import PageHero from "../../components/common/PageHero";
+import PageHero from "../components/common/PageHero";
 
-const bookkeepingTopics = [
+const businessTopics = [
   {
-    icon: BookOpen,
-    title: "Recording Business Transactions",
+    icon: Building2,
+    title: "Starting a Business",
     description:
-      "Learn how to properly record income, expenses, assets, liabilities, and owner transactions.",
+      "Learn about registering your business, choosing a business structure, and CRA business accounts.",
     link:
-      "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/keeping-records.html",
-  },
-
-  {
-    icon: Landmark,
-    title: "Bank Reconciliation",
-    description:
-      "Compare your accounting records with your bank statements to ensure your financial records are accurate.",
-    link:
-      "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/keeping-records.html",
-  },
-
-  {
-    icon: Receipt,
-    title: "Business Expenses",
-    description:
-      "Understand which business expenses should be recorded and how supporting documents should be maintained.",
-    link:
-      "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/business-expenses.html",
+      "https://www.canada.ca/en/services/business/start.html",
   },
 
   {
     icon: Calculator,
-    title: "Financial Statements",
+    title: "Business Expenses",
     description:
-      "Income statements and balance sheets help business owners understand the financial health of their business.",
+      "Understand which business expenses may be deductible for income tax purposes.",
+    link:
+      "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships/business-income-tax-reporting/business-expenses.html",
+  },
+
+  {
+    icon: Landmark,
+    title: "Business Taxes",
+    description:
+      "Learn about corporate income tax, GST/HST, payroll, instalments, and filing obligations.",
+    link:
+      "https://www.canada.ca/en/services/taxes/business-number.html",
+  },
+
+  {
+    icon: FileText,
+    title: "Business Records",
+    description:
+      "Keep proper accounting records and supporting documents required by the CRA.",
     link:
       "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/keeping-records.html",
   },
@@ -49,7 +49,19 @@ const bookkeepingTopics = [
 
 const governmentResources = [
   {
-    title: "CRA Keeping Records",
+    title: "CRA Business Information",
+    link:
+      "https://www.canada.ca/en/services/business.html",
+  },
+
+  {
+    title: "Business Number Registration",
+    link:
+      "https://www.canada.ca/en/services/taxes/business-number.html",
+  },
+
+  {
+    title: "Keeping Business Records",
     link:
       "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/keeping-records.html",
   },
@@ -57,19 +69,7 @@ const governmentResources = [
   {
     title: "Business Expenses",
     link:
-      "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/business-expenses.html",
-  },
-
-  {
-    title: "GST/HST Records",
-    link:
-      "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses.html",
-  },
-
-  {
-    title: "Payroll Records",
-    link:
-      "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll.html",
+      "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships/business-income-tax-reporting/business-expenses.html",
   },
 
   {
@@ -79,16 +79,16 @@ const governmentResources = [
   },
 ];
 
-export default function Bookkeeping() {
+export default function SmallBusiness() {
 
   return (
 
     <>
       <PageHero
         image="/images/resources-hero.jpg"
-        eyebrow="Bookkeeping Resources"
-        title="Bookkeeping Resource Centre"
-        description="Simple bookkeeping guidance for Canadian business owners to help maintain organized financial records and support accurate tax reporting."
+        eyebrow="Small Business Resources"
+        title="Small Business Resource Centre"
+        description="Simple guidance to help Canadian small business owners understand their accounting, tax, and reporting responsibilities."
       />
 
       {/* Introduction */}
@@ -98,45 +98,45 @@ export default function Bookkeeping() {
         <div className="max-w-5xl mx-auto px-6">
 
           <h2 className="text-4xl font-bold text-[#0B2D4D]">
-            What is Bookkeeping?
+            Running a Small Business
           </h2>
 
           <p className="mt-8 text-lg leading-8 text-gray-700">
-            Bookkeeping is the process of recording and organizing the
-            financial transactions of a business. Accurate bookkeeping helps
-            business owners understand how their business is performing and
-            provides the information needed to prepare financial statements
-            and tax returns.
+            Running a successful business involves more than serving
+            customers. Business owners are responsible for maintaining
+            accurate financial records, filing tax returns, managing
+            payroll when applicable, collecting GST/HST when required,
+            and complying with Canada Revenue Agency (CRA) regulations.
           </p>
 
           <p className="mt-6 text-lg leading-8 text-gray-700">
-            Good bookkeeping also makes it easier to monitor cash flow,
-            prepare budgets, make business decisions, and respond to CRA
-            requests if required.
+            Understanding these responsibilities from the beginning can
+            save time, reduce stress, and help your business grow with
+            confidence.
           </p>
 
         </div>
 
       </section>
-            {/* Common Bookkeeping Topics */}
+            {/* Common Small Business Topics */}
 
       <section className="py-20 bg-[#F8FAFC]">
 
         <div className="max-w-7xl mx-auto px-6">
 
           <h2 className="text-4xl font-bold text-center text-[#0B2D4D]">
-            Common Bookkeeping Topics
+            Common Small Business Topics
           </h2>
 
           <p className="mt-5 text-center text-gray-600 max-w-3xl mx-auto">
-            Good bookkeeping keeps your financial information organized,
-            supports tax compliance, and helps you make informed business
-            decisions throughout the year.
+            Every business owner should understand these core financial and
+            tax responsibilities to keep their business organized and
+            compliant.
           </p>
 
           <div className="grid lg:grid-cols-2 gap-8 mt-16">
 
-            {bookkeepingTopics.map((topic, index) => {
+            {businessTopics.map((topic, index) => {
 
               const Icon = topic.icon;
 
@@ -215,13 +215,13 @@ export default function Bookkeeping() {
             <div>
 
               <h3 className="text-xl font-semibold text-[#0B2D4D]">
-                Record Transactions Regularly
+                Keep Accurate Records
               </h3>
 
               <p className="mt-3 text-gray-600 leading-7">
-                Update your bookkeeping consistently instead of waiting until
-                year-end. Regular recordkeeping helps you stay organized and
-                avoid unnecessary stress during tax season.
+                Maintain organized records of income, expenses, invoices,
+                receipts, and bank transactions throughout the year. Good
+                bookkeeping makes tax filing much easier.
               </p>
 
             </div>
@@ -230,13 +230,13 @@ export default function Bookkeeping() {
             <div>
 
               <h3 className="text-xl font-semibold text-[#0B2D4D]">
-                Keep Supporting Documents
+                Separate Business and Personal Finances
               </h3>
 
               <p className="mt-3 text-gray-600 leading-7">
-                Save invoices, receipts, contracts, bank statements, and other
-                financial documents. These records support your bookkeeping and
-                may be required by the CRA.
+                Use separate business bank accounts and credit cards whenever
+                possible. This simplifies bookkeeping and improves financial
+                reporting.
               </p>
 
             </div>
@@ -245,13 +245,13 @@ export default function Bookkeeping() {
             <div>
 
               <h3 className="text-xl font-semibold text-[#0B2D4D]">
-                Reconcile Your Bank Accounts
+                Understand Your Tax Responsibilities
               </h3>
 
               <p className="mt-3 text-gray-600 leading-7">
-                Compare your bookkeeping records with your bank statements on a
-                regular basis to identify errors, missing transactions, or
-                duplicate entries.
+                Depending on your business, you may need to file income tax,
+                GST/HST returns, payroll remittances, and other CRA filings
+                throughout the year.
               </p>
 
             </div>
@@ -260,13 +260,13 @@ export default function Bookkeeping() {
             <div>
 
               <h3 className="text-xl font-semibold text-[#0B2D4D]">
-                Review Financial Reports
+                Review Your Financial Performance
               </h3>
 
               <p className="mt-3 text-gray-600 leading-7">
-                Reviewing your income statement and balance sheet regularly
-                helps you understand your business performance and make better
-                financial decisions.
+                Regularly reviewing your financial statements helps you
+                understand profitability, manage cash flow, and make better
+                business decisions.
               </p>
 
             </div>
@@ -287,10 +287,11 @@ export default function Bookkeeping() {
           </h2>
 
           <p className="mt-6 text-lg text-gray-600 leading-8">
-            The Canada Revenue Agency (CRA) provides official guidance on
-            record keeping, business expenses, GST/HST, payroll, and other
-            bookkeeping requirements. The resources below will take you
-            directly to the relevant CRA pages.
+            The Canada Revenue Agency (CRA) provides official guidance for
+            starting and operating a business, maintaining accounting records,
+            claiming business expenses, and meeting your tax obligations.
+            The resources below will take you directly to the appropriate
+            government pages.
           </p>
 
           <div className="mt-12 space-y-4">
@@ -329,15 +330,15 @@ export default function Bookkeeping() {
         <div className="max-w-5xl mx-auto px-6 text-center">
 
           <h2 className="text-4xl font-bold text-white">
-            Need Help Managing Your Books?
+            Need Help Managing Your Small Business?
           </h2>
 
           <p className="mt-8 text-lg text-blue-100 leading-8 max-w-3xl mx-auto">
-            Accurate bookkeeping is the foundation of every successful
-            business. Whether you need monthly bookkeeping, bank
-            reconciliations, financial reporting, GST/HST support, or
-            year-end preparation, Sky High Financial Management can help
-            keep your financial records organized and up to date.
+            Whether you're starting a new business or growing an existing one,
+            Sky High Financial Management can help with bookkeeping,
+            accounting, payroll, GST/HST, financial reporting, tax planning,
+            and year-end tax compliance so you can focus on running your
+            business with confidence.
           </p>
 
           <a

@@ -1,5 +1,5 @@
 import {
-  Users,
+  BookOpen,
   Receipt,
   Landmark,
   Calculator,
@@ -7,88 +7,88 @@ import {
   ExternalLink,
 } from "lucide-react";
 
-import PageHero from "../../components/common/PageHero";
+import PageHero from "../../../components/common/PageHero";
 
-const payrollTopics = [
+const bookkeepingTopics = [
   {
-    icon: Users,
-    title: "Payroll Deductions",
+    icon: BookOpen,
+    title: "Recording Business Transactions",
     description:
-      "Understand CPP, EI, and income tax deductions that employers must withhold from employee wages.",
+      "Learn how to properly record income, expenses, assets, liabilities, and owner transactions.",
     link:
-      "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/calculating-deductions.html",
+      "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/keeping-records.html",
   },
 
   {
-    icon: Calculator,
-    title: "Payroll Calculations",
+    icon: Landmark,
+    title: "Bank Reconciliation",
     description:
-      "Learn how employee pay, deductions, and employer contributions are calculated.",
+      "Compare your accounting records with your bank statements to ensure your financial records are accurate.",
     link:
-      "https://www.canada.ca/en/revenue-agency/services/e-services/digital-services-businesses/payroll-deductions-online-calculator.html",
+      "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/keeping-records.html",
   },
 
   {
     icon: Receipt,
-    title: "Payroll Remittances",
+    title: "Business Expenses",
     description:
-      "Information about remitting payroll deductions to the Canada Revenue Agency on time.",
+      "Understand which business expenses should be recorded and how supporting documents should be maintained.",
     link:
-      "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/remitting-payroll-deductions.html",
+      "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/business-expenses.html",
   },
 
   {
-    icon: FileText,
-    title: "T4 Slips & Information Returns",
+    icon: Calculator,
+    title: "Financial Statements",
     description:
-      "Learn about preparing T4 slips, T4 summaries, and annual payroll reporting requirements.",
+      "Income statements and balance sheets help business owners understand the financial health of their business.",
     link:
-      "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/t4-t5-other-information-returns.html",
+      "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/keeping-records.html",
   },
 ];
 
 const governmentResources = [
   {
-    title: "CRA Payroll",
+    title: "CRA Keeping Records",
+    link:
+      "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/keeping-records.html",
+  },
+
+  {
+    title: "Business Expenses",
+    link:
+      "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/business-expenses.html",
+  },
+
+  {
+    title: "GST/HST Records",
+    link:
+      "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses.html",
+  },
+
+  {
+    title: "Payroll Records",
     link:
       "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll.html",
   },
 
   {
-    title: "Payroll Deductions Online Calculator",
-    link:
-      "https://www.canada.ca/en/revenue-agency/services/e-services/digital-services-businesses/payroll-deductions-online-calculator.html",
-  },
-
-  {
-    title: "Payroll Remittances",
-    link:
-      "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/remitting-payroll-deductions.html",
-  },
-
-  {
-    title: "T4 Information Returns",
-    link:
-      "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/t4-t5-other-information-returns.html",
-  },
-
-  {
-    title: "Payroll Forms & Publications",
+    title: "CRA Forms & Publications",
     link:
       "https://www.canada.ca/en/revenue-agency/services/forms-publications.html",
   },
 ];
 
-export default function Payroll() {
+export default function Bookkeeping() {
 
   return (
 
     <>
       <PageHero
         image="/images/resources-hero.jpg"
-        eyebrow="Payroll Resources"
-        title="Payroll Resource Centre"
-        description="Simple payroll guidance for Canadian employers to help manage employee payments, payroll deductions, and CRA reporting requirements."
+        eyebrow="Bookkeeping Resources"
+        title="Bookkeeping Resource Centre"
+        description="Simple bookkeeping guidance for Canadian business owners to help maintain organized financial records and support accurate tax reporting."
       />
 
       {/* Introduction */}
@@ -98,45 +98,45 @@ export default function Payroll() {
         <div className="max-w-5xl mx-auto px-6">
 
           <h2 className="text-4xl font-bold text-[#0B2D4D]">
-            What is Payroll?
+            What is Bookkeeping?
           </h2>
 
           <p className="mt-8 text-lg leading-8 text-gray-700">
-            Payroll is the process of paying employees while calculating
-            and withholding the required deductions such as Canada Pension
-            Plan (CPP), Employment Insurance (EI), and income tax. Employers
-            are responsible for remitting these deductions to the Canada
-            Revenue Agency (CRA).
+            Bookkeeping is the process of recording and organizing the
+            financial transactions of a business. Accurate bookkeeping helps
+            business owners understand how their business is performing and
+            provides the information needed to prepare financial statements
+            and tax returns.
           </p>
 
           <p className="mt-6 text-lg leading-8 text-gray-700">
-            Maintaining an accurate payroll system helps businesses comply
-            with tax legislation, pay employees correctly, and avoid
-            penalties resulting from late or incorrect filings.
+            Good bookkeeping also makes it easier to monitor cash flow,
+            prepare budgets, make business decisions, and respond to CRA
+            requests if required.
           </p>
 
         </div>
 
       </section>
-            {/* Common Payroll Topics */}
+            {/* Common Bookkeeping Topics */}
 
       <section className="py-20 bg-[#F8FAFC]">
 
         <div className="max-w-7xl mx-auto px-6">
 
           <h2 className="text-4xl font-bold text-center text-[#0B2D4D]">
-            Common Payroll Topics
+            Common Bookkeeping Topics
           </h2>
 
           <p className="mt-5 text-center text-gray-600 max-w-3xl mx-auto">
-            Payroll involves more than simply paying employees. Understanding
-            the key payroll responsibilities helps businesses remain compliant
-            and avoid costly penalties.
+            Good bookkeeping keeps your financial information organized,
+            supports tax compliance, and helps you make informed business
+            decisions throughout the year.
           </p>
 
           <div className="grid lg:grid-cols-2 gap-8 mt-16">
 
-            {payrollTopics.map((topic, index) => {
+            {bookkeepingTopics.map((topic, index) => {
 
               const Icon = topic.icon;
 
@@ -200,14 +200,14 @@ export default function Payroll() {
       </section>
 
 
-      {/* Things Every Employer Should Know */}
+      {/* Things Every Business Owner Should Know */}
 
       <section className="py-20 bg-white">
 
         <div className="max-w-5xl mx-auto px-6">
 
           <h2 className="text-4xl font-bold text-[#0B2D4D]">
-            Things Every Employer Should Know
+            Things Every Business Owner Should Know
           </h2>
 
           <div className="mt-10 space-y-8">
@@ -215,13 +215,13 @@ export default function Payroll() {
             <div>
 
               <h3 className="text-xl font-semibold text-[#0B2D4D]">
-                Register a Payroll Account
+                Record Transactions Regularly
               </h3>
 
               <p className="mt-3 text-gray-600 leading-7">
-                Before paying employees, employers generally need to open a
-                CRA payroll program account to report payroll deductions and
-                remittances.
+                Update your bookkeeping consistently instead of waiting until
+                year-end. Regular recordkeeping helps you stay organized and
+                avoid unnecessary stress during tax season.
               </p>
 
             </div>
@@ -230,13 +230,13 @@ export default function Payroll() {
             <div>
 
               <h3 className="text-xl font-semibold text-[#0B2D4D]">
-                Deduct CPP, EI and Income Tax
+                Keep Supporting Documents
               </h3>
 
               <p className="mt-3 text-gray-600 leading-7">
-                Employers are responsible for calculating and withholding the
-                correct Canada Pension Plan (CPP), Employment Insurance (EI),
-                and income tax from employee earnings.
+                Save invoices, receipts, contracts, bank statements, and other
+                financial documents. These records support your bookkeeping and
+                may be required by the CRA.
               </p>
 
             </div>
@@ -245,13 +245,13 @@ export default function Payroll() {
             <div>
 
               <h3 className="text-xl font-semibold text-[#0B2D4D]">
-                Remit Payroll Deductions on Time
+                Reconcile Your Bank Accounts
               </h3>
 
               <p className="mt-3 text-gray-600 leading-7">
-                Payroll deductions must be remitted to the CRA according to
-                your assigned remittance schedule. Late payments may result
-                in penalties and interest.
+                Compare your bookkeeping records with your bank statements on a
+                regular basis to identify errors, missing transactions, or
+                duplicate entries.
               </p>
 
             </div>
@@ -260,13 +260,13 @@ export default function Payroll() {
             <div>
 
               <h3 className="text-xl font-semibold text-[#0B2D4D]">
-                Prepare T4 Slips Each Year
+                Review Financial Reports
               </h3>
 
               <p className="mt-3 text-gray-600 leading-7">
-                At the end of each calendar year, employers prepare T4 slips
-                and file the related information return with the CRA while
-                providing employees with their copies.
+                Reviewing your income statement and balance sheet regularly
+                helps you understand your business performance and make better
+                financial decisions.
               </p>
 
             </div>
@@ -287,10 +287,10 @@ export default function Payroll() {
           </h2>
 
           <p className="mt-6 text-lg text-gray-600 leading-8">
-            The Canada Revenue Agency (CRA) provides official payroll
-            information, online calculators, employer guides, forms, and
-            reporting requirements. The resources below will take you directly
-            to the relevant CRA pages.
+            The Canada Revenue Agency (CRA) provides official guidance on
+            record keeping, business expenses, GST/HST, payroll, and other
+            bookkeeping requirements. The resources below will take you
+            directly to the relevant CRA pages.
           </p>
 
           <div className="mt-12 space-y-4">
@@ -329,15 +329,15 @@ export default function Payroll() {
         <div className="max-w-5xl mx-auto px-6 text-center">
 
           <h2 className="text-4xl font-bold text-white">
-            Need Help Managing Payroll?
+            Need Help Managing Your Books?
           </h2>
 
           <p className="mt-8 text-lg text-blue-100 leading-8 max-w-3xl mx-auto">
-            Payroll requires accuracy, timely remittances, and compliance with
-            CRA regulations. Whether you need payroll setup, regular payroll
-            processing, T4 preparation, ROEs, or payroll advice, Sky High
-            Financial Management can help keep your business compliant and your
-            employees paid correctly.
+            Accurate bookkeeping is the foundation of every successful
+            business. Whether you need monthly bookkeeping, bank
+            reconciliations, financial reporting, GST/HST support, or
+            year-end preparation, Sky High Financial Management can help
+            keep your financial records organized and up to date.
           </p>
 
           <a

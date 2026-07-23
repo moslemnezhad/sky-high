@@ -6,12 +6,35 @@ import {
 } from "lucide-react";
 
 const downloads = [
-  { id: "t1", file: "#" },
-  { id: "t2", file: "#" },
-  { id: "bookkeeping", file: "#" },
-  { id: "payroll", file: "#" },
-  { id: "gst", file: "#" },
-  { id: "yearend", file: "#" },
+  {
+    id: "t1",
+    file: "/documents/personal-tax-preparation-checklist-canada.pdf",
+  },
+
+  {
+    id: "t2",
+    file: "/documents/corporate-tax-preparation-checklist-canada.pdf",
+  },
+
+  {
+    id: "bookkeeping",
+    file: "/documents/monthly-bookkeeping-checklist-canada.pdf",
+  },
+
+  {
+    id: "payroll",
+    file: "/documents/payroll-compliance-checklist-canada.pdf",
+  },
+
+  {
+    id: "gst",
+    file: "/documents/gst-hst-compliance-checklist-canada.pdf",
+  },
+
+  {
+    id: "yearend",
+    file: "/documents/tax-planning-year-end-checklist-canada.pdf",
+  },
 ];
 
 export default function DownloadCenter() {
@@ -78,15 +101,17 @@ export default function DownloadCenter() {
 
               <a
                 href={item.file}
+                download
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 mt-8 font-semibold text-[#C8A24A] hover:text-[#0B2D4D] transition-colors"
               >
 
-                <Download size={18} />
+  <Download size={18} />
 
-                {t("resources.downloads.button")}
+  {t("resources.downloads.button")}
 
-              </a>
-
+</a>
             </div>
 
           ))}

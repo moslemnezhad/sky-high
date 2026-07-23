@@ -8,7 +8,7 @@ import {
   ExternalLink,
 } from "lucide-react";
 
-import PageHero from "../../components/common/PageHero";
+import PageHero from "../components/common/PageHero";
 
 
 const corporateTopics = [

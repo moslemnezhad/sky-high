@@ -1,75 +1,75 @@
 import {
-  Building2,
-  Calculator,
+  Globe,
   Landmark,
   FileText,
-  TrendingUp,
+  Calculator,
+  BadgeDollarSign,
   ExternalLink,
 } from "lucide-react";
 
-import PageHero from "../../components/common/PageHero";
+import PageHero from "../components/common/PageHero";
 
-const businessTopics = [
+const crossBorderTopics = [
   {
-    icon: Building2,
-    title: "Starting a Business",
+    icon: Globe,
+    title: "Canadian Tax Residency",
     description:
-      "Learn about registering your business, choosing a business structure, and CRA business accounts.",
+      "Understand how residency affects your Canadian tax obligations and worldwide income reporting.",
     link:
-      "https://www.canada.ca/en/services/business/start.html",
-  },
-
-  {
-    icon: Calculator,
-    title: "Business Expenses",
-    description:
-      "Understand which business expenses may be deductible for income tax purposes.",
-    link:
-      "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships/business-income-tax-reporting/business-expenses.html",
+      "https://www.canada.ca/en/revenue-agency/services/tax/international-non-residents/individuals-leaving-entering-canada-non-residents.html",
   },
 
   {
     icon: Landmark,
-    title: "Business Taxes",
+    title: "Foreign Income",
     description:
-      "Learn about corporate income tax, GST/HST, payroll, instalments, and filing obligations.",
+      "Learn how Canadian residents report employment, investment, rental, and business income earned outside Canada.",
     link:
-      "https://www.canada.ca/en/services/taxes/business-number.html",
+      "https://www.canada.ca/en/revenue-agency/services/tax/international-non-residents.html",
   },
 
   {
-    icon: FileText,
-    title: "Business Records",
+    icon: BadgeDollarSign,
+    title: "Foreign Property Reporting",
     description:
-      "Keep proper accounting records and supporting documents required by the CRA.",
+      "Information about reporting specified foreign property, including Form T1135.",
     link:
-      "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/keeping-records.html",
+      "https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t1135.html",
+  },
+
+  {
+    icon: Calculator,
+    title: "Canada–U.S. Tax Treaty",
+    description:
+      "Overview of the tax treaty designed to reduce double taxation between Canada and the United States.",
+    link:
+      "https://www.canada.ca/en/department-finance/programs/tax-policy/tax-treaties/country/united-states-america-convention.html",
   },
 ];
 
 const governmentResources = [
   {
-    title: "CRA Business Information",
+    title: "CRA International Tax",
     link:
-      "https://www.canada.ca/en/services/business.html",
+      "https://www.canada.ca/en/revenue-agency/services/tax/international-non-residents.html",
   },
 
   {
-    title: "Business Number Registration",
+    title: "Form T1135",
     link:
-      "https://www.canada.ca/en/services/taxes/business-number.html",
+      "https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t1135.html",
   },
 
   {
-    title: "Keeping Business Records",
+    title: "Canada–U.S. Tax Treaty",
     link:
-      "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/keeping-records.html",
+      "https://www.canada.ca/en/department-finance/programs/tax-policy/tax-treaties/country/united-states-america-convention.html",
   },
 
   {
-    title: "Business Expenses",
+    title: "CRA Non-Residents",
     link:
-      "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships/business-income-tax-reporting/business-expenses.html",
+      "https://www.canada.ca/en/revenue-agency/services/tax/international-non-residents/non-residents-canada.html",
   },
 
   {
@@ -79,16 +79,16 @@ const governmentResources = [
   },
 ];
 
-export default function SmallBusiness() {
+export default function CrossBorder() {
 
   return (
 
     <>
       <PageHero
         image="/images/resources-hero.jpg"
-        eyebrow="Small Business Resources"
-        title="Small Business Resource Centre"
-        description="Simple guidance to help Canadian small business owners understand their accounting, tax, and reporting responsibilities."
+        eyebrow="Canada–USA Tax Resources"
+        title="Canada–USA Tax Resource Centre"
+        description="Simple guidance for individuals and businesses with tax obligations in both Canada and the United States."
       />
 
       {/* Introduction */}
@@ -98,45 +98,45 @@ export default function SmallBusiness() {
         <div className="max-w-5xl mx-auto px-6">
 
           <h2 className="text-4xl font-bold text-[#0B2D4D]">
-            Running a Small Business
+            What is Canada–USA Tax?
           </h2>
 
           <p className="mt-8 text-lg leading-8 text-gray-700">
-            Running a successful business involves more than serving
-            customers. Business owners are responsible for maintaining
-            accurate financial records, filing tax returns, managing
-            payroll when applicable, collecting GST/HST when required,
-            and complying with Canada Revenue Agency (CRA) regulations.
+            Cross-border taxation applies when individuals or businesses have
+            financial activities in both Canada and the United States. This
+            may include living in one country while earning income in the
+            other, owning foreign investments, operating a business across
+            borders, or filing tax returns in both countries.
           </p>
 
           <p className="mt-6 text-lg leading-8 text-gray-700">
-            Understanding these responsibilities from the beginning can
-            save time, reduce stress, and help your business grow with
-            confidence.
+            Understanding your residency status, reporting obligations, and
+            available tax treaty benefits can help reduce double taxation and
+            ensure compliance with both Canadian and U.S. tax rules.
           </p>
 
         </div>
 
       </section>
-            {/* Common Small Business Topics */}
+            {/* Common Canada–USA Tax Topics */}
 
       <section className="py-20 bg-[#F8FAFC]">
 
         <div className="max-w-7xl mx-auto px-6">
 
           <h2 className="text-4xl font-bold text-center text-[#0B2D4D]">
-            Common Small Business Topics
+            Common Canada–USA Tax Topics
           </h2>
 
           <p className="mt-5 text-center text-gray-600 max-w-3xl mx-auto">
-            Every business owner should understand these core financial and
-            tax responsibilities to keep their business organized and
-            compliant.
+            Cross-border tax situations can become complex. These are some of
+            the most common topics that Canadian individuals and businesses
+            encounter.
           </p>
 
           <div className="grid lg:grid-cols-2 gap-8 mt-16">
 
-            {businessTopics.map((topic, index) => {
+            {crossBorderTopics.map((topic, index) => {
 
               const Icon = topic.icon;
 
@@ -200,14 +200,14 @@ export default function SmallBusiness() {
       </section>
 
 
-      {/* Things Every Business Owner Should Know */}
+      {/* Things You Should Know */}
 
       <section className="py-20 bg-white">
 
         <div className="max-w-5xl mx-auto px-6">
 
           <h2 className="text-4xl font-bold text-[#0B2D4D]">
-            Things Every Business Owner Should Know
+            Things You Should Know
           </h2>
 
           <div className="mt-10 space-y-8">
@@ -215,13 +215,13 @@ export default function SmallBusiness() {
             <div>
 
               <h3 className="text-xl font-semibold text-[#0B2D4D]">
-                Keep Accurate Records
+                Canadian Tax Residency Matters
               </h3>
 
               <p className="mt-3 text-gray-600 leading-7">
-                Maintain organized records of income, expenses, invoices,
-                receipts, and bank transactions throughout the year. Good
-                bookkeeping makes tax filing much easier.
+                Your Canadian residency status determines whether you report
+                only Canadian income or your worldwide income on your Canadian
+                tax return.
               </p>
 
             </div>
@@ -230,13 +230,13 @@ export default function SmallBusiness() {
             <div>
 
               <h3 className="text-xl font-semibold text-[#0B2D4D]">
-                Separate Business and Personal Finances
+                Foreign Income May Need To Be Reported
               </h3>
 
               <p className="mt-3 text-gray-600 leading-7">
-                Use separate business bank accounts and credit cards whenever
-                possible. This simplifies bookkeeping and improves financial
-                reporting.
+                Canadian residents generally report income earned anywhere in
+                the world, including employment, investments, rental income,
+                and business income.
               </p>
 
             </div>
@@ -245,13 +245,13 @@ export default function SmallBusiness() {
             <div>
 
               <h3 className="text-xl font-semibold text-[#0B2D4D]">
-                Understand Your Tax Responsibilities
+                Foreign Assets May Require Additional Reporting
               </h3>
 
               <p className="mt-3 text-gray-600 leading-7">
-                Depending on your business, you may need to file income tax,
-                GST/HST returns, payroll remittances, and other CRA filings
-                throughout the year.
+                Certain foreign investments and property may require additional
+                reporting to the CRA, including Form T1135 for specified
+                foreign property.
               </p>
 
             </div>
@@ -260,13 +260,13 @@ export default function SmallBusiness() {
             <div>
 
               <h3 className="text-xl font-semibold text-[#0B2D4D]">
-                Review Your Financial Performance
+                The Tax Treaty Can Reduce Double Taxation
               </h3>
 
               <p className="mt-3 text-gray-600 leading-7">
-                Regularly reviewing your financial statements helps you
-                understand profitability, manage cash flow, and make better
-                business decisions.
+                Canada and the United States have a tax treaty that helps
+                prevent double taxation and determines which country has the
+                primary right to tax certain types of income.
               </p>
 
             </div>
@@ -287,11 +287,11 @@ export default function SmallBusiness() {
           </h2>
 
           <p className="mt-6 text-lg text-gray-600 leading-8">
-            The Canada Revenue Agency (CRA) provides official guidance for
-            starting and operating a business, maintaining accounting records,
-            claiming business expenses, and meeting your tax obligations.
-            The resources below will take you directly to the appropriate
-            government pages.
+            The Canada Revenue Agency (CRA) and the Department of Finance
+            provide official information on international taxation,
+            non-resident tax rules, foreign income reporting, Form T1135,
+            and the Canada–U.S. Tax Treaty. The resources below will take
+            you directly to the relevant government pages.
           </p>
 
           <div className="mt-12 space-y-4">
@@ -330,15 +330,15 @@ export default function SmallBusiness() {
         <div className="max-w-5xl mx-auto px-6 text-center">
 
           <h2 className="text-4xl font-bold text-white">
-            Need Help Managing Your Small Business?
+            Need Help With Canada–U.S. Taxes?
           </h2>
 
           <p className="mt-8 text-lg text-blue-100 leading-8 max-w-3xl mx-auto">
-            Whether you're starting a new business or growing an existing one,
-            Sky High Financial Management can help with bookkeeping,
-            accounting, payroll, GST/HST, financial reporting, tax planning,
-            and year-end tax compliance so you can focus on running your
-            business with confidence.
+            Cross-border tax matters can quickly become complicated.
+            Whether you have foreign income, U.S. investments, Canadian
+            residency questions, Form T1135 reporting, or tax obligations
+            in both countries, Sky High Financial Management can help you
+            understand your reporting requirements and remain compliant.
           </p>
 
           <a

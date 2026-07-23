@@ -25,30 +25,29 @@
   },
 
   "footer": {
-  "companyTitle": "Sky High Financial",
-
-  "description": "Professional accounting, bookkeeping, payroll, tax planning, and advisory services for individuals and businesses across Canada.",
-
+  "company": {
+    "description": "Professional accounting, bookkeeping, payroll, tax planning and advisory services for individuals and businesses across Canada."
+  },
+  
   "languages": {
     "english": "English",
     "persian": "فارسی",
     "arabic": "العربية"
   },
 
-  "servicesTitle": "Services",
-
-  "services": {
+    "services": {
+    "title": "Services",
     "accounting": "Accounting",
     "bookkeeping": "Bookkeeping",
     "payroll": "Payroll",
     "corporateTax": "Corporate Tax",
     "personalTax": "Personal Tax",
     "crossBorder": "Cross-Border Tax",
-    "craCompliance": "CRA Compliance",
-    "financialAdvisory": "Financial Advisory"
+    "cra": "CRA Compliance",
+    "advisory": "Financial Advisory"
   },
 
-  "company": {
+  "companyMenu": {
     "title": "Company",
     "home": "Home",
     "about": "About Us",
@@ -70,12 +69,10 @@
     "hoursValue": "Mon – Fri\n9:00 AM – 6:00 PM"
   },
 
-  "bottom": {
     "copyright": "All Rights Reserved.",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service"
-  }
-},
+  },
 
   "home": {
   "hero": {
@@ -125,32 +122,6 @@
   "description": "Get professional tax and accounting support tailored for Canadian individuals and businesses. Book a consultation today and receive expert financial guidance.",
   "button": "Book Free Consultation"
 },
-"stats": {
-  "title": "Trusted by Individuals & Businesses",
-  "subtitle": "We focus on accuracy, compliance, and long-term financial confidence for our clients across Canada.",
-
-  "items": {
-    "experience": {
-      "value": "10+ Years",
-      "label": "Professional Experience"
-    },
-
-    "taxReturns": {
-      "value": "500+",
-      "label": "Tax Returns Completed"
-    },
-
-    "compliance": {
-      "value": "100%",
-      "label": "CRA Compliance Focus"
-    },
-
-    "support": {
-      "value": "24/7",
-      "label": "Client-Oriented Support Mindset"
-    }
-  }
-},
 
 "howWeWork": {
   "eyebrow": "SIMPLE PROCESS",
@@ -179,6 +150,7 @@
     }
   }
 },
+
 "industries": {
   "eyebrow": "INDUSTRIES WE SERVE",
   "title": "Supporting Businesses Across Canada",
@@ -259,21 +231,57 @@
       "description": "Learn about Sky High Financial Management, our professional approach, and our commitment to providing accurate, reliable, and personalized accounting and tax solutions for every client we serve."
     },
 
+    "founder": {
+
+      "eyebrow": "MEET YOUR TRUSTED FINANCIAL PARTNER",
+
+      "name": "Mohammad Moslem Nezhad",
+
+      "position": "Founder & Principal Accountant | MSc Economics",
+
+      "paragraph1": "Mohammad Moslem Nezhad is the Founder and Principal Accountant of Sky High Financial Management Inc. With a strong academic foundation in economics and years of practical accounting experience, he is dedicated to helping individuals, entrepreneurs, and businesses achieve financial clarity and long-term success.",
+
+      "paragraph2": "Originally from Iran, Mohammad earned his Master of Science (MSc) in Economics from the University of Esfahan in 2014. Shortly after graduation, he immigrated to Vancouver, Canada, where he began building his professional career in accounting and financial management.",
+
+      "paragraph3": "Throughout his career in Canada, Mohammad has worked with accounting and financial management firms serving clients across a wide range of industries. His experience includes financial reporting, bookkeeping, corporate and personal taxation, payroll administration, business advisory services, financial analysis, and CRA compliance for both individuals and privately owned businesses. He has also supported local communities by assisting low-income individuals with the preparation and filing of their income tax returns.",
+
+      "paragraph4": "Driven by a passion for helping small businesses grow with confidence, Mohammad established Sky High Financial Management Inc. to provide personalized accounting, taxation, and financial advisory services. Every client relationship is built on integrity, professionalism, transparency, and a genuine commitment to long-term success."
+
+    },
+
     "company": {
-      "title": "Who We Are",
-      "paragraph1": "Sky High Financial Management Inc. is committed to delivering accurate accounting, tax, and financial solutions tailored to the unique needs of each client.",
-      "paragraph2": "We believe accounting should provide clarity—not complexity. Our goal is to help business owners understand their financial position, remain compliant, reduce tax risk, and make confident decisions for future growth."
+
+      "eyebrow": "ABOUT SKY HIGH FINANCIAL",
+
+      "title": "Accounting Solutions Built Around Your Goals",
+
+      "paragraph1": "Sky High Financial Management Inc. is a Canadian accounting firm dedicated to providing personalized accounting, bookkeeping, taxation, payroll, and financial advisory services for individuals, entrepreneurs, and small businesses.",
+
+      "paragraph2": "Our approach is built on accuracy, transparency, and long-term relationships. We work closely with our clients to simplify financial management, improve financial decision-making, and provide practical solutions tailored to their unique needs."
+
     },
 
     "why": {
-      "title": "Why Businesses Choose Us",
-      "accounting": "Professional Accounting & Bookkeeping",
-      "tax": "Corporate & Personal Tax Expertise",
-      "crossBorder": "Canada & USA Cross-Border Tax Services",
-      "payroll": "Payroll & CRA Compliance",
-      "cloud": "Cloud Accounting Solutions",
-      "multi": "Multilingual Service (English | فارسی | العربية)"
-    },
+
+    "eyebrow": "WHY CHOOSE US",
+
+    "title": "Professional Support With A Personal Approach",
+
+    "description": "We combine accounting expertise, tax knowledge, and personalized service to help individuals and businesses make confident financial decisions.",
+
+    "accounting": "Accounting & Financial Reporting",
+
+    "tax": "Personal & Corporate Tax Planning",
+
+    "crossBorder": "Cross-Border Tax Guidance",
+
+    "payroll": "Payroll Management & Compliance",
+
+    "cloud": "Modern Cloud Accounting Solutions",
+
+    "multi": "Multilingual Client Support"
+
+  },
 
     "mission": {
       "title": "Our Mission",
@@ -291,10 +299,12 @@
     },
 
     "cta": {
-      "title": "Let's Build Your Financial Success Together",
-      "description": "Whether you're starting a business, managing growth, or preparing your taxes, we're here to help every step of the way.",
-      "button": "Book a Consultation"
-    }
+    "eyebrow": "LET'S WORK TOGETHER",
+    "title": "Ready To Take Control Of Your Finances?",
+    "description": "Whether you need accounting, bookkeeping, tax planning, payroll, or business advisory services, we're here to help you move forward with confidence.",
+    "consultation": "Book a Free Consultation",
+    "contact": "Explore Our Services"
+  }
   },
 
   "services": {
@@ -339,6 +349,7 @@
 
   }
 },
+
 "cta": {
   "eyebrow": "LET'S WORK TOGETHER",
   "title": "Ready to Simplify Your Accounting?",
@@ -688,43 +699,5 @@
 
   "secondary": "Explore Our Services"
 }
-},
-
-  
-  "footer": {
-  "company": {
-    "description": "Professional accounting, bookkeeping, payroll, tax planning and advisory services for individuals and businesses across Canada."
-  },
-
-  "services": {
-    "title": "Services",
-    "accounting": "Accounting",
-    "bookkeeping": "Bookkeeping",
-    "payroll": "Payroll",
-    "corporateTax": "Corporate Tax",
-    "personalTax": "Personal Tax",
-    "crossBorder": "Cross-Border Tax",
-    "cra": "CRA Compliance",
-    "advisory": "Financial Advisory"
-  },
-
-  "companyMenu": {
-    "title": "Company"
-  },
-
-  "contact": {
-    "title": "Contact",
-    "phone": "Phone",
-    "email": "Email",
-    "area": "Service Area",
-    "hours": "Business Hours",
-    "schedule": "Mon – Fri\n9:00 AM – 6:00 PM"
-  },
-
-  "privacy": "Privacy Policy",
-
-  "terms": "Terms of Service",
-
-  "copyright": " All Rights Reserved."
 }
-}
+ }

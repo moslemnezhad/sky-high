@@ -1,95 +1,94 @@
 import {
-  Briefcase,
-  User,
-  TrendingUp,
-  Home,
-  BadgeDollarSign,
-  ShieldCheck,
+  Users,
+  Receipt,
+  Landmark,
+  Calculator,
+  FileText,
   ExternalLink,
 } from "lucide-react";
 
-import PageHero from "../../components/common/PageHero";
+import PageHero from "../components/common/PageHero";
 
-const personalTopics = [
+const payrollTopics = [
   {
-    icon: Briefcase,
-    title: "Employment Income",
+    icon: Users,
+    title: "Payroll Deductions",
     description:
-      "Understand T4 slips, taxable benefits, payroll deductions, and employment income reporting.",
+      "Understand CPP, EI, and income tax deductions that employers must withhold from employee wages.",
     link:
-      "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/income-you-earned/employment-income.html",
+      "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/calculating-deductions.html",
   },
 
   {
-    icon: User,
-    title: "Self-Employment Income",
+    icon: Calculator,
+    title: "Payroll Calculations",
     description:
-      "Information for freelancers, contractors, consultants, and sole proprietors.",
+      "Learn how employee pay, deductions, and employer contributions are calculated.",
     link:
-      "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships.html",
+      "https://www.canada.ca/en/revenue-agency/services/e-services/digital-services-businesses/payroll-deductions-online-calculator.html",
   },
 
   {
-    icon: TrendingUp,
-    title: "Investment Income",
+    icon: Receipt,
+    title: "Payroll Remittances",
     description:
-      "Interest, dividends, capital gains, and investment income reporting.",
+      "Information about remitting payroll deductions to the Canada Revenue Agency on time.",
     link:
-      "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/income-you-earned/investment-income.html",
+      "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/remitting-payroll-deductions.html",
   },
 
   {
-    icon: Home,
-    title: "Rental Income",
+    icon: FileText,
+    title: "T4 Slips & Information Returns",
     description:
-      "Reporting rental income and understanding deductible rental expenses.",
+      "Learn about preparing T4 slips, T4 summaries, and annual payroll reporting requirements.",
     link:
-      "https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/t4036.html",
+      "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/t4-t5-other-information-returns.html",
   },
 ];
 
 const governmentResources = [
   {
-    title: "CRA Personal Income Tax",
+    title: "CRA Payroll",
     link:
-      "https://www.canada.ca/en/services/taxes/income-tax/personal-income-tax.html",
+      "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll.html",
   },
 
   {
-    title: "CRA My Account",
+    title: "Payroll Deductions Online Calculator",
     link:
-      "https://www.canada.ca/en/revenue-agency/services/e-services/e-services-individuals/account-individuals.html",
+      "https://www.canada.ca/en/revenue-agency/services/e-services/digital-services-businesses/payroll-deductions-online-calculator.html",
   },
 
   {
-    title: "Tax Credits & Deductions",
+    title: "Payroll Remittances",
     link:
-      "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses.html",
+      "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/remitting-payroll-deductions.html",
   },
 
   {
-    title: "CRA Forms & Publications",
+    title: "T4 Information Returns",
+    link:
+      "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/t4-t5-other-information-returns.html",
+  },
+
+  {
+    title: "Payroll Forms & Publications",
     link:
       "https://www.canada.ca/en/revenue-agency/services/forms-publications.html",
   },
-
-  {
-    title: "Benefits & Credits",
-    link:
-      "https://www.canada.ca/en/services/benefits.html",
-  },
 ];
 
-export default function PersonalTax() {
+export default function Payroll() {
 
   return (
 
     <>
       <PageHero
         image="/images/resources-hero.jpg"
-        eyebrow="Personal Tax Resources"
-        title="Personal Tax Resource Centre"
-        description="Simple guidance to help Canadian taxpayers understand personal income tax and find trusted Canada Revenue Agency resources."
+        eyebrow="Payroll Resources"
+        title="Payroll Resource Centre"
+        description="Simple payroll guidance for Canadian employers to help manage employee payments, payroll deductions, and CRA reporting requirements."
       />
 
       {/* Introduction */}
@@ -99,44 +98,45 @@ export default function PersonalTax() {
         <div className="max-w-5xl mx-auto px-6">
 
           <h2 className="text-4xl font-bold text-[#0B2D4D]">
-            What is Personal Tax?
+            What is Payroll?
           </h2>
 
           <p className="mt-8 text-lg leading-8 text-gray-700">
-            Personal income tax is paid by individuals on income earned during
-            the year. Most Canadians must file an income tax return annually,
-            even if no tax is owing, to report their income and determine
-            eligibility for tax credits and government benefits.
+            Payroll is the process of paying employees while calculating
+            and withholding the required deductions such as Canada Pension
+            Plan (CPP), Employment Insurance (EI), and income tax. Employers
+            are responsible for remitting these deductions to the Canada
+            Revenue Agency (CRA).
           </p>
 
           <p className="mt-6 text-lg leading-8 text-gray-700">
-            Preparing your tax return becomes much easier when your documents
-            are organized and you understand the different sources of income
-            that need to be reported.
+            Maintaining an accurate payroll system helps businesses comply
+            with tax legislation, pay employees correctly, and avoid
+            penalties resulting from late or incorrect filings.
           </p>
 
         </div>
 
       </section>
-            {/* Common Personal Tax Topics */}
+            {/* Common Payroll Topics */}
 
       <section className="py-20 bg-[#F8FAFC]">
 
         <div className="max-w-7xl mx-auto px-6">
 
           <h2 className="text-4xl font-bold text-center text-[#0B2D4D]">
-            Common Personal Tax Topics
+            Common Payroll Topics
           </h2>
 
           <p className="mt-5 text-center text-gray-600 max-w-3xl mx-auto">
-            Understanding the most common sources of income and available tax
-            benefits can help you prepare a complete and accurate personal tax
-            return.
+            Payroll involves more than simply paying employees. Understanding
+            the key payroll responsibilities helps businesses remain compliant
+            and avoid costly penalties.
           </p>
 
           <div className="grid lg:grid-cols-2 gap-8 mt-16">
 
-            {personalTopics.map((topic, index) => {
+            {payrollTopics.map((topic, index) => {
 
               const Icon = topic.icon;
 
@@ -200,14 +200,14 @@ export default function PersonalTax() {
       </section>
 
 
-      {/* Things You Should Know */}
+      {/* Things Every Employer Should Know */}
 
       <section className="py-20 bg-white">
 
         <div className="max-w-5xl mx-auto px-6">
 
           <h2 className="text-4xl font-bold text-[#0B2D4D]">
-            Things You Should Know
+            Things Every Employer Should Know
           </h2>
 
           <div className="mt-10 space-y-8">
@@ -215,14 +215,13 @@ export default function PersonalTax() {
             <div>
 
               <h3 className="text-xl font-semibold text-[#0B2D4D]">
-                Gather Your Tax Documents
+                Register a Payroll Account
               </h3>
 
               <p className="mt-3 text-gray-600 leading-7">
-                Before preparing your return, collect all of your tax slips and
-                supporting documents such as T4s, T5s, RRSP contribution slips,
-                tuition receipts, medical expenses, and charitable donation
-                receipts.
+                Before paying employees, employers generally need to open a
+                CRA payroll program account to report payroll deductions and
+                remittances.
               </p>
 
             </div>
@@ -231,13 +230,13 @@ export default function PersonalTax() {
             <div>
 
               <h3 className="text-xl font-semibold text-[#0B2D4D]">
-                Review All Sources of Income
+                Deduct CPP, EI and Income Tax
               </h3>
 
               <p className="mt-3 text-gray-600 leading-7">
-                Income may come from employment, self-employment, investments,
-                pensions, rental properties, or other sources. Reporting all
-                income helps avoid reassessments and penalties.
+                Employers are responsible for calculating and withholding the
+                correct Canada Pension Plan (CPP), Employment Insurance (EI),
+                and income tax from employee earnings.
               </p>
 
             </div>
@@ -246,13 +245,13 @@ export default function PersonalTax() {
             <div>
 
               <h3 className="text-xl font-semibold text-[#0B2D4D]">
-                Create a CRA My Account
+                Remit Payroll Deductions on Time
               </h3>
 
               <p className="mt-3 text-gray-600 leading-7">
-                CRA My Account allows you to access tax slips, Notices of
-                Assessment, RRSP contribution room, benefit information, and
-                many other online services.
+                Payroll deductions must be remitted to the CRA according to
+                your assigned remittance schedule. Late payments may result
+                in penalties and interest.
               </p>
 
             </div>
@@ -261,12 +260,13 @@ export default function PersonalTax() {
             <div>
 
               <h3 className="text-xl font-semibold text-[#0B2D4D]">
-                Don't Miss Important Deadlines
+                Prepare T4 Slips Each Year
               </h3>
 
               <p className="mt-3 text-gray-600 leading-7">
-                Filing your return and paying any balance owing on time can
-                help you avoid interest charges and late filing penalties.
+                At the end of each calendar year, employers prepare T4 slips
+                and file the related information return with the CRA while
+                providing employees with their copies.
               </p>
 
             </div>
@@ -287,10 +287,10 @@ export default function PersonalTax() {
           </h2>
 
           <p className="mt-6 text-lg text-gray-600 leading-8">
-            The Canada Revenue Agency (CRA) provides official information,
-            online services, tax forms, publications, and guidance to help
-            individuals meet their tax obligations. The resources below will
-            take you directly to the relevant CRA pages.
+            The Canada Revenue Agency (CRA) provides official payroll
+            information, online calculators, employer guides, forms, and
+            reporting requirements. The resources below will take you directly
+            to the relevant CRA pages.
           </p>
 
           <div className="mt-12 space-y-4">
@@ -329,15 +329,15 @@ export default function PersonalTax() {
         <div className="max-w-5xl mx-auto px-6 text-center">
 
           <h2 className="text-4xl font-bold text-white">
-            Need Help With Your Personal Taxes?
+            Need Help Managing Payroll?
           </h2>
 
           <p className="mt-8 text-lg text-blue-100 leading-8 max-w-3xl mx-auto">
-            Every taxpayer's situation is unique. Whether you need help
-            preparing your personal income tax return, understanding tax
-            deductions and credits, reporting investment or rental income,
-            or planning for future tax years, Sky High Financial Management
-            is here to help.
+            Payroll requires accuracy, timely remittances, and compliance with
+            CRA regulations. Whether you need payroll setup, regular payroll
+            processing, T4 preparation, ROEs, or payroll advice, Sky High
+            Financial Management can help keep your business compliant and your
+            employees paid correctly.
           </p>
 
           <a
