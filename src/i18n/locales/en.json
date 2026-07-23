@@ -57,17 +57,18 @@
   },
 
   "contact": {
-    "title": "Contact",
-    "phone": "Phone",
-    "email": "Email",
-    "whatsapp": "WhatsApp",
-    "linkedin": "LinkedIn",
-    "instagram": "Instagram",
-    "serviceArea": "Service Area",
-    "serviceAreaValue": "Canada & USA",
-    "hours": "Business Hours",
-    "hoursValue": "Mon – Fri\n9:00 AM – 6:00 PM"
-  },
+  "title": "Contact",
+  "phone": "Phone",
+  "phoneValue": "+1 (778) 903-1528",
+  "email": "Email",
+  "emailAddress": "skyhighfm.inc@gmail.com",
+  "serviceArea": "Service Area",
+  "serviceAreaValue": "Canada & USA",
+  "hours": "Business Hours",
+  "hoursValue": "Mon – Fri\n9:00 AM – 6:00 PM",
+  "linkedin": "LinkedIn",
+  "instagram": "Instagram"
+},
 
     "copyright": "All Rights Reserved.",
     "privacy": "Privacy Policy",
