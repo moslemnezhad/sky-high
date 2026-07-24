@@ -6,3 +6,8 @@ body {
   background: #ffffff;
   color: #334155;
 }
+
+footer {
+  direction: ltr;
+  text-align: left;
+}

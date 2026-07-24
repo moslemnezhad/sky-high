@@ -1,3 +1,4 @@
+import i18n from "../../i18n/i18n";
 import { useTranslation } from "react-i18next";
 import {
   Phone,
@@ -9,10 +10,19 @@ import {
 import { Link } from "react-router-dom";
 
 export default function Footer() {
+
   const { t } = useTranslation();
 
+
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+  };
+
   return (
-    <footer className="bg-[#071F35] text-white">
+    <footer
+        dir="ltr"
+        className="bg-[#071F35] text-white"
+      >
 
       {/* Gold Top Border */}
       <div className="h-1 bg-[#C8A24A]" />
@@ -21,8 +31,10 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 py-20">
 
 
-        <div className="grid gap-12 lg:grid-cols-4">
-
+        <div
+          dir="ltr"
+          className="grid gap-12 lg:grid-cols-4"
+        >
 
           {/* Company */}
 
@@ -48,19 +60,55 @@ export default function Footer() {
 
             {/* Languages */}
 
-            <div className="mt-6 flex flex-wrap gap-2">
+            <div className="mt-6 flex flex-wrap gap-2 ltr">
 
-              <span className="bg-[#0B2D4D] px-3 py-1 rounded-full text-sm">
+
+              <button
+                onClick={() => changeLanguage("en")}
+                className="
+                  bg-[#0B2D4D]
+                  px-3 py-1
+                  rounded-full
+                  text-sm
+                  hover:bg-[#C8A24A]
+                  transition
+                "
+              >
                 {t("footer.languages.english")}
-              </span>
+              </button>
 
-              <span className="bg-[#0B2D4D] px-3 py-1 rounded-full text-sm">
+
+
+              <button
+                onClick={() => changeLanguage("fa")}
+                className="
+                  bg-[#0B2D4D]
+                  px-3 py-1
+                  rounded-full
+                  text-sm
+                  hover:bg-[#C8A24A]
+                  transition
+                "
+              >
                 {t("footer.languages.persian")}
-              </span>
+              </button>
 
-              <span className="bg-[#0B2D4D] px-3 py-1 rounded-full text-sm">
+
+
+              <button
+                onClick={() => changeLanguage("ar")}
+                className="
+                  bg-[#0B2D4D]
+                  px-3 py-1
+                  rounded-full
+                  text-sm
+                  hover:bg-[#C8A24A]
+                  transition
+                "
+              >
                 {t("footer.languages.arabic")}
-              </span>
+              </button>
+
 
             </div>
 
@@ -80,7 +128,7 @@ export default function Footer() {
 
 
 
-            <div className="space-y-4">
+            <div dir="ltr" className="space-y-4">
 
 
               {[
@@ -121,22 +169,14 @@ export default function Footer() {
 
 
                 <Link
-                  key={item.name}
-                  to={item.link}
-                  className="
-                    flex items-center gap-2
-                    rtl:flex-row-reverse
-                    text-gray-300
-                    hover:text-[#C8A24A]
-                    transition
-                  "
-                >
-
-                  <ChevronRight className="w-4 h-4" />
-
-                  {item.name}
-
-                </Link>
+                key={item.name}
+                to={item.link}
+                dir="ltr"
+                className="flex items-center justify-start gap-2 text-gray-300 hover:text-[#C8A24A] transition"
+              >
+                <ChevronRight className="w-4 h-4 flex-shrink-0" />
+                <span>{item.name}</span>
+              </Link>
 
 
               ))}
@@ -231,7 +271,7 @@ export default function Footer() {
 
 
 
-              <div className="flex gap-3 rtl:flex-row-reverse">
+              <div className="flex gap-3">
 
                 <Phone className="text-[#C8A24A]" />
 
@@ -250,7 +290,7 @@ export default function Footer() {
               </div>
 
 
-              <div className="flex gap-3 rtl:flex-row-reverse">
+              <div className="flex gap-3">
 
 
                 <Mail className="text-[#C8A24A]" />
@@ -273,7 +313,7 @@ export default function Footer() {
               </div>
 
 
-              <div className="flex gap-3 rtl:flex-row-reverse">
+              <div className="flex gap-3">
 
                 <MapPin className="text-[#C8A24A]" />
 
@@ -293,7 +333,7 @@ export default function Footer() {
 
 
 
-              <div className="flex gap-3 rtl:flex-row-reverse">
+              <div className="flex gap-3">
 
 
                 <Clock3 className="text-[#C8A24A]" />
