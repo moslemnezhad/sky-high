@@ -62,17 +62,17 @@ export default function Navbar() {
             <img
               src="/logo.png"
               alt="Sky High Financial"
-              className="h-14 w-auto"
+              className="h-16 w-auto"
             />
 
             <div className="hidden md:block">
 
               <h2 className="font-bold text-xl text-[#0B2D4D] tracking-wide">
-                SKY HIGH
+                SKY HIGH FINANCIAL
               </h2>
 
-              <p className="text-xs uppercase tracking-[0.25em] text-[#C8A24A]">
-                Financial Management Inc.
+              <p className="text-xs uppercase tracking-[0.30em] text-[#C8A24A]">
+                 Management Inc.
               </p>
 
             </div>

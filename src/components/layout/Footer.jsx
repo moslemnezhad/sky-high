@@ -43,12 +43,13 @@ export default function Footer() {
             <img
               src="/logo.png"
               alt="Sky High Financial"
-              className="h-20 w-auto mb-6"
+              className="h-25 w-auto mb-5"
             />
 
 
             <h3 className="text-2xl font-bold">
               Sky High Financial
+              Management Inc.
             </h3>
 
 
