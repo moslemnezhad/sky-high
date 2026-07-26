@@ -14,10 +14,6 @@ import About from "./pages/About";
 import Resources from "./pages/Resources";
 import Contact from "./pages/Contact";
 
-// Legal Pages
-import TermsOfService from "./pages/terms-of-service/TermsOfService.en.jsx";
-import PrivacyPolicy from "./pages/privacy-policy/PrivacyPolicy.en.jsx";
-
 
 // Service Pages
 import ServicePage from "./pages/services/ServicePage";
@@ -62,6 +58,19 @@ import payrollAR from "./content/resources/payroll.ar.js";
 
 
 
+// Legal Pages - Multilingual
+
+import TermsOfServiceEN from "./pages/terms-of-service/TermsOfService.en.jsx";
+import TermsOfServiceFA from "./pages/terms-of-service/TermsOfService.fa.jsx";
+import TermsOfServiceAR from "./pages/terms-of-service/TermsOfService.ar.jsx";
+
+import PrivacyPolicyEN from "./pages/privacy-policy/PrivacyPolicy.en.jsx";
+import PrivacyPolicyFA from "./pages/privacy-policy/PrivacyPolicy.fa.jsx";
+import PrivacyPolicyAR from "./pages/privacy-policy/PrivacyPolicy.ar.jsx";
+
+
+
+
 // ===============================
 // Content Direction Handler
 // ===============================
@@ -88,10 +97,21 @@ function LayoutDirection({ children }) {
 
 }
 
+
+
+
+
+// ===============================
+// Resource Language Handler
+// ===============================
+
 function getResources(language) {
 
+
   if (language === "fa") {
+
     return {
+
       bookkeeping: bookkeepingFA,
       "corporate-tax": corporateTaxFA,
       "gst-hst": gstHstFA,
@@ -100,12 +120,17 @@ function getResources(language) {
       "small-business": smallBusinessFA,
       "tax-planning": taxPlanningFA,
       payroll: payrollFA,
+
     };
+
   }
 
 
+
   if (language === "ar") {
+
     return {
+
       bookkeeping: bookkeepingAR,
       "corporate-tax": corporateTaxAR,
       "gst-hst": gstHstAR,
@@ -114,11 +139,15 @@ function getResources(language) {
       "small-business": smallBusinessAR,
       "tax-planning": taxPlanningAR,
       payroll: payrollAR,
+
     };
+
   }
 
 
+
   return {
+
     bookkeeping: bookkeepingEN,
     "corporate-tax": corporateTaxEN,
     "gst-hst": gstHstEN,
@@ -127,16 +156,68 @@ function getResources(language) {
     "small-business": smallBusinessEN,
     "tax-planning": taxPlanningEN,
     payroll: payrollEN,
+
   };
+
 
 }
 
 
+
+
+
+// ===============================
+// Legal Pages Language Handler
+// ===============================
+
+function getLegalPages(language) {
+
+
+  if (language === "fa") {
+
+    return {
+
+      Terms: TermsOfServiceFA,
+      Privacy: PrivacyPolicyFA,
+
+    };
+
+  }
+
+
+
+  if (language === "ar") {
+
+    return {
+
+      Terms: TermsOfServiceAR,
+      Privacy: PrivacyPolicyAR,
+
+    };
+
+  }
+
+
+
+  return {
+
+    Terms: TermsOfServiceEN,
+    Privacy: PrivacyPolicyEN,
+
+  };
+
+
+}
 export default function App() {
 
-const { i18n } = useTranslation();
 
-const resources = getResources(i18n.language);
+  const { i18n } = useTranslation();
+
+
+  const resources = getResources(i18n.language);
+
+
+  const { Terms, Privacy } = getLegalPages(i18n.language);
 
 
 
@@ -167,6 +248,7 @@ const resources = getResources(i18n.language);
       {/* LANGUAGE DEPENDENT CONTENT */}
       {/* ========================= */}
 
+
       <LayoutDirection>
 
 
@@ -180,7 +262,6 @@ const resources = getResources(i18n.language);
             {/* ========================= */}
             {/* MAIN PAGES */}
             {/* ========================= */}
-
 
 
             <Route
@@ -218,19 +299,26 @@ const resources = getResources(i18n.language);
               element={<Contact />}
             />
 
+
+
+
             {/* ========================= */}
             {/* LEGAL PAGES */}
             {/* ========================= */}
 
+
             <Route
               path="/privacy"
-              element={<PrivacyPolicy />}
+              element={<Privacy />}
             />
+
 
             <Route
               path="/terms"
-              element={<TermsOfService />}
+              element={<Terms />}
             />
+
+
 
 
 
@@ -248,58 +336,79 @@ const resources = getResources(i18n.language);
             />
 
 
+
             <Route
               path="/resources/corporate-tax"
               element={
-                <ResourcePage resource={resources["corporate-tax"]} />
+                <ResourcePage
+                  resource={resources["corporate-tax"]}
+                />
               }
             />
+
 
 
             <Route
               path="/resources/gst-hst"
               element={
-                <ResourcePage resource={resources["gst-hst"]} />
+                <ResourcePage
+                  resource={resources["gst-hst"]}
+                />
               }
             />
+
 
 
             <Route
               path="/resources/cross-border"
               element={
-                <ResourcePage resource={resources["cross-border"]} />
+                <ResourcePage
+                  resource={resources["cross-border"]}
+                />
               }
             />
+
 
 
             <Route
               path="/resources/personal-tax"
               element={
-                <ResourcePage resource={resources["personal-tax"]} />
+                <ResourcePage
+                  resource={resources["personal-tax"]}
+                />
               }
             />
+
 
 
             <Route
               path="/resources/small-business"
               element={
-                <ResourcePage resource={resources["small-business"]} />
+                <ResourcePage
+                  resource={resources["small-business"]}
+                />
               }
             />
+
 
 
             <Route
               path="/resources/tax-planning"
               element={
-                <ResourcePage resource={resources["tax-planning"]} />
+                <ResourcePage
+                  resource={resources["tax-planning"]}
+                />
               }
             />
+
 
 
             <Route
               path="/resources/payroll"
               element={
-                <ResourcePage resource={resources.payroll} />
+                <ResourcePage
+                  resource={resources.payroll}
+                />
               }
             />
 
@@ -312,6 +421,7 @@ const resources = getResources(i18n.language);
 
 
       </LayoutDirection>
+
 
 
 
