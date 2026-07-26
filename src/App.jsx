@@ -14,6 +14,10 @@ import About from "./pages/About";
 import Resources from "./pages/Resources";
 import Contact from "./pages/Contact";
 
+// Legal Pages
+import TermsOfService from "./pages/terms-of-service/TermsOfService.en.jsx";
+import PrivacyPolicy from "./pages/privacy-policy/PrivacyPolicy.en.jsx";
+
 
 // Service Pages
 import ServicePage from "./pages/services/ServicePage";
@@ -24,15 +28,37 @@ import ResourcePage from "./pages/resources/ResourcePage";
 
 
 // Resource Content
-import bookkeeping from "./content/resources/bookkeeping.en";
-import corporateTax from "./content/resources/corporate-tax.en";
-import gstHst from "./content/resources/gst-hst.en";
-import crossBorder from "./content/resources/cross-border.en";
-import personalTax from "./content/resources/personal-tax.en";
-import smallBusiness from "./content/resources/small-business.en";
-import taxPlanning from "./content/resources/tax-planning.en";
-import payroll from "./content/resources/payroll.en";
+import bookkeepingEN from "./content/resources/bookkeeping.en.js";
+import bookkeepingFA from "./content/resources/bookkeeping.fa.js";
+import bookkeepingAR from "./content/resources/bookkeeping.ar.js";
 
+import corporateTaxEN from "./content/resources/corporate-tax.en.js";
+import corporateTaxFA from "./content/resources/corporate-tax.fa.js";
+import corporateTaxAR from "./content/resources/corporate-tax.ar.js";
+
+import gstHstEN from "./content/resources/gst-hst.en.js";
+import gstHstFA from "./content/resources/gst-hst.fa.js";
+import gstHstAR from "./content/resources/gst-hst.ar.js";
+
+import crossBorderEN from "./content/resources/cross-border.en.js";
+import crossBorderFA from "./content/resources/cross-border.fa.js";
+import crossBorderAR from "./content/resources/cross-border.ar.js";
+
+import personalTaxEN from "./content/resources/personal-tax.en.js";
+import personalTaxFA from "./content/resources/personal-tax.fa.js";
+import personalTaxAR from "./content/resources/personal-tax.ar.js";
+
+import smallBusinessEN from "./content/resources/small-business.en.js";
+import smallBusinessFA from "./content/resources/small-business.fa.js";
+import smallBusinessAR from "./content/resources/small-business.ar.js";
+
+import taxPlanningEN from "./content/resources/tax-planning.en.js";
+import taxPlanningFA from "./content/resources/tax-planning.fa.js";
+import taxPlanningAR from "./content/resources/tax-planning.ar.js";
+
+import payrollEN from "./content/resources/payroll.en.js";
+import payrollFA from "./content/resources/payroll.fa.js";
+import payrollAR from "./content/resources/payroll.ar.js";
 
 
 
@@ -62,10 +88,56 @@ function LayoutDirection({ children }) {
 
 }
 
+function getResources(language) {
 
+  if (language === "fa") {
+    return {
+      bookkeeping: bookkeepingFA,
+      "corporate-tax": corporateTaxFA,
+      "gst-hst": gstHstFA,
+      "cross-border": crossBorderFA,
+      "personal-tax": personalTaxFA,
+      "small-business": smallBusinessFA,
+      "tax-planning": taxPlanningFA,
+      payroll: payrollFA,
+    };
+  }
+
+
+  if (language === "ar") {
+    return {
+      bookkeeping: bookkeepingAR,
+      "corporate-tax": corporateTaxAR,
+      "gst-hst": gstHstAR,
+      "cross-border": crossBorderAR,
+      "personal-tax": personalTaxAR,
+      "small-business": smallBusinessAR,
+      "tax-planning": taxPlanningAR,
+      payroll: payrollAR,
+    };
+  }
+
+
+  return {
+    bookkeeping: bookkeepingEN,
+    "corporate-tax": corporateTaxEN,
+    "gst-hst": gstHstEN,
+    "cross-border": crossBorderEN,
+    "personal-tax": personalTaxEN,
+    "small-business": smallBusinessEN,
+    "tax-planning": taxPlanningEN,
+    payroll: payrollEN,
+  };
+
+}
 
 
 export default function App() {
+
+const { i18n } = useTranslation();
+
+const resources = getResources(i18n.language);
+
 
 
   return (
@@ -146,7 +218,19 @@ export default function App() {
               element={<Contact />}
             />
 
+            {/* ========================= */}
+            {/* LEGAL PAGES */}
+            {/* ========================= */}
 
+            <Route
+              path="/privacy"
+              element={<PrivacyPolicy />}
+            />
+
+            <Route
+              path="/terms"
+              element={<TermsOfService />}
+            />
 
 
 
@@ -159,70 +243,63 @@ export default function App() {
             <Route
               path="/resources/bookkeeping"
               element={
-                <ResourcePage resource={bookkeeping} />
+                <ResourcePage resource={resources.bookkeeping} />
               }
             />
-
 
 
             <Route
               path="/resources/corporate-tax"
               element={
-                <ResourcePage resource={corporateTax} />
+                <ResourcePage resource={resources["corporate-tax"]} />
               }
             />
-
 
 
             <Route
               path="/resources/gst-hst"
               element={
-                <ResourcePage resource={gstHst} />
+                <ResourcePage resource={resources["gst-hst"]} />
               }
             />
-
 
 
             <Route
               path="/resources/cross-border"
               element={
-                <ResourcePage resource={crossBorder} />
+                <ResourcePage resource={resources["cross-border"]} />
               }
             />
-
 
 
             <Route
               path="/resources/personal-tax"
               element={
-                <ResourcePage resource={personalTax} />
+                <ResourcePage resource={resources["personal-tax"]} />
               }
             />
-
 
 
             <Route
               path="/resources/small-business"
               element={
-                <ResourcePage resource={smallBusiness} />
+                <ResourcePage resource={resources["small-business"]} />
               }
             />
-
 
 
             <Route
               path="/resources/tax-planning"
               element={
-                <ResourcePage resource={taxPlanning} />
+                <ResourcePage resource={resources["tax-planning"]} />
               }
             />
-
 
 
             <Route
               path="/resources/payroll"
               element={
-                <ResourcePage resource={payroll} />
+                <ResourcePage resource={resources.payroll} />
               }
             />
 

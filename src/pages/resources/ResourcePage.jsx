@@ -17,7 +17,7 @@ import {
 } from "lucide-react";
 
 import PageHero from "../../components/common/PageHero";
-
+import { useTranslation } from "react-i18next";
 
 const iconMap = {
   BookOpen,
@@ -39,6 +39,12 @@ const iconMap = {
 
 
 export default function ResourcePage({ resource }) {
+
+  const { t } = useTranslation();
+  console.log(
+    "Translation test:",
+    t("resources.viewGovernmentResources")
+  );
 
 
   if (!resource) {
@@ -231,7 +237,7 @@ export default function ResourcePage({ resource }) {
 
                             <div className="mt-6 inline-flex items-center gap-2 text-[#C8A24A] font-semibold">
 
-                              View Official Government Resources
+                              {t("resources.viewGovernmentResources")}
 
                             </div>
 

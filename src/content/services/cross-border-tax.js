@@ -2,6 +2,7 @@ export default {
   slug: "cross-border-tax",
 
   hero: {
+    eyebrow: "Professional Service",
     title: "Canada–U.S. Cross-Border Tax Services",
 
     subtitle:

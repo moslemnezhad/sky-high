@@ -2,6 +2,7 @@ export default {
   slug: "cra-compliance",
 
   hero: {
+    eyebrow: "Professional Service",
     title: "CRA Compliance Services",
 
     subtitle:

@@ -2,6 +2,7 @@ export default {
   slug: "financial-advisory",
 
   hero: {
+    eyebrow: "Professional Service",
     title: "Financial Advisory Services",
 
     subtitle:

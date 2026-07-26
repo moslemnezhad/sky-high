@@ -2,6 +2,7 @@ export default {
   slug: "business-consulting",
 
   hero: {
+    eyebrow: "Professional Service",
     title: "Business Consulting Services",
 
     subtitle:

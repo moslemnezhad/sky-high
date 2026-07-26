@@ -2,6 +2,7 @@ export default {
   slug: "personal-tax",
 
   hero: {
+    eyebrow: "Professional Service",
     title: "Personal Tax Services",
 
     subtitle:

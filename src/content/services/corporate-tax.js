@@ -2,6 +2,7 @@ export default {
   slug: "corporate-tax",
 
   hero: {
+    eyebrow: "Professional Service",
     title: "Corporate Tax Services",
 
     subtitle:

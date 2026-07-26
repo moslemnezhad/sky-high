@@ -1,17 +1,23 @@
 import { useParams, Link } from "react-router-dom";
 import { CheckCircle, ChevronRight } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import { getServiceBySlug } from "../../content/services";
 
 export default function ServicePage() {
+
   const { slug } = useParams();
+
+  const { t } = useTranslation();
+
   const service = getServiceBySlug(slug);
 
   if (!service) {
     return (
       <div className="min-h-screen flex items-center justify-center">
         <h2 className="text-3xl font-bold text-[#0B2D4D]">
-          Service Not Found
+          {t("services.notFound")}
         </h2>
+
       </div>
     );
   }
@@ -41,13 +47,13 @@ export default function ServicePage() {
           <div className="flex items-center gap-2 text-sm text-gray-300 mb-8">
 
             <Link to="/" className="hover:text-[#C8A24A]">
-              Home
+              {t("navbar.home")}
             </Link>
 
             <ChevronRight className="w-4 h-4" />
 
             <Link to="/services" className="hover:text-[#C8A24A]">
-              Services
+              {t("navbar.services")}
             </Link>
 
             <ChevronRight className="w-4 h-4" />
@@ -65,7 +71,7 @@ export default function ServicePage() {
 
 
             <p className="uppercase tracking-[0.35em] text-[#C8A24A] font-semibold mb-4">
-              Professional Service
+              {service.hero.eyebrow}
             </p>
 
 
@@ -83,7 +89,7 @@ export default function ServicePage() {
               to="/contact"
               className="inline-flex mt-10 bg-[#C8A24A] hover:bg-[#d6b15b] text-[#071F35] px-8 py-4 rounded-xl font-semibold transition-all duration-300 shadow-lg"
             >
-              Book Consultation
+              {service.cta.button}
             </Link>
 
           </div>

@@ -2,6 +2,7 @@ export default {
   slug: "payroll",
 
   hero: {
+    eyebrow: "Professional Service",
     title: "Payroll Services",
 
     subtitle:

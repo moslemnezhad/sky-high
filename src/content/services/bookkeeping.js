@@ -2,6 +2,8 @@ export default {
   slug: "bookkeeping",
 
   hero: {
+    eyebrow: "Professional Service",
+
     title: "Professional Bookkeeping Services",
 
     subtitle:

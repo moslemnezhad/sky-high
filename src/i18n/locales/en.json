@@ -530,11 +530,14 @@
 
 "resources": {
 
+  "viewGovernmentResources": "View Official Government Resources",
+  
   "hero": {
 
     "eyebrow": "LEARN & EXPLORE",
 
     "title": "Knowledge for Better Financial Decisions",
+    
 
     "description": "Browse practical guides and trusted resources covering Canadian taxes, bookkeeping, payroll, GST/HST, and small business topics to help you better understand your financial responsibilities."
 
