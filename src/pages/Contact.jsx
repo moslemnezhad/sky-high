@@ -107,7 +107,11 @@ export default function Contact() {
 
               {/* Phone */}
 
-              <div className="rounded-2xl border border-gray-200 bg-white p-6 hover:shadow-lg transition">
+              <a
+                href="tel:+17789031528"
+                dir="ltr"
+                className="rounded-2xl border border-gray-200 bg-white p-6 hover:shadow-lg transition block"
+              >
 
                 <Phone className="w-8 h-8 text-[#C8A24A]" />
 
@@ -115,11 +119,13 @@ export default function Contact() {
                   {t("contact.cards.phone")}
                 </h3>
 
-                <p className="mt-2 text-gray-600">
+                <p
+                  className="mt-2 text-gray-600 text-left"
+                >
                   {t("contact.cards.phoneValue")}
                 </p>
 
-              </div>
+              </a>
 
 
               {/* WhatsApp */}
@@ -137,12 +143,14 @@ export default function Contact() {
                   {t("contact.cards.whatsapp")}
                 </h3>
 
-                <p className="mt-2 text-gray-600">
-                  {t("contact.cards.whatsappValue")}
-                </p>
+                <p
+                dir="ltr"
+                className="mt-2 text-gray-600 text-left"
+              >
+                {t("contact.cards.whatsappValue")}
+              </p>
 
               </a>
-
 
               {/* Email */}
 
@@ -382,6 +390,7 @@ export default function Contact() {
 
             <a
               href="tel:+17789031528"
+              dir="ltr"
               className="inline-flex items-center justify-center rounded-xl bg-[#C8A24A] px-8 py-4 font-semibold text-[#071F35] transition hover:bg-[#d6b15b]"
             >
               {t("contact.cta.call")}
@@ -391,6 +400,7 @@ export default function Contact() {
               href="https://wa.me/17789031528"
               target="_blank"
               rel="noopener noreferrer"
+              dir="ltr"
               className="inline-flex items-center justify-center rounded-xl border border-white/30 px-8 py-4 font-semibold text-white transition hover:bg-white/10"
             >
               {t("contact.cta.whatsapp")}
