@@ -10,7 +10,13 @@ import {
 } from "lucide-react";
 
 export default function Contact() {
-  const { t } = useTranslation();
+
+  const { t, i18n } = useTranslation();
+
+  const isRTL =
+    i18n.language === "fa" ||
+    i18n.language === "ar";
+
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
 
@@ -113,21 +119,24 @@ export default function Contact() {
                 className="rounded-2xl border border-gray-200 bg-white p-6 hover:shadow-lg transition block"
               >
 
-                <Phone className="w-8 h-8 text-[#C8A24A]" />
+                <div className={isRTL ? "flex flex-col items-end" : ""}>
 
-                <h3 className="mt-5 font-semibold text-[#0B2D4D]">
-                  {t("contact.cards.phone")}
-                </h3>
+                  <Phone className="w-8 h-8 text-[#C8A24A]" />
 
-                <p
-                  className="mt-2 text-gray-600 text-left"
-                >
-                  {t("contact.cards.phoneValue")}
-                </p>
+                  <h3 className="mt-5 font-semibold text-[#0B2D4D]">
+                    {t("contact.cards.phone")}
+                  </h3>
+
+                  <p
+                    className="mt-2 text-gray-600 text-left"
+                  >
+                    {t("contact.cards.phoneValue")}
+                  </p>
+
+                </div>
 
               </a>
-
-
+              
               {/* WhatsApp */}
 
               <a
@@ -137,18 +146,22 @@ export default function Contact() {
                 className="rounded-2xl border border-gray-200 bg-white p-6 hover:shadow-lg transition block"
               >
 
-                <MessageCircle className="w-8 h-8 text-[#25D366]" />
+                <div className={isRTL ? "text-right" : "text-left"}>
 
-                <h3 className="mt-5 font-semibold text-[#0B2D4D]">
-                  {t("contact.cards.whatsapp")}
-                </h3>
+                  <MessageCircle className="w-8 h-8 text-[#25D366]" />
 
-                <p
-                dir="ltr"
-                className="mt-2 text-gray-600 text-left"
-              >
-                {t("contact.cards.whatsappValue")}
-              </p>
+                  <h3 className="mt-5 font-semibold text-[#0B2D4D]">
+                    {t("contact.cards.whatsapp")}
+                  </h3>
+
+                  <p
+                    dir="ltr"
+                    className="mt-2 text-gray-600"
+                  >
+                    {t("contact.cards.whatsappValue")}
+                  </p>
+
+                </div>
 
               </a>
 
