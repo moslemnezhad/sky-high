@@ -70,10 +70,10 @@ export default function Footer() {
               <img
                 src="/logo.png"
                 alt="Sky High Financial"
-                className="h-12 w-12 object-contain"
+                className="h-16 w-16 object-contain flex-shrink-0"
               />
 
-              <h3 className="text-2xl font-bold leading-tight">
+              <h3 className="text-xl font-bold leading-tight">
                 Sky High Financial
                 <br />
                 Management Inc.
@@ -81,7 +81,7 @@ export default function Footer() {
 
             </div>
 
-            <p className="mt-6 text-gray-300 leading-8">
+            <p className="mt-5 text-gray-300 leading-8">
               {t("footer.company.description")}
             </p>
 
@@ -100,9 +100,9 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Instagram"
-                  className="text-gray-300 hover:text-[#C8A24A] transition"
+                  className="text-gray-300 hover:text-[#C8A24A] hover:scale-110 transition"
                 >
-                  <InstagramIcon className="w-8 h-8" />
+                  <InstagramIcon className="w-7 h-7" />
                 </a>
 
 
@@ -111,9 +111,9 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="LinkedIn"
-                  className="text-gray-300 hover:text-[#C8A24A] transition"
+                  className="text-gray-300 hover:text-[#C8A24A] hover:scale-110 transition"
                 >
-                  <LinkedinIcon className="w-8 h-8" />
+                  <LinkedinIcon className="w-7 h-7" />
                 </a>
 
               </div>
@@ -123,7 +123,7 @@ export default function Footer() {
 
             {/* Languages */}
 
-            <div className="mt-8 flex flex-wrap gap-2 ltr">
+            <div className="mt-10 flex flex-wrap gap-2 ltr">
 
 
               <button
