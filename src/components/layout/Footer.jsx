@@ -6,9 +6,34 @@ import {
   MapPin,
   Clock3,
   ChevronRight,
-} from "lucide-react";
+ } from "lucide-react";
+
 import { Link } from "react-router-dom";
 
+function InstagramIcon({ className }) {
+  return (
+    <svg
+      className={className}
+      viewBox="0 0 24 24"
+      fill="currentColor"
+    >
+      <path d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9a5.5 5.5 0 0 1-5.5 5.5h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9a3.5 3.5 0 0 0 3.5-3.5v-9A3.5 3.5 0 0 0 16.5 4h-9zm4.5 3a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"/>
+    </svg>
+  );
+}
+
+
+function LinkedinIcon({ className }) {
+  return (
+    <svg
+      className={className}
+      viewBox="0 0 24 24"
+      fill="currentColor"
+    >
+      <path d="M6.94 8.5H3.5V20h3.44V8.5zM5.22 3A2 2 0 1 0 5.22 7a2 2 0 0 0 0-4zM20.5 13.3c0-3.47-1.85-5.08-4.32-5.08-1.99 0-2.88 1.1-3.38 1.87V8.5H9.37V20h3.43v-5.7c0-1.5.28-3 2.17-3 1.87 0 1.9 1.74 1.9 3.1V20h3.43v-6.7z"/>
+    </svg>
+  );
+}
 export default function Footer() {
 
   const { t } = useTranslation();
@@ -40,28 +65,65 @@ export default function Footer() {
 
           <div>
 
-            <img
-              src="/logo.png"
-              alt="Sky High Financial"
-              className="h-25 w-auto mb-5"
-            />
+            <div className="flex items-center gap-4">
 
+              <img
+                src="/logo.png"
+                alt="Sky High Financial"
+                className="h-12 w-12 object-contain"
+              />
 
-            <h3 className="text-2xl font-bold">
-              Sky High Financial
-              Management Inc.
-            </h3>
+              <h3 className="text-2xl font-bold leading-tight">
+                Sky High Financial
+                <br />
+                Management Inc.
+              </h3>
 
+            </div>
 
-            <p className="mt-5 text-gray-300 leading-8">
+            <p className="mt-6 text-gray-300 leading-8">
               {t("footer.company.description")}
             </p>
 
 
+            <div className="mt-6 w-full">
+
+              <p className="text-sm font-semibold text-white mb-3">
+                {t("footer.social.follow")}
+              </p>
+
+
+              <div className="flex gap-5">
+
+                <a
+                  href="https://www.instagram.com/skyhighfm.inc"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram"
+                  className="text-gray-300 hover:text-[#C8A24A] transition"
+                >
+                  <InstagramIcon className="w-8 h-8" />
+                </a>
+
+
+                <a
+                  href="https://www.linkedin.com/company/sky-high-financial-management"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="LinkedIn"
+                  className="text-gray-300 hover:text-[#C8A24A] transition"
+                >
+                  <LinkedinIcon className="w-8 h-8" />
+                </a>
+
+              </div>
+
+            </div>
+
 
             {/* Languages */}
 
-            <div className="mt-6 flex flex-wrap gap-2 ltr">
+            <div className="mt-8 flex flex-wrap gap-2 ltr">
 
 
               <button
@@ -113,9 +175,9 @@ export default function Footer() {
 
             </div>
 
-
-          </div>
-
+            
+           </div>
+      
 
           {/* Services */}
 
