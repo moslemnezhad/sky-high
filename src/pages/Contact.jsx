@@ -236,7 +236,7 @@ export default function Contact() {
 
                 <input
                   type="text"
-                  name="name"
+                  name="from_name"
                   placeholder={t("contact.form.name")}
                   required
                   className="w-full rounded-xl border border-gray-300 px-5 py-4 focus:outline-none focus:ring-2 focus:ring-[#C8A24A]"
@@ -244,7 +244,7 @@ export default function Contact() {
 
                 <input
                   type="email"
-                  name="email"
+                  name="from_email"
                   placeholder={t("contact.form.email")}
                   required
                   className="w-full rounded-xl border border-gray-300 px-5 py-4 focus:outline-none focus:ring-2 focus:ring-[#C8A24A]"
