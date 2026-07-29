@@ -252,7 +252,7 @@ export default function App() {
       <LayoutDirection>
 
 
-        <main className="min-h-screen">
+        <main className="min-h-screen pt-20">
 
 
           <Routes>
