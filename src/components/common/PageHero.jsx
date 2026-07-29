@@ -35,13 +35,13 @@ export default function PageHero({
 
   const heroPadding =
     size === "large"
-      ? "py-52 lg:py-72"
-      : "py-24 lg:py-32";
+      ? "py-40 lg:py-72"
+      : "py-28 lg:py-32";
 
   return (
     <section
       dir="ltr"
-      className="relative overflow-hidden"
+      className="relative overflow-visible"
       style={{
         backgroundImage: `url(${image})`,
         backgroundSize: "cover",
@@ -118,7 +118,7 @@ export default function PageHero({
 
           <h1
             dir={direction()}
-            className={`mt-4 text-5xl md:text-6xl font-bold text-white leading-tight ${textAlign()}`}
+            className={`mt-4 text-4xl md:text-6xl font-bold text-white leading-tight ${textAlign()}`}
             style={{
               textShadow: "0 3px 10px rgba(0,0,0,.30)",
             }}
