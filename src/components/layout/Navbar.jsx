@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import { Menu, X, Globe } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
@@ -7,6 +7,7 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const { t, i18n } = useTranslation();
+  const location = useLocation();
 
   useEffect(() => {
     document.documentElement.dir =
@@ -19,6 +20,19 @@ export default function Navbar() {
 
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
+    setMenuOpen(false);
+  };
+
+  const scrollToTopIfSamePage = (e, path) => {
+    if (location.pathname === path) {
+      e.preventDefault();
+
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }
+
     setMenuOpen(false);
   };
 
@@ -56,6 +70,7 @@ export default function Navbar() {
 
           <NavLink
             to="/"
+            onClick={(e) => scrollToTopIfSamePage(e, "/")}
             className="flex items-center gap-4"
           >
 
@@ -72,12 +87,13 @@ export default function Navbar() {
               </h2>
 
               <p className="text-xs uppercase tracking-[0.30em] text-[#C8A24A]">
-                 Management Inc.
+                Management Inc.
               </p>
 
             </div>
 
           </NavLink>
+
 
           {/* Desktop */}
 
@@ -89,6 +105,7 @@ export default function Navbar() {
                 key={item.path}
                 to={item.path}
                 end={item.path === "/"}
+                onClick={(e) => scrollToTopIfSamePage(e, item.path)}
                 className={({ isActive }) =>
                   `font-medium transition-all duration-300 ${
                     isActive
@@ -103,6 +120,7 @@ export default function Navbar() {
             ))}
 
           </nav>
+
 
           {/* Right */}
 
@@ -151,6 +169,7 @@ export default function Navbar() {
 
             </div>
 
+
             <NavLink
               to="/contact"
               className="bg-[#0B2D4D] hover:bg-[#143e63] text-white px-6 py-3 rounded-xl font-semibold transition shadow"
@@ -159,6 +178,7 @@ export default function Navbar() {
             </NavLink>
 
           </div>
+
 
           {/* Mobile */}
 
@@ -175,6 +195,7 @@ export default function Navbar() {
 
       </div>
 
+
       {menuOpen && (
 
         <div className="lg:hidden bg-white border-t border-gray-200 shadow-lg">
@@ -187,7 +208,9 @@ export default function Navbar() {
                 key={item.path}
                 to={item.path}
                 end={item.path === "/"}
-                onClick={() => setMenuOpen(false)}
+                onClick={(e) =>
+                  scrollToTopIfSamePage(e, item.path)
+                }
                 className="block font-medium text-[#0B2D4D]"
               >
                 {item.name}
@@ -195,7 +218,9 @@ export default function Navbar() {
 
             ))}
 
+
             <hr />
+
 
             <div className="flex gap-5">
 
@@ -213,6 +238,7 @@ export default function Navbar() {
 
             </div>
 
+
             <NavLink
               to="/contact"
               onClick={() => setMenuOpen(false)}
@@ -220,6 +246,7 @@ export default function Navbar() {
             >
               {t("navbar.book")}
             </NavLink>
+
 
           </div>
 
