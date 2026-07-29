@@ -70,27 +70,48 @@ export default function Navbar() {
 
           <NavLink
             to="/"
-            onClick={(e) => scrollToTopIfSamePage(e, "/")}
-            className="flex items-center gap-4"
+            className="flex items-center gap-3"
           >
 
             <img
               src="/logo.png"
               alt="Sky High Financial"
-              className="h-16 w-auto"
+              className="h-12 md:h-16 w-auto"
             />
 
-            <div className="hidden md:block">
 
-              <h2 className="font-bold text-xl text-[#0B2D4D] tracking-wide">
+            <div>
+
+              <h2
+                className="
+                  font-bold 
+                  text-sm 
+                  md:text-xl 
+                  text-[#0B2D4D]
+                  tracking-wide
+                  leading-tight
+                "
+              >
                 SKY HIGH FINANCIAL
               </h2>
 
-              <p className="text-xs uppercase tracking-[0.30em] text-[#C8A24A]">
+
+              <p
+                className="
+                  text-[9px]
+                  md:text-xs
+                  uppercase
+                  tracking-[0.20em]
+                  md:tracking-[0.30em]
+                  text-[#C8A24A]
+                "
+              >
                 Management Inc.
               </p>
 
+
             </div>
+
 
           </NavLink>
 
