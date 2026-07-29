@@ -35,8 +35,8 @@ export default function PageHero({
 
   const heroPadding =
     size === "large"
-      ? "py-40 lg:py-72"
-      : "py-28 lg:py-32";
+      ? "py-32 lg:py-72"
+      : "py-20 lg:py-32";
 
   return (
     <section
@@ -65,7 +65,7 @@ export default function PageHero({
 
         {/* Breadcrumb */}
 
-        <div className="flex flex-wrap items-center gap-2 text-xs text-blue-100 mb-8">
+        <div className="flex flex-wrap items-center gap-2 text-xs text-blue-100 mb-4 md:mb-8">
 
           {breadcrumbs.map((item, index) => (
 
@@ -118,7 +118,7 @@ export default function PageHero({
 
           <h1
             dir={direction()}
-            className={`mt-4 text-4xl md:text-6xl font-bold text-white leading-tight ${textAlign()}`}
+            className={`mt-4 text-4xl md:text-5xl font-bold text-white leading-tight ${textAlign()}`}
             style={{
               textShadow: "0 3px 10px rgba(0,0,0,.30)",
             }}
