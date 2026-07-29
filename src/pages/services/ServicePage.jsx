@@ -84,14 +84,7 @@ export default function ServicePage() {
               {service.hero.subtitle}
             </p>
 
-
-            <Link
-              to="/contact"
-              className="inline-flex mt-10 bg-[#C8A24A] hover:bg-[#d6b15b] text-[#071F35] px-8 py-4 rounded-xl font-semibold transition-all duration-300 shadow-lg"
-            >
-              {service.cta.button}
-            </Link>
-
+            
           </div>
 
         </div>
