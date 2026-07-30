@@ -45,7 +45,7 @@ export default function PageHero({
       style={{
         backgroundImage: `url(${image})`,
         backgroundSize: "cover",
-        backgroundPosition: "right bottom",
+        backgroundPosition: "center right",
         backgroundRepeat: "no-repeat",
       }}
     >

@@ -187,10 +187,10 @@ export default function ResourcePage({ resource }) {
 
                     return (
 
-                      <a
+                      <div
                         key={index}
-                        href="#government-resources"
-                        className="bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl transition duration-300 group cursor-pointer"
+                        
+                        className="bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl transition duration-300 group"
                       >
 
 
@@ -235,11 +235,22 @@ export default function ResourcePage({ resource }) {
 
 
 
-                            <div className="mt-6 inline-flex items-center gap-2 text-[#C8A24A] font-semibold">
-
+                            <a
+                              href="#government-resources"
+                              className="
+                                mt-6
+                                inline-flex
+                                items-center
+                                gap-2
+                                text-[#C8A24A]
+                                font-semibold
+                                hover:text-[#0B2D4D]
+                                transition
+                              "
+                            >
                               {t("resources.viewGovernmentResources")}
-
-                            </div>
+                              <ExternalLink size={16} />
+                            </a>
 
 
 
@@ -251,7 +262,7 @@ export default function ResourcePage({ resource }) {
 
 
 
-                      </a>
+                      </div>
 
                     );
 
