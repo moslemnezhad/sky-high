@@ -79,22 +79,29 @@ export default function About() {
                 {t("about.founder.position")}
               </p>
 
-              <p className="mt-8 text-gray-600 leading-8">
+              <p className="mt-8 text-gray-600 leading-7">
                 {t("about.founder.paragraph1")}
               </p>
 
-              <p className="mt-6 text-gray-600 leading-8">
+              <p className="mt-6 text-gray-600 leading-7">
                 {t("about.founder.paragraph2")}
               </p>
 
-              <p className="mt-6 text-gray-600 leading-8">
+              <p className="mt-6 text-gray-600 leading-7">
                 {t("about.founder.paragraph3")}
               </p>
 
-              <p className="mt-6 text-gray-600 leading-8">
+              <p className="mt-6 text-gray-600 leading-7">
                 {t("about.founder.paragraph4")}
               </p>
 
+              <p className="mt-6 text-gray-600 leading-7">
+                {t("about.founder.paragraph5")}
+              </p>
+
+              <p className="mt-6 text-gray-600 leading-7">
+                {t("about.founder.paragraph6")}
+              </p>
             </div>
 
           </div>
