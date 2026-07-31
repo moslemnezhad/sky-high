@@ -44,7 +44,7 @@ export default function HowWeWork() {
         <div className="text-center">
 
 
-          <p className="uppercase tracking-[0.3em] text-[#C8A24A] font-semibold">
+          <p className="hero-eyebrow text-[#C8A24A] font-semibold">
             {t("home.howWeWork.eyebrow")}
           </p>
 

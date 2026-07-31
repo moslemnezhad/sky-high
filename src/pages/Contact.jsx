@@ -97,7 +97,7 @@ export default function Contact() {
 
             <div>
 
-              <p className="uppercase tracking-[0.3em] text-[#C8A24A] font-semibold">
+              <p className="hero-eyebrow text-[#C8A24A] font-semibold">
                 {t("contact.intro.eyebrow")}
               </p>
 
@@ -324,7 +324,7 @@ export default function Contact() {
 
           <div className="text-center">
 
-            <p className="uppercase tracking-[0.3em] text-[#C8A24A] font-semibold">
+            <p className="hero-eyebrow text-[#C8A24A] font-semibold">
 
               {t("contact.faq.eyebrow")}
 

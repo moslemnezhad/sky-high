@@ -100,7 +100,6 @@ export default function Navbar() {
                 className="
                   text-[9px]
                   md:text-xs
-                  uppercase
                   tracking-[0.20em]
                   md:tracking-[0.30em]
                   text-[#C8A24A]

@@ -70,7 +70,7 @@ export default function Services() {
 
                     <div className="h-[2px] w-12 bg-[#C8A24A]" />
 
-                      <p className="uppercase tracking-[0.3em] text-sm font-semibold text-[#C8A24A]">
+                      <p className="hero-eyebrow text-sm font-semibold text-[#C8A24A]">
                         {t(`services.categories.${category}.title`)}
                       </p>
 
@@ -139,7 +139,7 @@ export default function Services() {
 
   <div className="max-w-4xl mx-auto text-center">
 
-    <p className="uppercase tracking-[0.3em] text-[#C8A24A] font-semibold text-sm">
+    <p className="hero-eyebrow text-[#C8A24A] font-semibold text-sm">
       {t("services.whyChoose.eyebrow")}
     </p>
 
@@ -217,7 +217,7 @@ export default function Services() {
 
   <div className="max-w-4xl mx-auto bg-white rounded-3xl shadow-lg border border-gray-200 px-8 py-16">
 
-    <p className="uppercase tracking-[0.3em] text-[#C8A24A] font-semibold text-sm">
+    <p className="hero-eyebrow text-[#C8A24A] font-semibold text-sm">
       {t("services.cta.eyebrow")}
     </p>
 

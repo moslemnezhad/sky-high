@@ -65,7 +65,7 @@ export default function Industries() {
         <div className="text-center max-w-3xl mx-auto">
 
 
-          <p className="uppercase tracking-[0.3em] text-[#C8A24A] font-semibold">
+          <p className="hero-eyebrow text-[#C8A24A] font-semibold">
 
             {t("home.industries.eyebrow")}
 
