@@ -70,7 +70,7 @@ export default function ServicePage() {
             <div className="w-20 h-1 bg-[#C8A24A] rounded-full mb-6" />
 
 
-            <p className="uppercase tracking-[0.35em] text-[#C8A24A] font-semibold mb-4">
+            <p className="hero-eyebrow text-[#C8A24A] font-semibold mb-4">
               {service.hero.eyebrow}
             </p>
 

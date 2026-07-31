@@ -51,7 +51,7 @@ export default function DownloadCenter() {
 
         <div className="text-center max-w-3xl mx-auto">
 
-          <p className="uppercase tracking-[0.35em] text-[#C8A24A] font-semibold">
+          <p className="hero-eyebrow text-[#C8A24A] font-semibold">
 
             {t("resources.downloads.eyebrow")}
 

@@ -25,4 +25,5 @@ html {
   text-transform: none;
   letter-spacing: normal;
   font-size: 1rem;
+  word-spacing:.15em;
 }

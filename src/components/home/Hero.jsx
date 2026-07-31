@@ -33,7 +33,7 @@ export default function Hero() {
           {/* Eyebrow */}
           <p
             dir={direction()}
-            className={`uppercase tracking-[0.35em] text-[#C8A24A] font-semibold ${textAlign()}`}
+            className={`hero-eyebrow text-[#C8A24A] font-semibold ${textAlign()}`}
           >
             {t("home.hero.eyebrow")}
           </p>
