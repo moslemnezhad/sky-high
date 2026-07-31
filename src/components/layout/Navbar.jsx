@@ -98,8 +98,8 @@ export default function Navbar() {
 
               <p
                 className="
-                  text-[9px]
-                  md:text-xs
+                  text-[11px]
+                  md:text-sm
                   tracking-[0.20em]
                   md:tracking-[0.30em]
                   text-[#C8A24A]
