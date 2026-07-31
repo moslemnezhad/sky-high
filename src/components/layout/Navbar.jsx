@@ -103,6 +103,7 @@ export default function Navbar() {
                   tracking-[0.20em]
                   md:tracking-[0.30em]
                   text-[#C8A24A]
+                  font-semibold
                 "
               >
                 Management Inc.
