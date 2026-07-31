@@ -109,7 +109,7 @@ export default function PageHero({
 
           <p
             dir={direction()}
-            className={`uppercase tracking-[0.35em] text-[#C8A24A] font-semibold ${textAlign()}`}
+            className={`hero-eyebrow text-[#C8A24A] font-semibold ${textAlign()}`}
           >
             {eyebrow}
           </p>

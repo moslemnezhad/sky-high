@@ -15,3 +15,14 @@ footer {
 html {
   scroll-behavior: smooth;
 }
+
+.hero-eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.35em;
+}
+
+[dir="rtl"] .hero-eyebrow {
+  text-transform: none;
+  letter-spacing: normal;
+  font-size: 1rem;
+}
