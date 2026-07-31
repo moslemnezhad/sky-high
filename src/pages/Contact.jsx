@@ -51,7 +51,7 @@ export default function Contact() {
       <section className="relative h-[75vh] min-h-[450px] flex items-center overflow-hidden">
 
         <div
-          className="absolute inset-0 bg-cover bg-center"
+          className="absolute inset-0 bg-cover bg-right center"
           style={{
             backgroundImage: "url('/images/contact-hero.jpg')",
           }}
