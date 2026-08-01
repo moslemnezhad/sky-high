@@ -48,35 +48,59 @@ export default function Contact() {
     <>
       {/* ================= HERO ================= */}
 
-      <section className="relative h-[75vh] min-h-[450px] flex items-center overflow-hidden">
+      <section
+        dir="ltr"
+        className="relative h-[75vh] min-h-[450px] flex items-center overflow-hidden"
+      >
 
         <div
-          className="absolute inset-0 bg-cover bg-right center"
+          className="absolute inset-0 bg-cover bg-right"
           style={{
             backgroundImage: "url('/images/contact-hero.jpg')",
           }}
         />
 
-{/* Soft Overlay */}
-<div className="absolute inset-0 bg-[#071F35]/20" />
+        {/* Soft Overlay */}
+        <div className="absolute inset-0 bg-[#071F35]/20" />
 
-{/* Left Gradient */}
-<div className="absolute inset-0 bg-gradient-to-r from-[#071F35]/65 via-[#071F35]/30 to-transparent" />
+        {/* Left Gradient */}
+        <div className="absolute inset-0 bg-gradient-to-r from-[#071F35]/65 via-[#071F35]/30 to-transparent" />
+
         <div className="relative max-w-7xl mx-auto px-6 w-full">
 
           <div className="max-w-3xl">
 
-            <p className="hero-eyebrow text-[#C8A24A] font-semibold">
+            <p
+              dir={i18n.language === "fa" || i18n.language === "ar" ? "rtl" : "ltr"}
+              className={`hero-eyebrow text-[#C8A24A] font-semibold ${
+                i18n.language === "fa" || i18n.language === "ar"
+                  ? "text-right"
+                  : "text-left"
+              }`}
+            >
               {t("contact.hero.eyebrow")}
             </p>
 
-            <h1 className="mt-4 text-5xl md:text-6xl font-bold text-white leading-tight">
+            <h1
+              dir={i18n.language === "fa" || i18n.language === "ar" ? "rtl" : "ltr"}
+              className={`mt-4 text-5xl md:text-6xl font-bold text-white leading-tight ${
+                i18n.language === "fa" || i18n.language === "ar"
+                  ? "text-right"
+                  : "text-left"
+              }`}
+            >
               {t("contact.hero.title")}
             </h1>
 
-            <p className="mt-8 text-xl leading-8 text-gray-200">
-              {t("contact.hero.description")} 
-                            
+            <p
+              dir={i18n.language === "fa" || i18n.language === "ar" ? "rtl" : "ltr"}
+              className={`mt-8 text-xl leading-8 text-gray-200 ${
+                i18n.language === "fa" || i18n.language === "ar"
+                  ? "text-right"
+                  : "text-left"
+              }`}
+            >
+              {t("contact.hero.description")}
             </p>
 
           </div>
