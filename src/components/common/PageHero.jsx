@@ -1,5 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import { ChevronRight } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import { direction, textAlign } from "../../utils/language";
 
 export default function PageHero({
@@ -10,28 +11,67 @@ export default function PageHero({
   size = "medium",
 }) {
   const location = useLocation();
+  const { t } = useTranslation();
 
   const paths = location.pathname.split("/").filter(Boolean);
 
+  const isResourcesPage = paths[0] === "resources";
+
   const breadcrumbs = [
     {
-      label: "Home",
+      label: t("navbar.home"),
       to: "/",
     },
   ];
 
   let current = "";
 
-  paths.forEach((path, index) => {
-    current += "/" + path;
+paths.forEach((path, index) => {
+  current += "/" + path;
 
-    breadcrumbs.push({
-      label: path
-        .replace(/-/g, " ")
-        .replace(/\b\w/g, (c) => c.toUpperCase()),
-      to: index === paths.length - 1 ? null : current,
-    });
+  let label;
+
+  // ---------- Static pages ----------
+  if (path === "about") {
+    label = t("navbar.about");
+  }
+
+  else if (path === "services") {
+    label = t("navbar.services");
+  }
+
+  else if (path === "resources") {
+    label = t("navbar.resources");
+  }
+
+  // ---------- Resource article ----------
+  else if (
+    isResourcesPage &&
+    index === paths.length - 1
+  ) {
+    label = title;
+  }
+
+  // ---------- Service detail page ----------
+  else if (
+    paths[0] === "services" &&
+    index === paths.length - 1
+  ) {
+    label = title;
+  }
+
+  // ---------- Everything else ----------
+  else {
+    label = path
+      .replace(/-/g, " ")
+      .replace(/\b\w/g, (c) => c.toUpperCase());
+  }
+
+  breadcrumbs.push({
+    label,
+    to: index === paths.length - 1 ? null : current,
   });
+});
 
   const heroPadding =
     size === "large"
@@ -49,13 +89,16 @@ export default function PageHero({
         backgroundRepeat: "no-repeat",
       }}
     >
+
       {/* Left Gradient */}
 
       <div className="absolute inset-0 bg-gradient-to-r from-[#071F35]/75 via-[#071F35]/45 to-[#071F35]/10"></div>
 
+
       {/* Soft Overlay */}
 
       <div className="absolute inset-0 bg-black/10"></div>
+
 
       {/* Content */}
 
@@ -63,45 +106,63 @@ export default function PageHero({
         className={`relative max-w-7xl mx-auto px-6 lg:px-4 xl:px-0 w-full ${heroPadding}`}
       >
 
-        {/* Breadcrumb */}
+        {/* ================= BREADCRUMB ================= */}
 
-        <div className="flex flex-wrap items-center gap-2 text-xs text-blue-100 mb-8">
+        <div
+          className={`max-w-2xl mb-8 flex ${
+            direction() === "rtl"
+              ? "justify-end"
+              : "justify-start"
+          }`}
+        >
 
-          {breadcrumbs.map((item, index) => (
+          <div
+            className="flex flex-wrap items-center gap-2 text-xs text-blue-100"
+            dir={direction()}
+          >
 
-            <div
-              key={index}
-              className="flex items-center gap-2"
-            >
+            {breadcrumbs.map((item, index) => (
 
-              {index !== 0 && (
-                <ChevronRight size={13} />
-              )}
+              <div
+                key={index}
+                className="flex items-center gap-2"
+                dir={direction()}
+              >
 
-              {item.to ? (
+                {index !== 0 && (
+                  <ChevronRight
+                    size={13}
+                    className="shrink-0"
+                  />
+                )}
 
-                <Link
-                  to={item.to}
-                  className="hover:text-white transition duration-300"
-                >
-                  {item.label}
-                </Link>
+                {item.to ? (
 
-              ) : (
+                  <Link
+                    to={item.to}
+                    className="hover:text-white transition duration-300"
+                  >
+                    {item.label}
+                  </Link>
 
-                <span className="text-white font-medium">
-                  {item.label}
-                </span>
+                ) : (
 
-              )}
+                  <span className="text-white font-medium">
+                    {item.label}
+                  </span>
 
-            </div>
+                )}
 
-          ))}
+              </div>
+
+            ))}
+
+          </div>
 
         </div>
 
-        {/* Hero Content */}
+
+        {/* ================= HERO CONTENT ================= */}
 
         <div className="max-w-2xl">
 
@@ -114,6 +175,7 @@ export default function PageHero({
             {eyebrow}
           </p>
 
+
           {/* Title */}
 
           <h1
@@ -125,6 +187,7 @@ export default function PageHero({
           >
             {title}
           </h1>
+
 
           {/* Description */}
 

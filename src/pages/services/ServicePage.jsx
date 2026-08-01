@@ -7,7 +7,9 @@ export default function ServicePage() {
 
   const { slug } = useParams();
 
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+
+  const isRTL = i18n.dir() === "rtl";
 
   const service = getServiceBySlug(slug);
 
@@ -44,49 +46,85 @@ export default function ServicePage() {
         <div className="relative max-w-7xl mx-auto px-6 w-full">
 
 
-          <div className="flex items-center gap-2 text-sm text-gray-300 mb-8">
+         {/* ================= BREADCRUMBS ================= */}
 
-            <Link to="/" className="hover:text-[#C8A24A]">
-              {t("navbar.home")}
-            </Link>
+          <div
+            className={`w-full flex ${
+              isRTL ? "justify-end" : "justify-start"
+            } mb-8`}
+          >
+            <div
+              className="flex items-center gap-2 text-sm text-gray-300"
+              style={{ direction: "ltr" }}
+            >
 
-            <ChevronRight className="w-4 h-4" />
+              <Link
+                to="/"
+                className="hover:text-[#C8A24A]"
+                style={{
+                  direction: isRTL ? "rtl" : "ltr",
+                  unicodeBidi: "plaintext",
+                }}
+              >
+                {t("navbar.home")}
+              </Link>
 
-            <Link to="/services" className="hover:text-[#C8A24A]">
-              {t("navbar.services")}
-            </Link>
+              <ChevronRight className="w-4 h-4 shrink-0" />
 
-            <ChevronRight className="w-4 h-4" />
+              <Link
+                to="/services"
+                className="hover:text-[#C8A24A]"
+                style={{
+                  direction: isRTL ? "rtl" : "ltr",
+                  unicodeBidi: "plaintext",
+                }}
+              >
+                {t("navbar.services")}
+              </Link>
 
-            <span className="text-white">
-              {service.hero.title}
-            </span>
+              <ChevronRight className="w-4 h-4 shrink-0" />
 
+              <span
+                className="text-white"
+                style={{
+                  direction: isRTL ? "rtl" : "ltr",
+                  unicodeBidi: "plaintext",
+                }}
+              >
+                {service.hero.title}
+              </span>
+
+            </div>
           </div>
 
-
-          <div className="max-w-3xl">
+          <div
+          className={`w-full flex ${
+            isRTL ? "justify-end" : "justify-start"
+          }`}
+        >
+          <div
+            dir={isRTL ? "rtl" : "ltr"}
+            className={`w-full max-w-3xl ${
+              isRTL ? "text-right" : "text-left"
+            }`}
+          >
 
             <div className="w-20 h-1 bg-[#C8A24A] rounded-full mb-6" />
-
 
             <p className="hero-eyebrow text-[#C8A24A] font-semibold mb-4">
               {service.hero.eyebrow}
             </p>
 
-
             <h1 className="text-5xl md:text-6xl font-bold text-white leading-tight">
               {service.hero.title}
             </h1>
-
 
             <p className="mt-8 text-xl leading-8 text-gray-200">
               {service.hero.subtitle}
             </p>
 
-            
           </div>
-
+        </div>
         </div>
 
       </section>
