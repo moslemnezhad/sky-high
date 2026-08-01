@@ -30,7 +30,7 @@ export default function ServicePage() {
       <section className="relative h-[70vh] min-h-[520px] flex items-center overflow-hidden">
 
         <div
-          className="absolute inset-0 bg-cover bg-center"
+          className="absolute inset-0 bg-cover bg-right center"
           style={{
             backgroundImage: `url(${service.hero.image})`,
           }}
