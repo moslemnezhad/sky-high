@@ -132,7 +132,7 @@ paths.forEach((path, index) => {
                 {index !== 0 && (
                   <ChevronRight
                     size={13}
-                    className="shrink-0"
+                    className={`shrink-0 ${direction() === "rtl" ? "rotate-180" : ""}`}
                   />
                 )}
 

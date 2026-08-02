@@ -2,14 +2,15 @@ import { useParams, Link } from "react-router-dom";
 import { CheckCircle, ChevronRight } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { getServiceBySlug } from "../../content/services";
+import { direction, textAlign } from "../../utils/language";
 
 export default function ServicePage() {
 
   const { slug } = useParams();
 
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
-  const isRTL = i18n.dir() === "rtl";
+  
 
   const service = getServiceBySlug(slug);
 
@@ -29,7 +30,7 @@ export default function ServicePage() {
 
       {/* ================= HERO ================= */}
 
-      <section className="relative h-[70vh] min-h-[520px] flex items-center overflow-hidden">
+      <section dir="ltr" className="relative h-[70vh] min-h-[520px] flex items-center overflow-hidden">
 
         <div
           className="absolute inset-0 bg-cover bg-center"
@@ -46,51 +47,34 @@ export default function ServicePage() {
         <div className="relative max-w-7xl mx-auto px-6 w-full">
 
 
-         {/* ================= BREADCRUMBS ================= */}
+          {/* ================= BREADCRUMBS ================= */}
 
           <div
-            className={`w-full flex ${
-              isRTL ? "justify-end" : "justify-start"
+            className={`max-w-3xl flex ${
+              direction() === "rtl" ? "justify-end" : "justify-start"
             } mb-8`}
           >
             <div
+              dir={direction()}
               className="flex items-center gap-2 text-sm text-gray-300"
-              style={{ direction: "ltr" }}
             >
 
-              <Link
-                to="/"
-                className="hover:text-[#C8A24A]"
-                style={{
-                  direction: isRTL ? "rtl" : "ltr",
-                  unicodeBidi: "plaintext",
-                }}
-              >
+              <Link to="/" className="hover:text-[#C8A24A]">
                 {t("navbar.home")}
               </Link>
 
-              <ChevronRight className="w-4 h-4 shrink-0" />
+              <ChevronRight
+                className={`w-4 h-4 shrink-0 ${direction() === "rtl" ? "rotate-180" : ""}`}
+              />
 
-              <Link
-                to="/services"
-                className="hover:text-[#C8A24A]"
-                style={{
-                  direction: isRTL ? "rtl" : "ltr",
-                  unicodeBidi: "plaintext",
-                }}
-              >
+              <Link to="/services" className="hover:text-[#C8A24A]">
                 {t("navbar.services")}
               </Link>
 
-              <ChevronRight className="w-4 h-4 shrink-0" />
-
-              <span
-                className="text-white"
-                style={{
-                  direction: isRTL ? "rtl" : "ltr",
-                  unicodeBidi: "plaintext",
-                }}
-              >
+              <ChevronRight
+                className={`w-4 h-4 shrink-0 ${direction() === "rtl" ? "rotate-180" : ""}`}
+              />
+              <span className="text-white">
                 {service.hero.title}
               </span>
 
@@ -98,32 +82,24 @@ export default function ServicePage() {
           </div>
 
           <div
-          className={`w-full flex ${
-            isRTL ? "justify-end" : "justify-start"
-          }`}
+          dir={direction()}
+          className={`w-full max-w-3xl ${textAlign()}`}
         >
-          <div
-            dir={isRTL ? "rtl" : "ltr"}
-            className={`w-full max-w-3xl ${
-              isRTL ? "text-right" : "text-left"
-            }`}
-          >
 
-            <div className="w-20 h-1 bg-[#C8A24A] rounded-full mb-6" />
+          <div className="w-20 h-1 bg-[#C8A24A] rounded-full mb-6" />
 
-            <p className="hero-eyebrow text-[#C8A24A] font-semibold mb-4">
-              {service.hero.eyebrow}
-            </p>
+          <p className="hero-eyebrow text-[#C8A24A] font-semibold mb-4">
+            {service.hero.eyebrow}
+          </p>
 
-            <h1 className="text-5xl md:text-6xl font-bold text-white leading-tight">
-              {service.hero.title}
-            </h1>
+          <h1 className="text-5xl md:text-6xl font-bold text-white leading-tight">
+            {service.hero.title}
+          </h1>
 
-            <p className="mt-8 text-xl leading-8 text-gray-200">
-              {service.hero.subtitle}
-            </p>
+          <p className="mt-8 text-xl leading-8 text-gray-200">
+            {service.hero.subtitle}
+          </p>
 
-          </div>
         </div>
         </div>
 
@@ -131,23 +107,23 @@ export default function ServicePage() {
 
            {/* ================= OVERVIEW ================= */}
 
-      <section className="py-24">
+            <section className="py-24">
 
-        <div className="max-w-5xl mx-auto px-6">
+              <div className="max-w-5xl mx-auto px-6">
 
-          <h2 className="text-4xl font-bold text-[#0B2D4D]">
-            {service.overview.title}
-          </h2>
+                <h2 className="text-4xl font-bold text-[#0B2D4D]">
+                  {service.overview.title}
+                </h2>
 
-          <div className="w-20 h-1 bg-[#C8A24A] mt-5 mb-10 rounded-full" />
+                <div className="w-20 h-1 bg-[#C8A24A] mt-5 mb-10 rounded-full" />
 
-          <p className="text-gray-600 leading-9 text-lg">
-            {service.overview.description}
-          </p>
+                <p className="text-gray-600 leading-9 text-lg">
+                  {service.overview.description}
+                </p>
 
-        </div>
+              </div>
 
-      </section>
+            </section>
 
 
       {/* ================= BENEFITS ================= */}
