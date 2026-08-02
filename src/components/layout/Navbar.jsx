@@ -229,10 +229,10 @@ export default function Navbar() {
           {/* Mobile */}
 
           <button
-  ref={buttonRef}
-  className="lg:hidden"
-  onClick={() => setMenuOpen(!menuOpen)}
->
+              ref={buttonRef}
+              className="lg:hidden"
+              onClick={() => setMenuOpen(!menuOpen)}
+            >
             {menuOpen
               ? <X className="w-7 h-7 text-[#0B2D4D]" />
               : <Menu className="w-7 h-7 text-[#0B2D4D]" />}
@@ -245,7 +245,7 @@ export default function Navbar() {
 
       {menuOpen && (
 
-  <div ref={menuRef} className="lg:hidden bg-white border-t border-gray-200 shadow-lg">
+          <div ref={menuRef} className="lg:hidden bg-white border-t border-gray-200 shadow-lg">
 
           <div className="px-6 py-6 space-y-5">
 
