@@ -1,10 +1,12 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import { Menu, X, Globe } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const menuRef = useRef(null);
+  const buttonRef = useRef(null);
 
   const { t, i18n } = useTranslation();
   const location = useLocation();
@@ -17,6 +19,29 @@ export default function Navbar() {
 
     document.documentElement.lang = i18n.language;
   }, [i18n.language]);
+
+  useEffect(() => {
+  function handleClickOutside(event) {
+    if (
+      menuRef.current &&
+      !menuRef.current.contains(event.target) &&
+      buttonRef.current &&
+      !buttonRef.current.contains(event.target)
+    ) {
+      setMenuOpen(false);
+    }
+  }
+
+  if (menuOpen) {
+    document.addEventListener("mousedown", handleClickOutside);
+    document.addEventListener("touchstart", handleClickOutside);
+  }
+
+  return () => {
+    document.removeEventListener("mousedown", handleClickOutside);
+    document.removeEventListener("touchstart", handleClickOutside);
+  };
+}, [menuOpen]);
 
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
@@ -204,9 +229,10 @@ export default function Navbar() {
           {/* Mobile */}
 
           <button
-            className="lg:hidden"
-            onClick={() => setMenuOpen(!menuOpen)}
-          >
+  ref={buttonRef}
+  className="lg:hidden"
+  onClick={() => setMenuOpen(!menuOpen)}
+>
             {menuOpen
               ? <X className="w-7 h-7 text-[#0B2D4D]" />
               : <Menu className="w-7 h-7 text-[#0B2D4D]" />}
@@ -219,7 +245,7 @@ export default function Navbar() {
 
       {menuOpen && (
 
-        <div className="lg:hidden bg-white border-t border-gray-200 shadow-lg">
+  <div ref={menuRef} className="lg:hidden bg-white border-t border-gray-200 shadow-lg">
 
           <div className="px-6 py-6 space-y-5">
 
