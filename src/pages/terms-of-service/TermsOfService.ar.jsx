@@ -15,7 +15,7 @@ export default function TermsOfService() {
 
           <p>
             باستخدام الخدمات المقدمة من شركة Sky High Financial Management
-            Inc.، فإنك توافق على الشروط والأحكام التالية.
+            Inc، فإنك توافق على الشروط والأحكام التالية.
           </p>
 
 
@@ -64,7 +64,7 @@ export default function TermsOfService() {
             </h2>
 
             <p>
-              لا تتحمل شركة Sky High Financial Management Inc. مسؤولية أي
+              لا تتحمل شركة Sky High Financial Management Inc مسؤولية أي
               خسائر ناتجة عن معلومات غير دقيقة يقدمها العملاء أو عن قرارات
               يتم اتخاذها دون الحصول على استشارة مهنية مناسبة.
             </p>
@@ -78,7 +78,7 @@ export default function TermsOfService() {
 
             <p>
               إذا كانت لديك أي أسئلة حول شروط استخدام الخدمة هذه، يرجى
-              التواصل مع شركة Sky High Financial Management Inc.
+              التواصل مع شركة Sky High Financial Management Inc
             </p>
           </section>
 

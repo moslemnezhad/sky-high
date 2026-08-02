@@ -12,7 +12,7 @@ export default function PrivacyPolicy() {
         <div className="space-y-8 text-gray-700 leading-8">
 
           <p>
-            شرکت Sky High Financial Management Inc. به حریم خصوصی شما احترام
+            شرکت Sky High Financial Management Inc به حریم خصوصی شما احترام
             می‌گذارد و متعهد است از اطلاعات شخصی شما محافظت کند.
           </p>
 
@@ -79,7 +79,7 @@ export default function PrivacyPolicy() {
 
             <p>
               اگر درباره این سیاست حفظ حریم خصوصی سؤال یا نگرانی دارید،
-              لطفاً با شرکت Sky High Financial Management Inc. تماس بگیرید.
+              لطفاً با شرکت Sky High Financial Management Inc تماس بگیرید.
             </p>
           </section>
 
