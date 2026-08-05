@@ -2,7 +2,7 @@ export default {
   slug: "tax-planning",
 
   hero: {
-    eyebrow: "Professional Service",
+    eyebrow: "expert service",
     title: "Tax Planning & Optimization",
 
     subtitle:

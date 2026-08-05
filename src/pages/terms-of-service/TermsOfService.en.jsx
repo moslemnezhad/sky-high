@@ -21,7 +21,7 @@ export default function TermsOfService() {
 
           <section>
             <h2 className="text-2xl font-bold text-[#0B2D4D]">
-              Professional Services
+              Comprehensive Services
             </h2>
 
             <p>

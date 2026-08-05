@@ -2,8 +2,8 @@ export default {
   slug: "cross-border-tax",
 
   hero: {
-    eyebrow: "Professional Service",
-    title: "Canada–U.S. Cross-Border Tax Services",
+    eyebrow: "expert service",
+    title: "Canada–U.S. Cross-Border Tax",
 
     subtitle:
       "Professional cross-border tax planning and compliance services for individuals and businesses with financial activities in both Canada and the United States.",

@@ -2,11 +2,11 @@ export default {
   slug: "accounting",
 
   hero: {
-    eyebrow: "Professional Service",
-    title: "Accounting Services",
+    eyebrow: "expert service",
+    title: "Accounting",
 
     subtitle:
-      "Professional accounting services that provide accurate financial information, improve decision-making, and help your business grow with confidence.",
+      "comprehensive accounting services that provide accurate financial information, improve decision-making, and help your business grow with confidence.",
 
     image: "/images/accounting.jpg",
   },
@@ -15,7 +15,7 @@ export default {
     title: "Overview",
 
     description:
-      "Sky High Financial Management provides comprehensive accounting services for corporations, small businesses, self-employed professionals, and growing organizations across Canada. Our accounting solutions go beyond bookkeeping by delivering reliable financial statements, management reports, and meaningful insights that help business owners understand their financial performance and make informed decisions. Whether you are starting a new business or managing an established corporation, we provide accurate, timely, and professional accounting services tailored to your needs.",
+      "Sky High Financial Management provides comprehensive accounting services for corporations, small businesses, self-employed professionals, and growing organizations across Canada. Our accounting solutions go beyond bookkeeping by delivering reliable financial statements, management reports, and meaningful insights that help business owners understand their financial performance and make informed decisions. Whether you are starting a new business or managing an established corporation, we provide accurate, timely, and comprehensive accounting services tailored to your needs.",
   },
 
   benefits: {

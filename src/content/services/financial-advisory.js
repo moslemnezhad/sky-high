@@ -2,8 +2,8 @@ export default {
   slug: "financial-advisory",
 
   hero: {
-    eyebrow: "Professional Service",
-    title: "Financial Advisory Services",
+    eyebrow: "expert service",
+    title: "Financial Advisory",
 
     subtitle:
       "Strategic financial guidance that helps business owners make informed decisions, improve profitability, manage cash flow, and build long-term financial success.",

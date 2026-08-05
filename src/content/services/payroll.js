@@ -2,8 +2,8 @@ export default {
   slug: "payroll",
 
   hero: {
-    eyebrow: "Professional Service",
-    title: "Payroll Services",
+    eyebrow: "expert service",
+    title: "Payroll",
 
     subtitle:
       "Accurate, compliant, and stress-free payroll solutions that ensure your employees are paid correctly while keeping your business fully compliant with CRA payroll requirements.",

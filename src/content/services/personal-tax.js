@@ -2,8 +2,8 @@ export default {
   slug: "personal-tax",
 
   hero: {
-    eyebrow: "Professional Service",
-    title: "Personal Tax Services",
+    eyebrow: "expert service",
+    title: "Personal Tax",
 
     subtitle:
       "Professional personal income tax preparation designed to maximize your tax savings, ensure CRA compliance, and give you confidence that your return is prepared accurately.",

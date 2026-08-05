@@ -2,9 +2,9 @@ export default {
   slug: "bookkeeping",
 
   hero: {
-    eyebrow: "Professional Service",
+    eyebrow: "expert service",
 
-    title: "Professional Bookkeeping Services",
+    title: "Bookkeeping",
 
     subtitle:
       "Reliable bookkeeping services that keep your financial records accurate, organized, and ready for confident business decisions throughout the year.",

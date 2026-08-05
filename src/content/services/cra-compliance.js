@@ -2,8 +2,8 @@ export default {
   slug: "cra-compliance",
 
   hero: {
-    eyebrow: "Professional Service",
-    title: "CRA Compliance Services",
+    eyebrow: "expert service",
+    title: "CRA Compliance",
 
     subtitle:
       "Helping Canadian individuals and businesses stay compliant with Canada Revenue Agency requirements while reducing risk, avoiding penalties, and responding confidently to CRA requests.",

@@ -2,8 +2,8 @@ export default {
   slug: "business-consulting",
 
   hero: {
-    eyebrow: "Professional Service",
-    title: "Business Consulting Services",
+    eyebrow: "expert service",
+    title: "Business Consulting",
 
     subtitle:
       "Professional business consulting that helps entrepreneurs and business owners improve performance, increase profitability, and achieve sustainable long-term growth.",

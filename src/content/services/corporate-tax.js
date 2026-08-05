@@ -2,8 +2,8 @@ export default {
   slug: "corporate-tax",
 
   hero: {
-    eyebrow: "Professional Service",
-    title: "Corporate Tax Services",
+    eyebrow: "expert service",
+    title: "Corporate Tax",
 
     subtitle:
       "Professional corporate tax preparation and strategic tax planning that helps Canadian businesses remain compliant while minimizing tax liabilities and supporting long-term growth.",
