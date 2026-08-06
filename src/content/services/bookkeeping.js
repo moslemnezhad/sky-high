@@ -30,7 +30,7 @@ export default {
       "Improve cash flow visibility and financial decision-making.",
       "Reduce accounting errors before year-end.",
       "Ensure your records are ready for tax preparation.",
-      "Receive professional support from experienced accounting professionals.",
+      "Receive exceptional support from experienced accounting professionals.",
     ],
   },
 

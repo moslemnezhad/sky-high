@@ -134,7 +134,7 @@ export default {
     title: "Stay Compliant. Avoid Costly Mistakes.",
 
     description:
-      "Whether you need help responding to CRA correspondence, catching up on outstanding filings, or maintaining year-round compliance, Sky High Financial Management is here to provide reliable professional support.",
+      "Whether you need help responding to CRA correspondence, catching up on outstanding filings, or maintaining year-round compliance, Sky High Financial Management is here to provide reliable exceptional support.",
 
     button: "Book Consultation",
   },

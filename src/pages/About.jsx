@@ -53,14 +53,19 @@ export default function About() {
 
             {/* Photo */}
 
-            <div>
-
+            <div className="flex justify-center">
               <img
                 src="/images/founder.jpg"
                 alt="Mohammad Moslem Nezhad"
-                className="w-full rounded-3xl shadow-xl object-cover"
+                className="
+                  w-full
+                  max-w-md
+                  lg:max-w-sm
+                  rounded-4xl
+                  shadow-x1
+                  object-cover
+                "
               />
-
             </div>
 
             {/* Content */}
