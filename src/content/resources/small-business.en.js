@@ -13,9 +13,9 @@ export default {
 
   hero: {
 
-    eyebrow: "Small Business Resources",
+    eyebrow: "Resource Centre",
 
-    title: "Small Business Resource Centre",
+    title: "Small Business",
 
     description:
       "Simple guidance to help Canadian small business owners understand their accounting, tax, and reporting responsibilities.",

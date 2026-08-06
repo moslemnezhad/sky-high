@@ -13,9 +13,9 @@ export default {
 
   hero: {
 
-    eyebrow: "منابع GST / HST",
+    eyebrow: "مرکز منابع",
 
-    title: "مرکز منابع GST / HST",
+    title: "GST / HST",
 
     description:
       "راهنمای ساده برای کمک به کسب‌وکارهای کانادایی جهت درک ثبت‌نام GST/HST، دریافت مالیات، ارسال اظهارنامه و اعتبار مالیاتی ورودی.",

@@ -13,9 +13,9 @@ export default {
 
   hero: {
 
-    eyebrow: "Canada–USA Tax Resources",
+    eyebrow: "Resource Centre",
 
-    title: "Canada–USA Tax Resource Centre",
+    title: "Canada–USA Tax",
 
     description:
       "Simple guidance for individuals and businesses with tax obligations in both Canada and the United States.",

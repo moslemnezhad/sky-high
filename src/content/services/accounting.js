@@ -6,7 +6,7 @@ export default {
     title: "Accounting",
 
     subtitle:
-      "comprehensive accounting services that provide accurate financial information, improve decision-making, and help your business grow with confidence.",
+      "Comprehensive accounting services that provide accurate financial information, improve decision-making, and help your business grow with confidence.",
 
     image: "/images/accounting.jpg",
   },

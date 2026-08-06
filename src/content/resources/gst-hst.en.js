@@ -13,9 +13,9 @@ export default {
 
   hero: {
 
-    eyebrow: "GST / HST Resources",
+    eyebrow: "Resource Centre",
 
-    title: "GST / HST Resource Centre",
+    title: "GST / HST",
 
     description:
       "Simple guidance to help Canadian businesses understand GST/HST registration, collection, filing, and Input Tax Credits.",

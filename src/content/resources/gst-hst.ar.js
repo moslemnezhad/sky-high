@@ -13,9 +13,9 @@ export default {
 
   hero: {
 
-    eyebrow: "موارد GST / HST",
+    eyebrow: "مركز موارد",
 
-    title: "مركز موارد GST / HST",
+    title: "GST / HST",
 
     description:
       "دليل مبسط لمساعدة الشركات الكندية على فهم تسجيل GST/HST، تحصيل الضرائب، تقديم الإقرارات، والائتمانات الضريبية للمدخلات.",

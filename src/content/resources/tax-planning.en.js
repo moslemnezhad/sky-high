@@ -11,9 +11,9 @@ export default {
 
 
   hero: {
-    eyebrow: "Tax Planning Resources",
+    eyebrow: "Resource Centre",
 
-    title: "Tax Planning Resource Centre",
+    title: "Tax Planning",
 
     description:
       "Simple guidance to help individuals and business owners make informed financial decisions throughout the year while staying compliant with Canadian tax laws.",

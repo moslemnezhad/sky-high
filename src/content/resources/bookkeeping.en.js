@@ -13,9 +13,9 @@ export default {
 
   hero: {
 
-    eyebrow: "Bookkeeping Resources",
+    eyebrow: "Resource Centre",
 
-    title: "Bookkeeping Resource Centre",
+    title: "Bookkeeping",
 
     description:
       "Simple guidance to help Canadian businesses understand bookkeeping, financial records, and the importance of accurate accounting information.",

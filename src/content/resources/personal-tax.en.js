@@ -13,9 +13,9 @@ export default {
 
   hero: {
 
-    eyebrow: "Personal Tax Resources",
+    eyebrow: "Resource Centre",
 
-    title: "Personal Tax Resource Centre",
+    title: "Personal Tax",
 
     description:
       "Simple guidance to help Canadian taxpayers understand personal income tax and find trusted Canada Revenue Agency resources.",

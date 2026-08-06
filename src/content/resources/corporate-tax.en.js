@@ -13,9 +13,9 @@ export default {
 
   hero: {
 
-    eyebrow: "Corporate Tax Resources",
+    eyebrow: "Resource Centre",
 
-    title: "Corporate Tax Resource Centre",
+    title: "Corporate Tax",
 
     description:
       "Simple guidance to help Canadian business owners understand corporate tax responsibilities, prepare required information, and find trusted CRA resources.",

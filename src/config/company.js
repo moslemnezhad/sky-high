@@ -43,6 +43,6 @@ export const company = {
   seo: {
     title: "Sky High Financial Management Inc.",
     description:
-      "comprehensive accounting, bookkeeping, payroll, corporate tax, personal tax, and Canada-USA cross-border tax services.",
+      "Comprehensive accounting, bookkeeping, payroll, corporate tax, personal tax, and Canada-USA cross-border tax services.",
   },
 };

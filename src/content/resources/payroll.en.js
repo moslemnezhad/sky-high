@@ -13,9 +13,9 @@ export default {
 
   hero: {
 
-    eyebrow: "Payroll Resources",
+    eyebrow: "Resource Centre",
 
-    title: "Payroll Resource Centre",
+    title: "Payroll",
 
     description:
       "Simple payroll guidance for Canadian employers to help manage employee payments, payroll deductions, and CRA reporting requirements.",
