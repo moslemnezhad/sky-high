@@ -21,7 +21,7 @@ export default {
       "راهنمای ساده برای کمک به صاحبان کسب‌وکارهای کوچک در کانادا جهت درک مسئولیت‌های حسابداری، مالیاتی و گزارش‌دهی.",
 
     image:
-      "/images/resources-hero.jpg",
+      "/images/business-consulting.jpg",
 
   },
 

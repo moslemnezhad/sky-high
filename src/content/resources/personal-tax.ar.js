@@ -21,7 +21,7 @@ export default {
       "دليل مبسط لمساعدة دافعي الضرائب في كندا على فهم ضريبة الدخل الشخصي والعثور على مصادر موثوقة من وكالة الإيرادات الكندية (CRA).",
 
     image:
-      "/images/resources-hero.jpg",
+      "/images/personal-tax.jpg",
 
   },
 

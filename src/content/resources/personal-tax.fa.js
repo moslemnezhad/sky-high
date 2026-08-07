@@ -21,7 +21,7 @@ export default {
       "راهنمای ساده برای کمک به مالیات‌دهندگان کانادایی جهت درک مالیات بر درآمد شخصی و دسترسی به منابع معتبر آژانس درآمد کانادا (CRA).",
 
     image:
-      "/images/resources-hero.jpg",
+      "/images/personal-tax.jpg",
 
   },
 

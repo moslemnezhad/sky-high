@@ -21,7 +21,7 @@ export default {
       "Simple guidance to help Canadian businesses understand bookkeeping, financial records, and the importance of accurate accounting information.",
 
     image:
-      "/images/resources-hero.jpg",
+      "/images/bookkeeping.jpg",
 
   },
 

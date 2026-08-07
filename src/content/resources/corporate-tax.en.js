@@ -21,7 +21,7 @@ export default {
       "Simple guidance to help Canadian business owners understand corporate tax responsibilities, prepare required information, and find trusted CRA resources.",
 
     image:
-      "/images/resources-hero.jpg",
+      "/images/corporate-tax.jpg",
 
   },
 

@@ -21,7 +21,7 @@ export default {
       "راهنمای ساده برای افراد و کسب‌وکارهایی که در کانادا و ایالات متحده آمریکا دارای تعهدات مالیاتی هستند.",
 
     image:
-      "/images/resources-hero.jpg",
+      "/images/cross-border-tax.jpg",
 
   },
 

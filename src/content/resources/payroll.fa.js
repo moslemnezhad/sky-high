@@ -21,7 +21,7 @@ export default {
       "راهنمای ساده حقوق و دستمزد برای کارفرمایان کانادایی جهت مدیریت پرداخت کارکنان، کسورات حقوق و الزامات گزارش‌دهی به CRA.",
 
     image:
-      "/images/resources-hero.jpg",
+      "/images/payroll.jpg",
 
   },
 

@@ -21,7 +21,7 @@ export default {
       "راهنمای ساده برای کمک به کسب‌وکارهای کانادایی جهت درک دفترداری، سوابق مالی و اهمیت اطلاعات دقیق دفترداری.",
 
     image:
-      "/images/resources-hero.jpg",
+      "/images/bookkeeping.jpg",
 
   },
 

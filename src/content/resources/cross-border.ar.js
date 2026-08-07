@@ -21,7 +21,7 @@ export default {
       "إرشادات مبسطة للأفراد والشركات الذين لديهم التزامات ضريبية في كل من كندا والولايات المتحدة.",
 
     image:
-      "/images/resources-hero.jpg",
+      "/images/cross-border-tax.jpg",
 
   },
 

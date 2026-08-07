@@ -21,7 +21,7 @@ export default {
       "دليل مبسط لمساعدة أصحاب الأعمال الصغيرة في كندا على فهم مسؤولياتهم المتعلقة بالمحاسبة والضرائب وإعداد التقارير.",
 
     image:
-      "/images/resources-hero.jpg",
+      "/images/business-consulting.jpg",
 
   },
 

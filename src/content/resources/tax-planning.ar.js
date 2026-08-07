@@ -20,7 +20,7 @@ export default {
     description:
       "دليل مبسط لمساعدة الأفراد وأصحاب الأعمال على اتخاذ قرارات مالية مدروسة طوال العام مع الالتزام بقوانين الضرائب الكندية.",
 
-    image: "/images/resources-hero.jpg",
+    image: "/images/tax-planning.jpg",
 
   },
 

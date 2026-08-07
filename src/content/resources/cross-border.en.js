@@ -21,7 +21,7 @@ export default {
       "Simple guidance for individuals and businesses with tax obligations in both Canada and the United States.",
 
     image:
-      "/images/resources-hero.jpg",
+      "/images/cross-border-tax.jpg",
 
   },
 

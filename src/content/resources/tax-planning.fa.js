@@ -20,7 +20,7 @@ export default {
     description:
       "راهنمای ساده برای کمک به افراد و صاحبان کسب‌وکارها جهت تصمیم‌گیری‌های مالی آگاهانه در طول سال و رعایت قوانین مالیاتی کانادا.",
 
-    image: "/images/resources-hero.jpg",
+    image: "/images/tax-planning.jpg",
 
   },
 

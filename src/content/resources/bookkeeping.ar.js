@@ -21,7 +21,7 @@ export default {
       "إرشادات مبسطة لمساعدة الشركات الكندية على فهم مسك الدفاتر والسجلات المالية وأهمية المعلومات المحاسبية الدقيقة.",
 
     image:
-      "/images/resources-hero.jpg",
+      "/images/bookkeeping.jpg",
 
   },
 

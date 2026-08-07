@@ -21,7 +21,7 @@ export default {
       "Simple payroll guidance for Canadian employers to help manage employee payments, payroll deductions, and CRA reporting requirements.",
 
     image:
-      "/images/resources-hero.jpg",
+      "/images/payroll.jpg",
 
   },
 

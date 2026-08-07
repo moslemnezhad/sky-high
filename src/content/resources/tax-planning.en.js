@@ -18,7 +18,7 @@ export default {
     description:
       "Simple guidance to help individuals and business owners make informed financial decisions throughout the year while staying compliant with Canadian tax laws.",
 
-    image: "/images/resources-hero.jpg",
+    image: "/images/tax-planning.jpg",
   },
 
 

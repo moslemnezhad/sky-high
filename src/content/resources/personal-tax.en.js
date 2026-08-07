@@ -21,7 +21,7 @@ export default {
       "Simple guidance to help Canadian taxpayers understand personal income tax and find trusted Canada Revenue Agency resources.",
 
     image:
-      "/images/resources-hero.jpg",
+      "/images/personal-tax.jpg",
 
   },
 

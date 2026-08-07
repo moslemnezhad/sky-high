@@ -21,7 +21,7 @@ export default {
       "Simple guidance to help Canadian small business owners understand their accounting, tax, and reporting responsibilities.",
 
     image:
-      "/images/resources-hero.jpg",
+      "/images/business-consulting.jpg",
 
   },
 
